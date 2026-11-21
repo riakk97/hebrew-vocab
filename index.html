@@ -1442,6 +1442,13 @@
           heEl.textContent = word.he;
           btn.appendChild(heEl);
 
+          if (Array.isArray(word.he_alt) && word.he_alt.length > 0) {
+            const heAltEl = document.createElement("span");
+            heAltEl.className = "alt-hint";
+            heAltEl.innerHTML = '亦作 <span style="font-family:\'SBL Hebrew\',\'Ezra SIL\',serif;font-size:1.15em;font-weight:700;">' + word.he_alt.join(" / ") + '</span>';
+            btn.appendChild(heAltEl);
+          }
+
           const trEl = document.createElement("span");
           trEl.className = "translit-text" + (state.showTranslit ? "" : " hidden");
           trEl.textContent = word.tr;
@@ -1451,16 +1458,6 @@
           zhEl.className = "zh-text";
           zhEl.textContent = word.zh;
           btn.appendChild(zhEl);
-
-          if (Array.isArray(word.zh_alt) && word.zh_alt.length > 0) {
-            const altText = word.zh_alt.filter(s => s && s !== word.zh).join(" / ");
-            if (altText) {
-              const altEl = document.createElement("span");
-              altEl.className = "alt-hint";
-              altEl.textContent = "亦作：" + altText;
-              btn.appendChild(altEl);
-            }
-          }
         }
 
         if (state.matchedIds.has(word.id)) {
@@ -1523,8 +1520,8 @@
           const item = document.createElement("div");
           const score = getRiskScore(w.id);
           item.className = "overview-item" + (score > 0 ? " high-risk" : "");
-          const altStr = (Array.isArray(w.zh_alt) && w.zh_alt.length > 0)
-            ? w.zh_alt.filter(s => s && s !== w.zh).join(" / ")
+          const heAltStr = (Array.isArray(w.he_alt) && w.he_alt.length > 0)
+            ? w.he_alt.join(" / ")
             : "";
           const freqHtml = (typeof w.freq === "number")
             ? ('<span class="overview-freq' + (state.showFreq ? '' : ' hidden') + '">第' + w.ch + '章 · ' + w.freq + '次</span>')
@@ -1536,11 +1533,11 @@
                 '<span class="overview-he">' + w.he + '</span>' +
                 '<span class="overview-tr' + (state.showTranslit ? '' : ' hidden') + '">' + w.tr + '</span>' +
               '</div>' +
+              (heAltStr ? '<div class="overview-alt">亦作：<span style="font-family:\'SBL Hebrew\',serif;font-weight:700;">' + heAltStr + '</span></div>' : '') +
               freqHtml +
             '</div>' +
             '<div class="overview-zh-box">' +
               '<div class="overview-zh">' + w.zh + '</div>' +
-              (altStr ? '<div class="overview-alt">亦作：' + altStr + '</div>' : '') +
             '</div>';
           elOvGrid.appendChild(item);
         });
