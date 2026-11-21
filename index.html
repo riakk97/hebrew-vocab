@@ -844,6 +844,46 @@
       grid-template-columns: 1fr 1fr;
       gap: 8px;
     }
+
+    .fb-field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .fb-field label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ink-main);
+    }
+    .fb-input, .fb-select, .fb-textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid var(--border-strong);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 13px;
+      color: var(--ink-main);
+      background-color: var(--bg-parchment);
+      outline: none;
+    }
+    .fb-input:focus, .fb-select:focus, .fb-textarea:focus {
+      border-color: var(--accent-sage);
+      background-color: #FFFFFF;
+    }
+    .fb-textarea {
+      min-height: 84px;
+      resize: vertical;
+      line-height: 1.45;
+    }
+    .fb-setup-box {
+      background-color: var(--bg-parchment);
+      border: 1px dashed var(--border-strong);
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 11px;
+      color: var(--ink-muted);
+      line-height: 1.55;
+    }
   </style>
 </head>
 <body>
@@ -885,6 +925,7 @@
 
       <button id="btn-next-round" type="button" class="btn-next">下一組 ↻</button>
       <button id="btn-data-modal" type="button" class="btn-ghost" title="錯題統計與 JSON 備份">紀錄/備份</button>
+      <button id="btn-feedback-modal" type="button" class="btn-ghost" title="單字勘誤與意見反饋">💬 回饋</button>
     </div>
   </header>
 
@@ -1024,6 +1065,57 @@
           <span style="font-size:12px;color:var(--ink-muted);">清除本機所有作答統計：</span>
           <button id="btn-reset-all" type="button" class="btn-ghost" style="color:var(--accent-terracotta);border-color:var(--accent-terracotta);">
             重設全部紀錄
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 意見反饋與單字勘誤彈窗 -->
+  <div id="feedback-modal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>💬 意見反饋與單字勘誤</h2>
+        <button id="btn-close-feedback" type="button" class="btn-ghost">關閉 ✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="font-size:12px;color:var(--ink-muted);line-height:1.5;">
+          發現母音、音譯、中文釋義或詞頻有誤，或有想要的新功能嗎？歡迎填寫下方欄位送出至雲端試算表，或一鍵複製文字在 <strong>LINE</strong> 傳給 <strong>子萱 (Mirriam)</strong>！
+        </div>
+
+        <div class="fb-field">
+          <label for="fb-type">回饋類型</label>
+          <select id="fb-type" class="fb-select">
+            <option value="單字勘誤（母音 / 音譯 / 釋義 / 詞頻）">📝 單字勘誤（母音 / 音譯 / 釋義 / 詞頻）</option>
+            <option value="同義詞重疊回報">🔄 同義詞重疊回報（不同字但中文相同）</option>
+            <option value="功能建議 / 介面優化">💡 功能建議 / 介面優化</option>
+            <option value="其他回饋">💬 其他回饋</option>
+          </select>
+        </div>
+
+        <div class="fb-field">
+          <label for="fb-word">相關單詞（可從目前題目選擇，或於下方說明）</label>
+          <select id="fb-word" class="fb-select">
+            <option value="一般建議（非特定單詞）">一般建議（非特定單詞）</option>
+          </select>
+        </div>
+
+        <div class="fb-field">
+          <label for="fb-message">回饋與勘誤內容 <span class="text-terracotta">*</span></label>
+          <textarea id="fb-message" class="fb-textarea" placeholder="例如：第 21 章 זָבַח 的釋義建議加上…… 或希望新增某項功能"></textarea>
+        </div>
+
+        <div class="fb-field">
+          <label for="fb-author">您的稱呼 / 聯絡方式（選填，方便回覆您）</label>
+          <input type="text" id="fb-author" class="fb-input" placeholder="例如：同學的名字或暱稱（可留空匿名）" />
+        </div>
+
+        <div class="backup-actions" style="margin-top:2px;">
+          <button id="btn-fb-submit-sheet" type="button" class="btn-next" style="justify-content:center;padding:9px 10px;">
+            🚀 送出至雲端回饋表
+          </button>
+          <button id="btn-fb-copy-line" type="button" class="btn-ghost" style="justify-content:center;padding:9px 10px;">
+            📋 複製文字傳 LINE
           </button>
         </div>
       </div>
@@ -1911,6 +2003,98 @@
         document.getElementById("btn-close-modal").addEventListener("click", () => modal.classList.remove("show"));
         modal.addEventListener("click", function (e) {
           if (e.target === modal) modal.classList.remove("show");
+        });
+
+        const fbModal = document.getElementById("feedback-modal");
+        const fbWordSelect = document.getElementById("fb-word");
+        const fbTypeSelect = document.getElementById("fb-type");
+        const fbMsgInput = document.getElementById("fb-message");
+        const fbAuthorInput = document.getElementById("fb-author");
+
+        function populateFeedbackWords() {
+          fbWordSelect.innerHTML = "";
+          const optGeneral = document.createElement("option");
+          optGeneral.value = "一般建議（非特定單詞）";
+          optGeneral.textContent = "一般建議（非特定單詞）";
+          fbWordSelect.appendChild(optGeneral);
+
+          if (state.currentWords && state.currentWords.length > 0) {
+            const grpCurrent = document.createElement("optgroup");
+            grpCurrent.label = "目前畫面上的題目單詞";
+            state.currentWords.forEach(w => {
+              const opt = document.createElement("option");
+              opt.value = "第" + w.ch + "章 " + w.he + " (" + w.tr + ") " + w.zh + " [" + w.id + "]";
+              opt.textContent = "第" + w.ch + "章｜" + w.he + " — " + w.zh;
+              grpCurrent.appendChild(opt);
+            });
+            fbWordSelect.appendChild(grpCurrent);
+          }
+
+          const grpAll = document.createElement("optgroup");
+          grpAll.label = "全部單詞列表（依章節）";
+          state.vocabulary.forEach(w => {
+            const opt = document.createElement("option");
+            opt.value = "第" + w.ch + "章 " + w.he + " (" + w.tr + ") " + w.zh + " [" + w.id + "]";
+            opt.textContent = "第" + w.ch + "章｜" + w.he + " (" + w.tr + ") — " + w.zh;
+            grpAll.appendChild(opt);
+          });
+          fbWordSelect.appendChild(grpAll);
+        }
+
+        document.getElementById("btn-feedback-modal").addEventListener("click", function () {
+          populateFeedbackWords();
+          fbModal.classList.add("show");
+        });
+        document.getElementById("btn-close-feedback").addEventListener("click", () => fbModal.classList.remove("show"));
+        fbModal.addEventListener("click", function (e) {
+          if (e.target === fbModal) fbModal.classList.remove("show");
+        });
+
+        function buildFormattedFeedbackText() {
+          const typeVal = fbTypeSelect.value;
+          const wordVal = fbWordSelect.value;
+          const msgVal = fbMsgInput.value.trim();
+          const authorVal = fbAuthorInput.value.trim() || "匿名同學";
+          return "【希伯來文單詞連連看｜回饋與勘誤】\n" +
+            "・類型：" + typeVal + "\n" +
+            "・單詞：" + wordVal + "\n" +
+            "・內容：" + msgVal + "\n" +
+            "・回饋者：" + authorVal;
+        }
+
+        document.getElementById("btn-fb-copy-line").addEventListener("click", async function () {
+          const msgVal = fbMsgInput.value.trim();
+          if (!msgVal) {
+            showToast("請先填寫回饋與勘誤內容！");
+            fbMsgInput.focus();
+            return;
+          }
+          const formatted = buildFormattedFeedbackText();
+          try {
+            await navigator.clipboard.writeText(formatted);
+            showToast("已複製回饋文字！請直接貼到 LINE 傳給子萱 (Mirriam)");
+          } catch (e) {
+            showToast("複製完成！請貼到 LINE 傳給子萱");
+          }
+        });
+
+        document.getElementById("btn-fb-submit-sheet").addEventListener("click", async function () {
+          const msgVal = fbMsgInput.value.trim();
+          if (!msgVal) {
+            showToast("請先填寫回饋與勘誤內容！");
+            fbMsgInput.focus();
+            return;
+          }
+          const formatted = buildFormattedFeedbackText();
+          try {
+            await navigator.clipboard.writeText(formatted);
+          } catch (e) {}
+
+          const sheetUrl = "https://docs.google.com/spreadsheets/d/158vv8MtHS1B2nL6AHy3mVhPKe88RonYzjoaSrGRETnw/edit";
+          window.open(sheetUrl, "_blank", "noopener,noreferrer");
+          showToast("已自動複製您的回饋並開啟雲端回饋試算表！");
+          fbMsgInput.value = "";
+          fbModal.classList.remove("show");
         });
 
         document.getElementById("btn-export-json").addEventListener("click", function () {
