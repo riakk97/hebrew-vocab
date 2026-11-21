@@ -1,9 +1,19 @@
 {
   "meta": {
-    "title": "聖經希伯來文初階（Basics of Biblical Hebrew）詞彙庫",
-    "version": "1.3.1",
+    "title": "聖經希伯來文初階（Basics of Biblical Hebrew）全書詞彙庫（第 3–35 章）",
+    "version": "2.0.0",
     "updated_at": "2026-11-21",
     "chapters_included": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
       13,
       14,
       15,
@@ -16,16 +26,2924 @@
       22,
       23,
       24,
-      25
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
     ],
-    "total_words": 187,
+    "total_words": 490,
     "notes": {
-      "ch19": "19.11 字彙共 12 詞（5 動詞、7 名詞）；截圖 19.11 內附帶之 שָׂרָף（火蛇，117次）亦一併列入（ch19_005）",
-      "ch20": "20.14 字彙共 7 詞（截圖 20.14）；20.15 頁首續接之 2 動詞 + 4 名詞 + 1 其他共 7 詞（截圖 p.258）；合計 14 詞（另 20.15 頁首 יַחַד 一起 46 次列入 ch20_010 的 zh_alt）",
-      "ch21_25": "已收錄第 21–25 章共 72 詞（Ch21: 15, Ch22: 14, Ch23: 14, Ch24: 15, Ch25: 14）；所有複數與異體希伯來文皆移至 he_alt 避免中文卡洩題"
+      "ch03_12": "第 3–12 章（上學期範圍）共 200 詞",
+      "ch13_18": "第 13–18 章（下學期期中範圍）共 88 詞",
+      "ch19_25": "第 19–25 章（下學期期末範圍）共 99 詞",
+      "ch26_35": "第 26–35 章（進階字幹與補充字彙）共 103 詞"
     }
   },
   "words": [
+    {
+      "id": "ch03_001",
+      "ch": 3,
+      "he": "אָדָם",
+      "tr": "ʾādām",
+      "zh": "人、亞當",
+      "zh_alt": [
+        "人",
+        "亞當"
+      ],
+      "pos": "noun",
+      "freq": 562,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_002",
+      "ch": 3,
+      "he": "אֶרֶץ",
+      "tr": "ʾereṣ",
+      "zh": "世界、地（陰）",
+      "zh_alt": [
+        "世界",
+        "地"
+      ],
+      "pos": "noun_f",
+      "freq": 2505,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_003",
+      "ch": 3,
+      "he": "אֱלֹהִים",
+      "tr": "ʾĕlōhîm",
+      "zh": "上帝、神",
+      "zh_alt": [
+        "上帝",
+        "神"
+      ],
+      "pos": "noun",
+      "freq": 2602,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_004",
+      "ch": 3,
+      "he": "אָב",
+      "tr": "ʾāb",
+      "zh": "父親、祖先",
+      "zh_alt": [
+        "父親",
+        "祖先"
+      ],
+      "pos": "noun",
+      "freq": 1211,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_005",
+      "ch": 3,
+      "he": "אֵל",
+      "tr": "ʾēl",
+      "zh": "上帝、神",
+      "zh_alt": [
+        "上帝",
+        "神"
+      ],
+      "pos": "noun",
+      "freq": 317,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_006",
+      "ch": 3,
+      "he": "בֵּן",
+      "tr": "bēn",
+      "zh": "兒子",
+      "zh_alt": [
+        "兒子"
+      ],
+      "pos": "noun",
+      "freq": 4941,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_007",
+      "ch": 3,
+      "he": "בַּיִת",
+      "tr": "bayit",
+      "zh": "房子、家人",
+      "zh_alt": [
+        "房子",
+        "家人"
+      ],
+      "pos": "noun",
+      "freq": 2047,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_008",
+      "ch": 3,
+      "he": "דָּבָר",
+      "tr": "dābār",
+      "zh": "話、事、物",
+      "zh_alt": [
+        "話",
+        "事",
+        "物"
+      ],
+      "pos": "noun",
+      "freq": 1454,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_009",
+      "ch": 3,
+      "he": "יוֹם",
+      "tr": "yôm",
+      "zh": "日",
+      "zh_alt": [
+        "日"
+      ],
+      "pos": "noun",
+      "freq": 2301,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_010",
+      "ch": 3,
+      "he": "יִשְׂרָאֵל",
+      "tr": "yiśrāʾēl",
+      "zh": "以色列",
+      "zh_alt": [
+        "以色列"
+      ],
+      "pos": "noun",
+      "freq": 2507,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_011",
+      "ch": 3,
+      "he": "יְרוּשָׁלַם",
+      "he_alt": [
+        "交替形式：יְרוּשָׁלַיִם"
+      ],
+      "tr": "yərûšālaim",
+      "zh": "耶路撒冷",
+      "zh_alt": [
+        "耶路撒冷"
+      ],
+      "pos": "noun",
+      "freq": 643,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_012",
+      "ch": 3,
+      "he": "יְהוָה",
+      "tr": "yhwh",
+      "zh": "雅偉、主",
+      "zh_alt": [
+        "雅偉",
+        "主"
+      ],
+      "pos": "noun",
+      "freq": 6828,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_013",
+      "ch": 3,
+      "he": "מִצְרַיִם",
+      "tr": "miṣrayim",
+      "zh": "埃及",
+      "zh_alt": [
+        "埃及"
+      ],
+      "pos": "noun",
+      "freq": 682,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_014",
+      "ch": 3,
+      "he": "מֹשֶׁה",
+      "tr": "mōšeh",
+      "zh": "摩西",
+      "zh_alt": [
+        "摩西"
+      ],
+      "pos": "noun",
+      "freq": 766,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_015",
+      "ch": 3,
+      "he": "מֶלֶךְ",
+      "tr": "melek",
+      "zh": "王",
+      "zh_alt": [
+        "王"
+      ],
+      "pos": "noun",
+      "freq": 2530,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_016",
+      "ch": 3,
+      "he": "סוּס",
+      "tr": "sûs",
+      "zh": "馬",
+      "zh_alt": [
+        "馬"
+      ],
+      "pos": "noun",
+      "freq": 138,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_017",
+      "ch": 3,
+      "he": "עֶבֶד",
+      "tr": "ʿebed",
+      "zh": "僕人",
+      "zh_alt": [
+        "僕人"
+      ],
+      "pos": "noun",
+      "freq": 803,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_018",
+      "ch": 3,
+      "he": "פַּרְעֹה",
+      "tr": "parʿōh",
+      "zh": "法老",
+      "zh_alt": [
+        "法老"
+      ],
+      "pos": "noun",
+      "freq": 274,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_019",
+      "ch": 3,
+      "he": "שָׁנָה",
+      "tr": "šānâ",
+      "zh": "年",
+      "zh_alt": [
+        "年"
+      ],
+      "pos": "noun",
+      "freq": 878,
+      "status": "verified"
+    },
+    {
+      "id": "ch03_020",
+      "ch": 3,
+      "he": "שֵׁם",
+      "tr": "šēm",
+      "zh": "名字",
+      "zh_alt": [
+        "名字"
+      ],
+      "pos": "noun",
+      "freq": 864,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_001",
+      "ch": 4,
+      "he": "אֲדֹנָי",
+      "he_alt": [
+        "另列 אֲדוֹן"
+      ],
+      "tr": "ʾădōnāy",
+      "zh": "上主",
+      "zh_alt": [
+        "上主"
+      ],
+      "pos": "noun",
+      "freq": 774,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_002",
+      "ch": 4,
+      "he": "אָח",
+      "he_alt": [
+        "不規則複數：אַחִים"
+      ],
+      "tr": "ʾāḥ",
+      "zh": "兄弟",
+      "zh_alt": [
+        "兄弟"
+      ],
+      "pos": "noun",
+      "freq": 629,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_003",
+      "ch": 4,
+      "he": "אִישׁ",
+      "he_alt": [
+        "不規則複數：אֲנָשִׁים"
+      ],
+      "tr": "ʾîš",
+      "zh": "男人、丈夫",
+      "zh_alt": [
+        "男人",
+        "丈夫"
+      ],
+      "pos": "noun",
+      "freq": 2198,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_004",
+      "ch": 4,
+      "he": "אִשָּׁה",
+      "he_alt": [
+        "不規則複數：נָשִׁים"
+      ],
+      "tr": "ʾiššâ",
+      "zh": "女人、妻子",
+      "zh_alt": [
+        "女人",
+        "妻子"
+      ],
+      "pos": "noun",
+      "freq": 779,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_005",
+      "ch": 4,
+      "he": "בַּת",
+      "he_alt": [
+        "不規則複數：בָּנוֹת"
+      ],
+      "tr": "bat",
+      "zh": "女兒",
+      "zh_alt": [
+        "女兒"
+      ],
+      "pos": "noun",
+      "freq": 603,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_006",
+      "ch": 4,
+      "he": "גּוֹי",
+      "tr": "gôy",
+      "zh": "人民、國家",
+      "zh_alt": [
+        "人民",
+        "國家"
+      ],
+      "pos": "noun",
+      "freq": 567,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_007",
+      "ch": 4,
+      "he": "דֶּרֶךְ",
+      "tr": "derek",
+      "zh": "道路、路徑（陰）",
+      "zh_alt": [
+        "道路",
+        "路徑"
+      ],
+      "pos": "noun_f",
+      "freq": 712,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_008",
+      "ch": 4,
+      "he": "הַר",
+      "he_alt": [
+        "複數：הָרִים"
+      ],
+      "tr": "har",
+      "zh": "山、山脈",
+      "zh_alt": [
+        "山",
+        "山脈"
+      ],
+      "pos": "noun",
+      "freq": 558,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_009",
+      "ch": 4,
+      "he": "כֹּהֵן",
+      "tr": "kōhēn",
+      "zh": "祭司",
+      "zh_alt": [
+        "祭司"
+      ],
+      "pos": "noun",
+      "freq": 750,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_010",
+      "ch": 4,
+      "he": "לֵב",
+      "he_alt": [
+        "交替的形式：לֵבָב"
+      ],
+      "tr": "lēb",
+      "zh": "心",
+      "zh_alt": [
+        "心"
+      ],
+      "pos": "noun",
+      "freq": 854,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_011",
+      "ch": 4,
+      "he": "מַיִם",
+      "tr": "mayim",
+      "zh": "水",
+      "zh_alt": [
+        "水"
+      ],
+      "pos": "noun",
+      "freq": 586,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_012",
+      "ch": 4,
+      "he": "נֶפֶשׁ",
+      "tr": "nepeš",
+      "zh": "生命、靈魂、脖子、喉嚨（陰）",
+      "zh_alt": [
+        "生命",
+        "靈魂",
+        "脖子",
+        "喉嚨"
+      ],
+      "pos": "noun_f",
+      "freq": 757,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_013",
+      "ch": 4,
+      "he": "נָבִיא",
+      "tr": "nābîʾ",
+      "zh": "先知",
+      "zh_alt": [
+        "先知"
+      ],
+      "pos": "noun",
+      "freq": 317,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_014",
+      "ch": 4,
+      "he": "סֵפֶר",
+      "tr": "sēper",
+      "zh": "書、書卷",
+      "zh_alt": [
+        "書",
+        "書卷"
+      ],
+      "pos": "noun",
+      "freq": 191,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_015",
+      "ch": 4,
+      "he": "עַיִן",
+      "he_alt": [
+        "雙數：עֵינַיִם"
+      ],
+      "tr": "ʿayin",
+      "zh": "眼睛、泉源（陰）",
+      "zh_alt": [
+        "眼睛",
+        "泉源"
+      ],
+      "pos": "noun_f",
+      "freq": 900,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_016",
+      "ch": 4,
+      "he": "עִיר",
+      "he_alt": [
+        "不規則複數：עָרִים"
+      ],
+      "tr": "ʿîr",
+      "zh": "城市（陰）",
+      "zh_alt": [
+        "城市"
+      ],
+      "pos": "noun_f",
+      "freq": 1095,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_017",
+      "ch": 4,
+      "he": "צָבָא",
+      "he_alt": [
+        "複數：צְבָאוֹת"
+      ],
+      "tr": "ṣābāʾ",
+      "zh": "軍隊、部隊、戰爭",
+      "zh_alt": [
+        "軍隊",
+        "部隊",
+        "戰爭"
+      ],
+      "pos": "noun",
+      "freq": 487,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_018",
+      "ch": 4,
+      "he": "קוֹל",
+      "tr": "qôl",
+      "zh": "聲音、聲響",
+      "zh_alt": [
+        "聲音",
+        "聲響"
+      ],
+      "pos": "noun",
+      "freq": 505,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_019",
+      "ch": 4,
+      "he": "רֹאשׁ",
+      "tr": "rōʾš",
+      "zh": "頭、首領、頂部",
+      "zh_alt": [
+        "頭",
+        "首領",
+        "頂部"
+      ],
+      "pos": "noun",
+      "freq": 600,
+      "status": "verified"
+    },
+    {
+      "id": "ch04_020",
+      "ch": 4,
+      "he": "תּוֹרָה",
+      "tr": "tôrâ",
+      "zh": "法律、訓誨、妥拉",
+      "zh_alt": [
+        "法律",
+        "訓誨",
+        "妥拉"
+      ],
+      "pos": "noun",
+      "freq": 223,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_001",
+      "ch": 5,
+      "he": "אֵשׁ",
+      "tr": "ʾēš",
+      "zh": "火（陰）",
+      "zh_alt": [
+        "火"
+      ],
+      "pos": "noun_f",
+      "freq": 376,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_002",
+      "ch": 5,
+      "he": "הֵיכָל",
+      "tr": "hêkāl",
+      "zh": "王宮、殿",
+      "zh_alt": [
+        "王宮",
+        "殿"
+      ],
+      "pos": "noun",
+      "freq": 80,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_003",
+      "ch": 5,
+      "he": "וְ",
+      "tr": "w",
+      "zh": "和、但、也、甚至",
+      "zh_alt": [
+        "和",
+        "但",
+        "也",
+        "甚至"
+      ],
+      "pos": "conj",
+      "freq": 50524,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_004",
+      "ch": 5,
+      "he": "זָהָב",
+      "tr": "zāhāb",
+      "zh": "金",
+      "zh_alt": [
+        "金"
+      ],
+      "pos": "noun",
+      "freq": 392,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_005",
+      "ch": 5,
+      "he": "חֶרֶב",
+      "tr": "ḥereb",
+      "zh": "劍（陰）",
+      "zh_alt": [
+        "劍"
+      ],
+      "pos": "noun_f",
+      "freq": 413,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_006",
+      "ch": 5,
+      "he": "חַי",
+      "he_alt": [
+        "名詞 חַיִּים"
+      ],
+      "tr": "ḥay",
+      "zh": "（名詞）生命、終身；（形容詞）活的",
+      "zh_alt": [
+        "生命",
+        "終身",
+        "活的"
+      ],
+      "pos": "adj",
+      "freq": 254,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_007",
+      "ch": 5,
+      "he": "יֶלֶד",
+      "tr": "yeled",
+      "zh": "男童、男孩",
+      "zh_alt": [
+        "男童",
+        "男孩"
+      ],
+      "pos": "noun",
+      "freq": 89,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_008",
+      "ch": 5,
+      "he": "יָם",
+      "tr": "yām",
+      "zh": "海、西",
+      "zh_alt": [
+        "海",
+        "西"
+      ],
+      "pos": "noun",
+      "freq": 396,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_009",
+      "ch": 5,
+      "he": "כֶּסֶף",
+      "tr": "kesep",
+      "zh": "銀",
+      "zh_alt": [
+        "銀"
+      ],
+      "pos": "noun",
+      "freq": 403,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_010",
+      "ch": 5,
+      "he": "כֹּה",
+      "tr": "kōh",
+      "zh": "這樣、如此",
+      "zh_alt": [
+        "這樣",
+        "如此"
+      ],
+      "pos": "noun",
+      "freq": 577,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_011",
+      "ch": 5,
+      "he": "מָקוֹם",
+      "tr": "māqôm",
+      "zh": "地方",
+      "zh_alt": [
+        "地方"
+      ],
+      "pos": "noun",
+      "freq": 401,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_012",
+      "ch": 5,
+      "he": "מִשְׁפָּט",
+      "tr": "mišpāṭ",
+      "zh": "審判、傳統、法律、習俗、規章",
+      "zh_alt": [
+        "審判",
+        "傳統",
+        "法律",
+        "習俗",
+        "規章"
+      ],
+      "pos": "noun",
+      "freq": 425,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_013",
+      "ch": 5,
+      "he": "מִזְבֵּחַ",
+      "tr": "mizbēaḥ",
+      "zh": "祭壇",
+      "zh_alt": [
+        "祭壇"
+      ],
+      "pos": "noun",
+      "freq": 403,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_014",
+      "ch": 5,
+      "he": "נְאֻם",
+      "tr": "nəʾum",
+      "zh": "言詞、宣言、啟示",
+      "zh_alt": [
+        "言詞",
+        "宣言",
+        "啟示"
+      ],
+      "pos": "noun",
+      "freq": 376,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_015",
+      "ch": 5,
+      "he": "עוֹלָם",
+      "tr": "ʿôlām",
+      "zh": "永遠、永恆",
+      "zh_alt": [
+        "永遠",
+        "永恆"
+      ],
+      "pos": "noun",
+      "freq": 439,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_016",
+      "ch": 5,
+      "he": "עָנָן",
+      "tr": "ʿānān",
+      "zh": "雲",
+      "zh_alt": [
+        "雲"
+      ],
+      "pos": "noun",
+      "freq": 87,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_017",
+      "ch": 5,
+      "he": "רוּחַ",
+      "tr": "rûaḥ",
+      "zh": "風、靈、氣息（陰）",
+      "zh_alt": [
+        "風",
+        "靈",
+        "氣息"
+      ],
+      "pos": "noun_f",
+      "freq": 378,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_018",
+      "ch": 5,
+      "he": "שַׂר",
+      "tr": "śar",
+      "zh": "官長、首領、王子",
+      "zh_alt": [
+        "官長",
+        "首領",
+        "王子"
+      ],
+      "pos": "noun",
+      "freq": 421,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_019",
+      "ch": 5,
+      "he": "שַׁעַר",
+      "tr": "šaʿar",
+      "zh": "城門",
+      "zh_alt": [
+        "城門"
+      ],
+      "pos": "noun",
+      "freq": 373,
+      "status": "verified"
+    },
+    {
+      "id": "ch05_020",
+      "ch": 5,
+      "he": "שָׁמַיִם",
+      "tr": "šāmayim",
+      "zh": "天、天空",
+      "zh_alt": [
+        "天",
+        "天空"
+      ],
+      "pos": "noun",
+      "freq": 421,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_001",
+      "ch": 6,
+      "he": "אַחַר",
+      "he_alt": [
+        "也作 אַחֲרֵי"
+      ],
+      "tr": "ʾaḥar",
+      "zh": "後面、之後",
+      "zh_alt": [
+        "後面",
+        "之後"
+      ],
+      "pos": "prep",
+      "freq": 718,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_002",
+      "ch": 6,
+      "he": "אֵת",
+      "he_alt": [
+        "也作 ־אֶת"
+      ],
+      "tr": "ʾēt",
+      "zh": "與",
+      "zh_alt": [
+        "與"
+      ],
+      "pos": "prep",
+      "freq": 890,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_003",
+      "ch": 6,
+      "he": "אֵת",
+      "he_alt": [
+        "也作 ־אֶת"
+      ],
+      "tr": "ʾēt",
+      "zh": "特定直接受詞記號，不需翻譯",
+      "zh_alt": [
+        "特定直接受詞記號",
+        "不需翻譯"
+      ],
+      "pos": "prep",
+      "freq": 10978,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_004",
+      "ch": 6,
+      "he": "אֶל",
+      "he_alt": [
+        "也作 ־אֶל"
+      ],
+      "tr": "ʾel",
+      "zh": "對著、向著",
+      "zh_alt": [
+        "對著",
+        "向著"
+      ],
+      "pos": "prep",
+      "freq": 5518,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_005",
+      "ch": 6,
+      "he": "בֵּין",
+      "he_alt": [
+        "帶有連接詞 וְ 時作 וּבֵין"
+      ],
+      "tr": "bên",
+      "zh": "在……之間",
+      "zh_alt": [
+        "在……之間"
+      ],
+      "pos": "prep",
+      "freq": 409,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_006",
+      "ch": 6,
+      "he": "בְּ",
+      "tr": "b",
+      "zh": "在之中、對著、藉由、同",
+      "zh_alt": [
+        "在之中",
+        "對著",
+        "藉由",
+        "同"
+      ],
+      "pos": "prep",
+      "freq": 15559,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_007",
+      "ch": 6,
+      "he": "בְּתוֹךְ",
+      "he_alt": [
+        "名詞 תָּוֶךְ"
+      ],
+      "tr": "bətôk",
+      "zh": "在……之間、中間",
+      "zh_alt": [
+        "在……之間",
+        "中間"
+      ],
+      "pos": "prep",
+      "freq": 420,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_008",
+      "ch": 6,
+      "he": "חָכְמָה",
+      "tr": "ḥokmâ",
+      "zh": "智慧、經驗、精明",
+      "zh_alt": [
+        "智慧",
+        "經驗",
+        "精明"
+      ],
+      "pos": "noun",
+      "freq": 153,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_009",
+      "ch": 6,
+      "he": "כְּ",
+      "tr": "k",
+      "zh": "像、如同、按照",
+      "zh_alt": [
+        "像",
+        "如同",
+        "按照"
+      ],
+      "pos": "prep",
+      "freq": 3053,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_010",
+      "ch": 6,
+      "he": "כֹּל",
+      "he_alt": [
+        "也作 ־כָּל"
+      ],
+      "tr": "kōl",
+      "zh": "所有的、各自、每個、完整的",
+      "zh_alt": [
+        "所有的",
+        "各自",
+        "每個",
+        "完整的"
+      ],
+      "pos": "noun",
+      "freq": 5415,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_011",
+      "ch": 6,
+      "he": "לִפְנֵי",
+      "tr": "lipnê",
+      "zh": "在……面前",
+      "zh_alt": [
+        "在……面前"
+      ],
+      "pos": "prep",
+      "freq": 1102,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_012",
+      "ch": 6,
+      "he": "לְ",
+      "tr": "l",
+      "zh": "給、向著、為了",
+      "zh_alt": [
+        "給",
+        "向著",
+        "為了"
+      ],
+      "pos": "prep",
+      "freq": 20321,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_013",
+      "ch": 6,
+      "he": "לְמַעַן",
+      "tr": "ləmaʿan",
+      "zh": "為了……緣故、因為、為了",
+      "zh_alt": [
+        "為了……緣故",
+        "因為",
+        "為了"
+      ],
+      "pos": "prep",
+      "freq": 272,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_014",
+      "ch": 6,
+      "he": "מִן",
+      "he_alt": [
+        "也作 ־מִן"
+      ],
+      "tr": "min",
+      "zh": "從",
+      "zh_alt": [
+        "從"
+      ],
+      "pos": "prep",
+      "freq": 7592,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_015",
+      "ch": 6,
+      "he": "מֵעַל",
+      "he_alt": [
+        "通常與 מִן 連用（מִמַּעַל）"
+      ],
+      "tr": "mēʿal",
+      "zh": "在……以上",
+      "zh_alt": [
+        "在……以上"
+      ],
+      "pos": "prep",
+      "freq": 140,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_016",
+      "ch": 6,
+      "he": "מִצְוָה",
+      "he_alt": [
+        "不規則複數：מִצְוֹת"
+      ],
+      "tr": "miṣwâ",
+      "zh": "命令、誡命",
+      "zh_alt": [
+        "命令",
+        "誡命"
+      ],
+      "pos": "noun",
+      "freq": 184,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_017",
+      "ch": 6,
+      "he": "עַד",
+      "tr": "ʿad",
+      "zh": "直到、當……的時候",
+      "zh_alt": [
+        "直到",
+        "當……的時候"
+      ],
+      "pos": "prep",
+      "freq": 1263,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_018",
+      "ch": 6,
+      "he": "עַל",
+      "tr": "ʿal",
+      "zh": "上面、在……之上、因為、按照",
+      "zh_alt": [
+        "上面",
+        "在……之上",
+        "因為",
+        "按照"
+      ],
+      "pos": "prep",
+      "freq": 5777,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_019",
+      "ch": 6,
+      "he": "עַל־דְּבַר",
+      "tr": "ʿal-dəbar",
+      "zh": "因為、為了",
+      "zh_alt": [
+        "因為",
+        "為了"
+      ],
+      "pos": "prep",
+      "freq": 49,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_020",
+      "ch": 6,
+      "he": "עִם",
+      "tr": "ʿim",
+      "zh": "與……一起",
+      "zh_alt": [
+        "與……一起"
+      ],
+      "pos": "prep",
+      "freq": 1048,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_021",
+      "ch": 6,
+      "he": "פֶּה",
+      "tr": "peh",
+      "zh": "嘴巴、開口",
+      "zh_alt": [
+        "嘴巴",
+        "開口"
+      ],
+      "pos": "noun",
+      "freq": 498,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_022",
+      "ch": 6,
+      "he": "שָׂדֶה",
+      "tr": "śādeh",
+      "zh": "田野、草場",
+      "zh_alt": [
+        "田野",
+        "草場"
+      ],
+      "pos": "noun",
+      "freq": 329,
+      "status": "verified"
+    },
+    {
+      "id": "ch06_023",
+      "ch": 6,
+      "he": "תַּחַת",
+      "tr": "taḥat",
+      "zh": "在……之下、下面、代替",
+      "zh_alt": [
+        "在……之下",
+        "下面",
+        "代替"
+      ],
+      "pos": "prep",
+      "freq": 510,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_001",
+      "ch": 7,
+      "he": "אֶחָד",
+      "tr": "ʾeḥād",
+      "zh": "一",
+      "zh_alt": [
+        "一"
+      ],
+      "pos": "noun",
+      "freq": 976,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_002",
+      "ch": 7,
+      "he": "גָּדוֹל",
+      "tr": "gādôl",
+      "zh": "大、偉大",
+      "zh_alt": [
+        "大",
+        "偉大"
+      ],
+      "pos": "adj",
+      "freq": 527,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_003",
+      "ch": 7,
+      "he": "דַּל",
+      "tr": "dal",
+      "zh": "貧窮",
+      "zh_alt": [
+        "貧窮"
+      ],
+      "pos": "adj",
+      "freq": 48,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_004",
+      "ch": 7,
+      "he": "זָקֵן",
+      "tr": "zāqēn",
+      "zh": "（形容詞）老；（名詞）老人、長老",
+      "zh_alt": [
+        "老",
+        "老人",
+        "長老"
+      ],
+      "pos": "adj",
+      "freq": 180,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_005",
+      "ch": 7,
+      "he": "חָכָם",
+      "tr": "ḥākām",
+      "zh": "有智慧的",
+      "zh_alt": [
+        "有智慧的"
+      ],
+      "pos": "adj",
+      "freq": 138,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_006",
+      "ch": 7,
+      "he": "טוֹב",
+      "tr": "ṭôb",
+      "zh": "好",
+      "zh_alt": [
+        "好"
+      ],
+      "pos": "adj",
+      "freq": 535,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_007",
+      "ch": 7,
+      "he": "יָפֶה",
+      "tr": "yāpeh",
+      "zh": "漂亮",
+      "zh_alt": [
+        "漂亮"
+      ],
+      "pos": "adj",
+      "freq": 43,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_008",
+      "ch": 7,
+      "he": "יָשָׁר",
+      "tr": "yāšār",
+      "zh": "直、正義、正直、公正",
+      "zh_alt": [
+        "直",
+        "正義",
+        "正直",
+        "公正"
+      ],
+      "pos": "adj",
+      "freq": 119,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_009",
+      "ch": 7,
+      "he": "כֵּן",
+      "he_alt": [
+        "עַל־כֵּן / לָכֵן"
+      ],
+      "tr": "kēn",
+      "zh": "這樣、因此",
+      "zh_alt": [
+        "這樣",
+        "因此"
+      ],
+      "pos": "adv",
+      "freq": 741,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_010",
+      "ch": 7,
+      "he": "מְאֹד",
+      "tr": "məʾōd",
+      "zh": "很、非常地",
+      "zh_alt": [
+        "很",
+        "非常地"
+      ],
+      "pos": "adv",
+      "freq": 300,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_011",
+      "ch": 7,
+      "he": "מְעַט",
+      "tr": "məʿaṭ",
+      "zh": "幾個、少",
+      "zh_alt": [
+        "幾個",
+        "少"
+      ],
+      "pos": "noun",
+      "freq": 101,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_012",
+      "ch": 7,
+      "he": "עַתָּה",
+      "tr": "ʿattâ",
+      "zh": "現在、最後、畢竟",
+      "zh_alt": [
+        "現在",
+        "最後",
+        "畢竟"
+      ],
+      "pos": "adv",
+      "freq": 435,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_013",
+      "ch": 7,
+      "he": "צַדִּיק",
+      "tr": "ṣaddîq",
+      "zh": "公義的、公正的、無罪的",
+      "zh_alt": [
+        "公義的",
+        "公正的",
+        "無罪的"
+      ],
+      "pos": "adj",
+      "freq": 206,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_014",
+      "ch": 7,
+      "he": "קֹדֶשׁ",
+      "tr": "qōdeš",
+      "zh": "（名詞）聖潔、聖物",
+      "zh_alt": [
+        "聖潔",
+        "聖物"
+      ],
+      "pos": "noun",
+      "freq": 470,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_015",
+      "ch": 7,
+      "he": "קָדוֹשׁ",
+      "tr": "qādôš",
+      "zh": "（形容詞）聖潔的",
+      "zh_alt": [
+        "聖潔的"
+      ],
+      "pos": "adj",
+      "freq": 117,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_016",
+      "ch": 7,
+      "he": "קָטֹן",
+      "tr": "qāṭōn",
+      "zh": "小、不重要、年輕",
+      "zh_alt": [
+        "小",
+        "不重要",
+        "年輕"
+      ],
+      "pos": "adj",
+      "freq": 74,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_017",
+      "ch": 7,
+      "he": "קָרוֹב",
+      "tr": "qārôb",
+      "zh": "近、臨近",
+      "zh_alt": [
+        "近",
+        "臨近"
+      ],
+      "pos": "adj",
+      "freq": 75,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_018",
+      "ch": 7,
+      "he": "קָשֶׁה",
+      "tr": "qāšeh",
+      "zh": "困難的、堅硬的、嚴重的",
+      "zh_alt": [
+        "困難的",
+        "堅硬的",
+        "嚴重的"
+      ],
+      "pos": "adj",
+      "freq": 36,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_019",
+      "ch": 7,
+      "he": "רָחוֹק",
+      "tr": "rāḥôq",
+      "zh": "遠的、遙遠的",
+      "zh_alt": [
+        "遠的",
+        "遙遠的"
+      ],
+      "pos": "adj",
+      "freq": 84,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_020",
+      "ch": 7,
+      "he": "רַב",
+      "tr": "rab",
+      "zh": "許多、好多",
+      "zh_alt": [
+        "許多",
+        "好多"
+      ],
+      "pos": "adj",
+      "freq": 419,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_021",
+      "ch": 7,
+      "he": "רַע",
+      "tr": "raʿ",
+      "zh": "惡的、壞的",
+      "zh_alt": [
+        "惡的",
+        "壞的"
+      ],
+      "pos": "adj",
+      "freq": 312,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_022",
+      "ch": 7,
+      "he": "רָשָׁע",
+      "tr": "rāšāʿ",
+      "zh": "惡的、違法的",
+      "zh_alt": [
+        "惡的",
+        "違法的"
+      ],
+      "pos": "adj",
+      "freq": 264,
+      "status": "verified"
+    },
+    {
+      "id": "ch07_023",
+      "ch": 7,
+      "he": "שִׁיר",
+      "tr": "šîr",
+      "zh": "歌",
+      "zh_alt": [
+        "歌"
+      ],
+      "pos": "noun",
+      "freq": 78,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_001",
+      "ch": 8,
+      "he": "אֹהֶל",
+      "tr": "ʾōhel",
+      "zh": "帳棚",
+      "zh_alt": [
+        "帳棚"
+      ],
+      "pos": "noun",
+      "freq": 348,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_002",
+      "ch": 8,
+      "he": "אַחֵר",
+      "tr": "ʾaḥēr",
+      "zh": "另一個、外邦的",
+      "zh_alt": [
+        "另一個",
+        "外邦的"
+      ],
+      "pos": "adj",
+      "freq": 166,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_003",
+      "ch": 8,
+      "he": "אֵיךְ",
+      "he_alt": [
+        "也作 אֵיכָה"
+      ],
+      "tr": "ʾêk",
+      "zh": "如何？",
+      "zh_alt": [
+        "如何？"
+      ],
+      "pos": "pron",
+      "freq": 61,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_004",
+      "ch": 8,
+      "he": "אֶלֶף",
+      "tr": "ʾelep",
+      "zh": "千",
+      "zh_alt": [
+        "千"
+      ],
+      "pos": "num",
+      "freq": 496,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_005",
+      "ch": 8,
+      "he": "אֲשֶׁר",
+      "he_alt": [
+        "כַּאֲשֶׁר"
+      ],
+      "tr": "ʾăšer",
+      "zh": "關係代名詞",
+      "zh_alt": [
+        "關係代名詞"
+      ],
+      "pos": "pron",
+      "freq": 5503,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_006",
+      "ch": 8,
+      "he": "בְּהֵמָה",
+      "tr": "bəhēmâ",
+      "zh": "牛、動物",
+      "zh_alt": [
+        "牛",
+        "動物"
+      ],
+      "pos": "noun",
+      "freq": 190,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_007",
+      "ch": 8,
+      "he": "גַּם",
+      "tr": "gam",
+      "zh": "也、的確",
+      "zh_alt": [
+        "也",
+        "的確"
+      ],
+      "pos": "adv",
+      "freq": 769,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_008",
+      "ch": 8,
+      "he": "דָּם",
+      "tr": "dām",
+      "zh": "血",
+      "zh_alt": [
+        "血"
+      ],
+      "pos": "noun",
+      "freq": 361,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_009",
+      "ch": 8,
+      "he": "הֲ",
+      "tr": "hă",
+      "zh": "疑問質詞",
+      "zh_alt": [
+        "疑問質詞"
+      ],
+      "pos": "pron",
+      "freq": 664,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_010",
+      "ch": 8,
+      "he": "טָהוֹר",
+      "tr": "ṭāhôr",
+      "zh": "乾淨、純潔",
+      "zh_alt": [
+        "乾淨",
+        "純潔"
+      ],
+      "pos": "adj",
+      "freq": 96,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_011",
+      "ch": 8,
+      "he": "כִּי",
+      "he_alt": [
+        "כִּי־אִם"
+      ],
+      "tr": "kî",
+      "zh": "因為、為了；（反義）但是，除了；（強調）確實地",
+      "zh_alt": [
+        "因為",
+        "為了",
+        "但是",
+        "除了",
+        "確實地"
+      ],
+      "pos": "conj",
+      "freq": 4487,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_012",
+      "ch": 8,
+      "he": "כְּסִיל",
+      "tr": "kəsîl",
+      "zh": "愚笨、遲鈍",
+      "zh_alt": [
+        "愚笨",
+        "遲鈍"
+      ],
+      "pos": "adj",
+      "freq": 70,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_013",
+      "ch": 8,
+      "he": "לָמָּה",
+      "he_alt": [
+        "也作 לָמָה"
+      ],
+      "tr": "lāmmâ",
+      "zh": "為什麼？",
+      "zh_alt": [
+        "為什麼？"
+      ],
+      "pos": "pron",
+      "freq": 178,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_014",
+      "ch": 8,
+      "he": "מָה",
+      "tr": "mâ",
+      "zh": "什麼？如何？",
+      "zh_alt": [
+        "什麼？如何？"
+      ],
+      "pos": "pron",
+      "freq": 571,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_015",
+      "ch": 8,
+      "he": "מַדּוּעַ",
+      "tr": "maddûaʿ",
+      "zh": "為何？為什麼？",
+      "zh_alt": [
+        "為何？為什麼？"
+      ],
+      "pos": "pron",
+      "freq": 72,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_016",
+      "ch": 8,
+      "he": "מִי",
+      "tr": "mî",
+      "zh": "誰？",
+      "zh_alt": [
+        "誰？"
+      ],
+      "pos": "pron",
+      "freq": 424,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_017",
+      "ch": 8,
+      "he": "עָנִי",
+      "tr": "ʿānî",
+      "zh": "貧窮、受苦",
+      "zh_alt": [
+        "貧窮",
+        "受苦"
+      ],
+      "pos": "adj",
+      "freq": 80,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_018",
+      "ch": 8,
+      "he": "שֶׁמֶן",
+      "tr": "šemen",
+      "zh": "油",
+      "zh_alt": [
+        "油"
+      ],
+      "pos": "noun",
+      "freq": 193,
+      "status": "verified"
+    },
+    {
+      "id": "ch08_019",
+      "ch": 8,
+      "he": "שֹׁפֵט",
+      "tr": "šōpēṭ",
+      "zh": "審判官",
+      "zh_alt": [
+        "審判官"
+      ],
+      "pos": "noun",
+      "freq": 68,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_001",
+      "ch": 9,
+      "he": "אוֹ",
+      "tr": "ʾô",
+      "zh": "或",
+      "zh_alt": [
+        "或"
+      ],
+      "pos": "conj",
+      "freq": 321,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_002",
+      "ch": 9,
+      "he": "אַיִן",
+      "he_alt": [
+        "亦作 אֵין（組合形）"
+      ],
+      "tr": "ʾayin",
+      "zh": "無、沒有",
+      "zh_alt": [
+        "無",
+        "沒有"
+      ],
+      "pos": "adv",
+      "freq": 791,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_003",
+      "ch": 9,
+      "he": "אַף",
+      "he_alt": [
+        "雙數：אַפַּיִם"
+      ],
+      "tr": "ʾap",
+      "zh": "鼻孔、鼻子、忿怒",
+      "zh_alt": [
+        "鼻孔",
+        "鼻子",
+        "忿怒"
+      ],
+      "pos": "noun",
+      "freq": 277,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_004",
+      "ch": 9,
+      "he": "בֹּקֶר",
+      "tr": "bōqer",
+      "zh": "早晨",
+      "zh_alt": [
+        "早晨"
+      ],
+      "pos": "noun",
+      "freq": 213,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_005",
+      "ch": 9,
+      "he": "בָּקָר",
+      "tr": "bāqār",
+      "zh": "牛、牲畜、家畜",
+      "zh_alt": [
+        "牛",
+        "牲畜",
+        "家畜"
+      ],
+      "pos": "noun",
+      "freq": 183,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_006",
+      "ch": 9,
+      "he": "בְּרָכָה",
+      "tr": "bərākâ",
+      "zh": "祝福、禮物",
+      "zh_alt": [
+        "祝福",
+        "禮物"
+      ],
+      "pos": "noun",
+      "freq": 71,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_007",
+      "ch": 9,
+      "he": "הֵן",
+      "tr": "hēn",
+      "zh": "如果、看啊！",
+      "zh_alt": [
+        "如果",
+        "看啊！"
+      ],
+      "pos": "adv",
+      "freq": 107,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_008",
+      "ch": 9,
+      "he": "הִנֵּה",
+      "tr": "hinnê",
+      "zh": "看啊！",
+      "zh_alt": [
+        "看啊！"
+      ],
+      "pos": "adv",
+      "freq": 1061,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_009",
+      "ch": 9,
+      "he": "חַטָּאת",
+      "tr": "ḥaṭṭāʾt",
+      "zh": "罪、贖罪祭（陰）",
+      "zh_alt": [
+        "罪",
+        "贖罪祭"
+      ],
+      "pos": "noun_f",
+      "freq": 298,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_010",
+      "ch": 9,
+      "he": "יֵשׁ",
+      "tr": "yēš",
+      "zh": "有",
+      "zh_alt": [
+        "有"
+      ],
+      "pos": "adv",
+      "freq": 138,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_011",
+      "ch": 9,
+      "he": "כָּבוֹד",
+      "tr": "kābôd",
+      "zh": "榮耀、尊重",
+      "zh_alt": [
+        "榮耀",
+        "尊重"
+      ],
+      "pos": "noun",
+      "freq": 200,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_012",
+      "ch": 9,
+      "he": "כְּלִי",
+      "tr": "kəlî",
+      "zh": "器皿、武器",
+      "zh_alt": [
+        "器皿",
+        "武器"
+      ],
+      "pos": "noun",
+      "freq": 325,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_013",
+      "ch": 9,
+      "he": "לֶחֶם",
+      "tr": "leḥem",
+      "zh": "麵包、食物",
+      "zh_alt": [
+        "麵包",
+        "食物"
+      ],
+      "pos": "noun",
+      "freq": 340,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_014",
+      "ch": 9,
+      "he": "לְבַד",
+      "tr": "ləbad",
+      "zh": "（副詞）單獨地、獨自；（介系詞）除……之外",
+      "zh_alt": [
+        "單獨地",
+        "獨自",
+        "除……之外"
+      ],
+      "pos": "prep",
+      "freq": 161,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_015",
+      "ch": 9,
+      "he": "מִשְׁפָּחָה",
+      "tr": "mišpāḥâ",
+      "zh": "家族、親族",
+      "zh_alt": [
+        "家族",
+        "親族"
+      ],
+      "pos": "noun",
+      "freq": 304,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_016",
+      "ch": 9,
+      "he": "מִלְחָמָה",
+      "tr": "milḥāmâ",
+      "zh": "戰爭、爭鬥",
+      "zh_alt": [
+        "戰爭",
+        "爭鬥"
+      ],
+      "pos": "noun",
+      "freq": 319,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_017",
+      "ch": 9,
+      "he": "סָבִיב",
+      "tr": "sābîb",
+      "zh": "環繞、在……四周、鄰近",
+      "zh_alt": [
+        "環繞",
+        "在……四周",
+        "鄰近"
+      ],
+      "pos": "prep",
+      "freq": 338,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_018",
+      "ch": 9,
+      "he": "עַם",
+      "tr": "ʿam",
+      "zh": "人民",
+      "zh_alt": [
+        "人民"
+      ],
+      "pos": "noun",
+      "freq": 1869,
+      "status": "verified"
+    },
+    {
+      "id": "ch09_019",
+      "ch": 9,
+      "he": "עֵץ",
+      "tr": "ʿēṣ",
+      "zh": "樹、木材",
+      "zh_alt": [
+        "樹",
+        "木材"
+      ],
+      "pos": "noun",
+      "freq": 329,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_001",
+      "ch": 10,
+      "he": "אֶבֶן",
+      "tr": "ʾeben",
+      "zh": "石頭（陰）",
+      "zh_alt": [
+        "石頭"
+      ],
+      "pos": "noun_f",
+      "freq": 276,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_002",
+      "ch": 10,
+      "he": "אֲדָמָה",
+      "tr": "ʾădāmâ",
+      "zh": "土地",
+      "zh_alt": [
+        "土地"
+      ],
+      "pos": "noun",
+      "freq": 222,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_003",
+      "ch": 10,
+      "he": "אוֹיֵב",
+      "tr": "ʾôyēb",
+      "zh": "敵人",
+      "zh_alt": [
+        "敵人"
+      ],
+      "pos": "noun",
+      "freq": 285,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_004",
+      "ch": 10,
+      "he": "בָּשָׂר",
+      "tr": "bāśār",
+      "zh": "肉，皮，肉體",
+      "zh_alt": [
+        "肉",
+        "皮",
+        "肉體"
+      ],
+      "pos": "noun",
+      "freq": 270,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_005",
+      "ch": 10,
+      "he": "בְּרִית",
+      "tr": "bərît",
+      "zh": "約（陰）",
+      "zh_alt": [
+        "約"
+      ],
+      "pos": "noun_f",
+      "freq": 287,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_006",
+      "ch": 10,
+      "he": "גְּבוּל",
+      "tr": "gəbûl",
+      "zh": "界限、領土",
+      "zh_alt": [
+        "界限",
+        "領土"
+      ],
+      "pos": "noun",
+      "freq": 251,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_007",
+      "ch": 10,
+      "he": "חַיִל",
+      "tr": "ḥayil",
+      "zh": "力量、財富、軍隊",
+      "zh_alt": [
+        "力量",
+        "財富",
+        "軍隊"
+      ],
+      "pos": "noun",
+      "freq": 246,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_008",
+      "ch": 10,
+      "he": "חֶסֶד",
+      "tr": "ḥesed",
+      "zh": "信實、慈愛、獻身、忠貞的愛",
+      "zh_alt": [
+        "信實",
+        "慈愛",
+        "獻身",
+        "忠貞的愛"
+      ],
+      "pos": "noun",
+      "freq": 249,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_009",
+      "ch": 10,
+      "he": "חֹדֶשׁ",
+      "tr": "ḥōdeš",
+      "zh": "新月、月份",
+      "zh_alt": [
+        "新月",
+        "月份"
+      ],
+      "pos": "noun",
+      "freq": 283,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_010",
+      "ch": 10,
+      "he": "יָד",
+      "he_alt": [
+        "複數：יָדוֹת"
+      ],
+      "tr": "yād",
+      "zh": "手；（暗喻）邊、力量（陰）",
+      "zh_alt": [
+        "手",
+        "邊",
+        "力量"
+      ],
+      "pos": "noun_f",
+      "freq": 1627,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_011",
+      "ch": 10,
+      "he": "מָוֶת",
+      "he_alt": [
+        "不規則的附屬形：מוֹת"
+      ],
+      "tr": "māwet",
+      "zh": "死亡",
+      "zh_alt": [
+        "死亡"
+      ],
+      "pos": "noun",
+      "freq": 153,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_012",
+      "ch": 10,
+      "he": "מַטֶּה",
+      "tr": "maṭṭeh",
+      "zh": "棍、杖、支派",
+      "zh_alt": [
+        "棍",
+        "杖",
+        "支派"
+      ],
+      "pos": "noun",
+      "freq": 252,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_013",
+      "ch": 10,
+      "he": "מִדְבָּר",
+      "tr": "midbār",
+      "zh": "牧場、曠野",
+      "zh_alt": [
+        "牧場",
+        "曠野"
+      ],
+      "pos": "noun",
+      "freq": 269,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_014",
+      "ch": 10,
+      "he": "עוֹד",
+      "tr": "ʿôd",
+      "zh": "還、仍舊、再",
+      "zh_alt": [
+        "還",
+        "仍舊",
+        "再"
+      ],
+      "pos": "adv",
+      "freq": 491,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_015",
+      "ch": 10,
+      "he": "עֵת",
+      "tr": "ʿēt",
+      "zh": "時間（陰）",
+      "zh_alt": [
+        "時間"
+      ],
+      "pos": "noun_f",
+      "freq": 296,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_016",
+      "ch": 10,
+      "he": "עֹלָה",
+      "tr": "ʿōlâ",
+      "zh": "燔祭",
+      "zh_alt": [
+        "燔祭"
+      ],
+      "pos": "noun",
+      "freq": 286,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_017",
+      "ch": 10,
+      "he": "פָּנִים",
+      "he_alt": [
+        "附屬形：פְּנֵי"
+      ],
+      "tr": "pānîm",
+      "zh": "臉",
+      "zh_alt": [
+        "臉"
+      ],
+      "pos": "noun",
+      "freq": 2126,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_018",
+      "ch": 10,
+      "he": "צֹאן",
+      "tr": "ṣōʾn",
+      "zh": "羊群、小群的綿羊與或山羊",
+      "zh_alt": [
+        "羊群"
+      ],
+      "pos": "noun",
+      "freq": 274,
+      "status": "verified"
+    },
+    {
+      "id": "ch10_019",
+      "ch": 10,
+      "he": "רֶגֶל",
+      "tr": "regel",
+      "zh": "腳（陰）",
+      "zh_alt": [
+        "腳"
+      ],
+      "pos": "noun_f",
+      "freq": 251,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_001",
+      "ch": 11,
+      "he": "אַמָּה",
+      "tr": "ʾammâ",
+      "zh": "肘（從手肘至中指指尖的距離）、前臂",
+      "zh_alt": [
+        "肘",
+        "前臂"
+      ],
+      "pos": "noun",
+      "freq": 249,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_002",
+      "ch": 11,
+      "he": "אֵם",
+      "tr": "ʾēm",
+      "zh": "母親（陰）",
+      "zh_alt": [
+        "母親"
+      ],
+      "pos": "noun_f",
+      "freq": 220,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_003",
+      "ch": 11,
+      "he": "בֶּגֶד",
+      "tr": "beged",
+      "zh": "衣裳",
+      "zh_alt": [
+        "衣裳"
+      ],
+      "pos": "noun",
+      "freq": 216,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_004",
+      "ch": 11,
+      "he": "זֶרַע",
+      "tr": "zeraʿ",
+      "zh": "種籽、後裔、子孫、後代",
+      "zh_alt": [
+        "種籽",
+        "後裔",
+        "子孫",
+        "後代"
+      ],
+      "pos": "noun",
+      "freq": 229,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_005",
+      "ch": 11,
+      "he": "חָצֵר",
+      "tr": "ḥāṣēr",
+      "zh": "居所、院子、村莊",
+      "zh_alt": [
+        "居所",
+        "院子",
+        "村莊"
+      ],
+      "pos": "noun",
+      "freq": 192,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_006",
+      "ch": 11,
+      "he": "לַיְלָה",
+      "tr": "laylâ",
+      "zh": "夜晚",
+      "zh_alt": [
+        "夜晚"
+      ],
+      "pos": "noun",
+      "freq": 234,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_007",
+      "ch": 11,
+      "he": "לָכֵן",
+      "tr": "lākēn",
+      "zh": "因此",
+      "zh_alt": [
+        "因此"
+      ],
+      "pos": "adv",
+      "freq": 200,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_008",
+      "ch": 11,
+      "he": "מוֹעֵד",
+      "tr": "môʿēd",
+      "zh": "指定的時間或地方、節期",
+      "zh_alt": [
+        "指定的時間或地方",
+        "節期"
+      ],
+      "pos": "noun",
+      "freq": 223,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_009",
+      "ch": 11,
+      "he": "מַחֲנֶה",
+      "tr": "maḥăneh",
+      "zh": "營、軍隊",
+      "zh_alt": [
+        "營",
+        "軍隊"
+      ],
+      "pos": "noun",
+      "freq": 215,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_010",
+      "ch": 11,
+      "he": "מַלְאָךְ",
+      "tr": "malʾāk",
+      "zh": "使者、天使",
+      "zh_alt": [
+        "使者",
+        "天使"
+      ],
+      "pos": "noun",
+      "freq": 213,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_011",
+      "ch": 11,
+      "he": "מַעֲשֶׂה",
+      "tr": "maʿăśeh",
+      "zh": "工作",
+      "zh_alt": [
+        "工作"
+      ],
+      "pos": "noun",
+      "freq": 235,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_012",
+      "ch": 11,
+      "he": "נַעַר",
+      "tr": "naʿar",
+      "zh": "青少年、少年人、僕人",
+      "zh_alt": [
+        "青少年",
+        "少年人",
+        "僕人"
+      ],
+      "pos": "noun",
+      "freq": 240,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_013",
+      "ch": 11,
+      "he": "נַחֲלָה",
+      "tr": "naḥălâ",
+      "zh": "遺產、財產、所有物",
+      "zh_alt": [
+        "遺產",
+        "財產",
+        "所有物"
+      ],
+      "pos": "noun",
+      "freq": 222,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_014",
+      "ch": 11,
+      "he": "עָוֹן",
+      "tr": "ʿāwōn",
+      "zh": "罪惡、罪狀、罪的刑罰",
+      "zh_alt": [
+        "罪惡",
+        "罪狀",
+        "罪的刑罰"
+      ],
+      "pos": "noun",
+      "freq": 233,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_015",
+      "ch": 11,
+      "he": "קֶרֶב",
+      "he_alt": [
+        "介系詞 בְּקֶרֶב"
+      ],
+      "tr": "qereb",
+      "zh": "內在、中間、身體",
+      "zh_alt": [
+        "內在",
+        "中間",
+        "身體"
+      ],
+      "pos": "noun",
+      "freq": 227,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_016",
+      "ch": 11,
+      "he": "רַק",
+      "tr": "raq",
+      "zh": "只、但是、無論如何",
+      "zh_alt": [
+        "只",
+        "但是",
+        "無論如何"
+      ],
+      "pos": "adv",
+      "freq": 109,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_017",
+      "ch": 11,
+      "he": "שָׁלוֹם",
+      "tr": "šālôm",
+      "zh": "平安、健康、拯救",
+      "zh_alt": [
+        "平安",
+        "健康",
+        "拯救"
+      ],
+      "pos": "noun",
+      "freq": 237,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_018",
+      "ch": 11,
+      "he": "שָׁם",
+      "tr": "šām",
+      "zh": "那裡、那時",
+      "zh_alt": [
+        "那裡",
+        "那時"
+      ],
+      "pos": "adv",
+      "freq": 835,
+      "status": "verified"
+    },
+    {
+      "id": "ch11_019",
+      "ch": 11,
+      "he": "תָּמִיד",
+      "tr": "tāmîd",
+      "zh": "不斷地、總是",
+      "zh_alt": [
+        "不斷地",
+        "總是"
+      ],
+      "pos": "adv",
+      "freq": 104,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_001",
+      "ch": 12,
+      "he": "אָכַל",
+      "tr": "ʾākal",
+      "zh": "吃",
+      "zh_alt": [
+        "吃"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 820,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_002",
+      "ch": 12,
+      "he": "אָמַר",
+      "tr": "ʾāmar",
+      "zh": "說、想",
+      "zh_alt": [
+        "說",
+        "想"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 5316,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_003",
+      "ch": 12,
+      "he": "הָלַךְ",
+      "tr": "hālak",
+      "zh": "去、行走、（暗喻，行事為人）、死亡",
+      "zh_alt": [
+        "去",
+        "行走",
+        "死亡"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 1554,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_004",
+      "ch": 12,
+      "he": "הָיָה",
+      "tr": "hāyâ",
+      "zh": "是、發生、成為",
+      "zh_alt": [
+        "是",
+        "發生",
+        "成為"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 3576,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_005",
+      "ch": 12,
+      "he": "יָצָא",
+      "tr": "yāṣāʾ",
+      "zh": "出去（來）、前去（來）",
+      "zh_alt": [
+        "出去",
+        "前去"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 1076,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_006",
+      "ch": 12,
+      "he": "יָשַׁב",
+      "tr": "yāšab",
+      "zh": "坐、定居、居住",
+      "zh_alt": [
+        "坐",
+        "定居",
+        "居住"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 1088,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_007",
+      "ch": 12,
+      "he": "נָתַן",
+      "tr": "nātan",
+      "zh": "給",
+      "zh_alt": [
+        "給"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 2014,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_008",
+      "ch": 12,
+      "he": "עָשָׂה",
+      "tr": "ʿāśâ",
+      "zh": "做、造成、創造",
+      "zh_alt": [
+        "做",
+        "造成",
+        "創造"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 2632,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_009",
+      "ch": 12,
+      "he": "רָאָה",
+      "tr": "rāʾâ",
+      "zh": "看見、理解、了解",
+      "zh_alt": [
+        "看見",
+        "理解",
+        "了解"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 1311,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_010",
+      "ch": 12,
+      "he": "שָׁבַת",
+      "tr": "šābat",
+      "zh": "停止、休息",
+      "zh_alt": [
+        "停止",
+        "休息"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 71,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_011",
+      "ch": 12,
+      "he": "שָׁמַע",
+      "tr": "šāmaʿ",
+      "zh": "聽見、留心聽、明白、順服",
+      "zh_alt": [
+        "聽見",
+        "留心聽",
+        "明白",
+        "順服"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 1165,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_012",
+      "ch": 12,
+      "he": "אָרוֹן",
+      "tr": "ʾārôn",
+      "zh": "約櫃、箱子",
+      "zh_alt": [
+        "約櫃",
+        "箱子"
+      ],
+      "pos": "noun",
+      "freq": 202,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_013",
+      "ch": 12,
+      "he": "מִנְחָה",
+      "tr": "minḥâ",
+      "zh": "禮物、奉獻",
+      "zh_alt": [
+        "禮物",
+        "奉獻"
+      ],
+      "pos": "noun",
+      "freq": 211,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_014",
+      "ch": 12,
+      "he": "שַׁבָּת",
+      "tr": "šabbāt",
+      "zh": "安息日",
+      "zh_alt": [
+        "安息日"
+      ],
+      "pos": "noun",
+      "freq": 111,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_015",
+      "ch": 12,
+      "he": "אַךְ",
+      "tr": "ʾak",
+      "zh": "只有、實在",
+      "zh_alt": [
+        "只有",
+        "實在"
+      ],
+      "pos": "adv",
+      "freq": 161,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_016",
+      "ch": 12,
+      "he": "אַל",
+      "tr": "ʾal",
+      "zh": "不、不是",
+      "zh_alt": [
+        "不",
+        "不是"
+      ],
+      "pos": "adv",
+      "freq": 729,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_017",
+      "ch": 12,
+      "he": "אִם",
+      "tr": "ʾim",
+      "zh": "假如、然後",
+      "zh_alt": [
+        "假如",
+        "然後"
+      ],
+      "pos": "adv",
+      "freq": 1070,
+      "status": "verified"
+    },
+    {
+      "id": "ch12_018",
+      "ch": 12,
+      "he": "לֹא",
+      "tr": "lōʾ",
+      "zh": "不、不是",
+      "zh_alt": [
+        "不",
+        "不是"
+      ],
+      "pos": "adv",
+      "freq": 5189,
+      "status": "verified"
+    },
     {
       "id": "ch13_001",
       "ch": 13,
@@ -2430,6 +5348,1492 @@
       "pos": "noun",
       "status": "verified",
       "freq": 84
+    },
+    {
+      "id": "ch26_001",
+      "ch": 26,
+      "he": "בִּקֵּשׁ",
+      "tr": "biqqēš",
+      "zh": "尋找、發現、要求",
+      "zh_alt": [
+        "尋找",
+        "發現",
+        "要求"
+      ],
+      "pos": "verb",
+      "stem": "Piel",
+      "freq": 225,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_002",
+      "ch": 26,
+      "he": "דִּבֶּר",
+      "tr": "dibber",
+      "zh": "說話",
+      "zh_alt": [
+        "說話"
+      ],
+      "pos": "verb",
+      "stem": "Piel",
+      "freq": 1136,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_003",
+      "ch": 26,
+      "he": "הִלֵּל",
+      "tr": "hillēl",
+      "zh": "讚美",
+      "zh_alt": [
+        "讚美"
+      ],
+      "pos": "verb",
+      "stem": "Piel",
+      "freq": 146,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_004",
+      "ch": 26,
+      "he": "יָדָה",
+      "tr": "yādâ",
+      "zh": "讚美、稱謝",
+      "zh_alt": [
+        "讚美",
+        "稱謝"
+      ],
+      "pos": "verb",
+      "stem": "Hiph.",
+      "freq": 111,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_005",
+      "ch": 26,
+      "he": "כִּסָּה",
+      "tr": "kissâ",
+      "zh": "遮蓋、隱藏；遮蓋、穿衣",
+      "zh_alt": [
+        "遮蓋",
+        "隱藏",
+        "遮蓋",
+        "穿衣"
+      ],
+      "pos": "verb",
+      "stem": "Piel",
+      "freq": 153,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_006",
+      "ch": 26,
+      "he": "מִהֵר",
+      "tr": "mihēr",
+      "zh": "加速、急忙",
+      "zh_alt": [
+        "加速",
+        "急忙"
+      ],
+      "pos": "verb",
+      "stem": "Piel",
+      "freq": 81,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_007",
+      "ch": 26,
+      "he": "נִבָּא",
+      "tr": "nibbāʾ",
+      "zh": "預言",
+      "zh_alt": [
+        "預言"
+      ],
+      "pos": "verb",
+      "stem": "Niph.",
+      "freq": 115,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_008",
+      "ch": 26,
+      "he": "נִבַּט",
+      "tr": "nibbaṭ",
+      "zh": "注視、注意",
+      "zh_alt": [
+        "注視",
+        "注意"
+      ],
+      "pos": "verb",
+      "stem": "Piel",
+      "freq": 70,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_009",
+      "ch": 26,
+      "he": "סָגַר",
+      "tr": "sāgar",
+      "zh": "封閉、關閉",
+      "zh_alt": [
+        "封閉",
+        "關閉"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 91,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_010",
+      "ch": 26,
+      "he": "צִוָּה",
+      "tr": "ṣiwâ",
+      "zh": "命令",
+      "zh_alt": [
+        "命令"
+      ],
+      "pos": "verb",
+      "stem": "Piel",
+      "freq": 496,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_011",
+      "ch": 26,
+      "he": "קִטֵּר",
+      "tr": "qiṭṭēr",
+      "zh": "獻祭成煙上升、獻燔祭",
+      "zh_alt": [
+        "獻祭成煙上升",
+        "獻燔祭"
+      ],
+      "pos": "verb",
+      "stem": "Piel",
+      "freq": 115,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_012",
+      "ch": 26,
+      "he": "שִׁיר",
+      "tr": "šîr",
+      "zh": "歌唱",
+      "zh_alt": [
+        "歌唱"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 88,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_013",
+      "ch": 26,
+      "he": "שִׁית",
+      "tr": "šît",
+      "zh": "設置、安置、放置",
+      "zh_alt": [
+        "設置",
+        "安置",
+        "放置"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 86,
+      "status": "verified"
+    },
+    {
+      "id": "ch26_014",
+      "ch": 26,
+      "he": "שֵׁרֵת",
+      "tr": "šērēt",
+      "zh": "照料、侍候、事奉神",
+      "zh_alt": [
+        "照料",
+        "侍候",
+        "事奉神"
+      ],
+      "pos": "verb",
+      "stem": "Piel",
+      "freq": 98,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_001",
+      "ch": 27,
+      "he": "גּוּר",
+      "tr": "gûr",
+      "zh": "居留、寄居",
+      "zh_alt": [
+        "居留",
+        "寄居"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 82,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_002",
+      "ch": 27,
+      "he": "יָעַץ",
+      "tr": "yāʿaṣ",
+      "zh": "勸告、建議、計劃、決定",
+      "zh_alt": [
+        "勸告",
+        "建議",
+        "計劃",
+        "決定"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 80,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_003",
+      "ch": 27,
+      "he": "לָמַד",
+      "tr": "lāmad",
+      "zh": "學；（Piel）教",
+      "zh_alt": [
+        "學",
+        "教"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 87,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_004",
+      "ch": 27,
+      "he": "מָשַׁל",
+      "tr": "māšal",
+      "zh": "統治、管轄、治理",
+      "zh_alt": [
+        "統治",
+        "管轄",
+        "治理"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 81,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_005",
+      "ch": 27,
+      "he": "מָכַר",
+      "tr": "mākar",
+      "zh": "賣",
+      "zh_alt": [
+        "賣"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 80,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_006",
+      "ch": 27,
+      "he": "עָזַר",
+      "tr": "ʿāzar",
+      "zh": "幫助、協助",
+      "zh_alt": [
+        "幫助",
+        "協助"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 82,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_007",
+      "ch": 27,
+      "he": "עָנָה",
+      "tr": "ʿānâ",
+      "zh": "壓迫、羞辱、侵犯、折磨",
+      "zh_alt": [
+        "壓迫",
+        "羞辱",
+        "侵犯",
+        "折磨"
+      ],
+      "pos": "verb",
+      "stem": "Piel",
+      "freq": 79,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_008",
+      "ch": 27,
+      "he": "קָלַל",
+      "tr": "qālal",
+      "zh": "輕、小、快；（Niphal, Piel）宣告為被咒詛的",
+      "zh_alt": [
+        "輕",
+        "小",
+        "快",
+        "宣告為被咒詛的"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 82,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_009",
+      "ch": 27,
+      "he": "קָנָה",
+      "tr": "qānâ",
+      "zh": "得、買",
+      "zh_alt": [
+        "得",
+        "買"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 85,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_010",
+      "ch": 27,
+      "he": "רָכַב",
+      "tr": "rākab",
+      "zh": "騎",
+      "zh_alt": [
+        "騎"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 78,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_011",
+      "ch": 27,
+      "he": "שָׁחַט",
+      "tr": "šāḥaṭ",
+      "zh": "宰、殺",
+      "zh_alt": [
+        "宰",
+        "殺"
+      ],
+      "pos": "verb",
+      "stem": "Qal",
+      "freq": 81,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_012",
+      "ch": 27,
+      "he": "אָחוֹת",
+      "tr": "ʾāḥôt",
+      "zh": "姐妹、所愛的（陰）",
+      "zh_alt": [
+        "姐妹",
+        "所愛的"
+      ],
+      "pos": "noun_f",
+      "freq": 119,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_013",
+      "ch": 27,
+      "he": "כָּנָף",
+      "tr": "kānāp",
+      "zh": "翅膀、角落、邊緣",
+      "zh_alt": [
+        "翅膀",
+        "角落",
+        "邊緣"
+      ],
+      "pos": "noun",
+      "freq": 111,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_014",
+      "ch": 27,
+      "he": "עַמּוּד",
+      "tr": "ʿammûd",
+      "zh": "柱子、圓柱",
+      "zh_alt": [
+        "柱子",
+        "圓柱"
+      ],
+      "pos": "noun",
+      "freq": 112,
+      "status": "verified"
+    },
+    {
+      "id": "ch27_015",
+      "ch": 27,
+      "he": "שֶׁקֶר",
+      "tr": "šeqer",
+      "zh": "謊話、虛假、欺騙",
+      "zh_alt": [
+        "謊話",
+        "虛假",
+        "欺騙"
+      ],
+      "pos": "noun",
+      "freq": 113,
+      "status": "verified"
+    },
+    {
+      "id": "ch28_001",
+      "ch": 28,
+      "he": "אָסַר",
+      "tr": "ʾāsar",
+      "zh": "捆綁、上腳鐐、囚禁",
+      "zh_alt": [
+        "捆綁",
+        "上腳鐐",
+        "囚禁"
+      ],
+      "pos": "verb",
+      "freq": 73,
+      "status": "verified",
+      "stem": "Qal"
+    },
+    {
+      "id": "ch28_002",
+      "ch": 28,
+      "he": "זָעַק",
+      "tr": "zāʿaq",
+      "zh": "呼喊、求助、召集",
+      "zh_alt": [
+        "呼喊",
+        "求助",
+        "召集"
+      ],
+      "pos": "verb",
+      "freq": 73,
+      "status": "verified",
+      "stem": "Qal"
+    },
+    {
+      "id": "ch28_003",
+      "ch": 28,
+      "he": "חָזָה",
+      "tr": "ḥāzāh",
+      "zh": "看見、察覺",
+      "zh_alt": [
+        "看見",
+        "察覺"
+      ],
+      "pos": "verb",
+      "freq": 55,
+      "status": "verified",
+      "stem": "Qal"
+    },
+    {
+      "id": "ch28_004",
+      "ch": 28,
+      "he": "חָלָה",
+      "tr": "ḥālāh",
+      "zh": "（變為）軟弱、生病",
+      "zh_alt": [
+        "軟弱",
+        "生病"
+      ],
+      "pos": "verb",
+      "freq": 75,
+      "status": "verified",
+      "stem": "Qal"
+    },
+    {
+      "id": "ch28_005",
+      "ch": 28,
+      "he": "חָנַן",
+      "tr": "ḥānan",
+      "zh": "恩待、幫助",
+      "zh_alt": [
+        "恩待",
+        "幫助"
+      ],
+      "pos": "verb",
+      "freq": 77,
+      "status": "verified",
+      "stem": "Qal"
+    },
+    {
+      "id": "ch28_006",
+      "ch": 28,
+      "he": "מָאַס",
+      "tr": "māʾas",
+      "zh": "否定、拒絕、輕視",
+      "zh_alt": [
+        "否定",
+        "拒絕",
+        "輕視"
+      ],
+      "pos": "verb",
+      "freq": 74,
+      "status": "verified",
+      "stem": "Qal"
+    },
+    {
+      "id": "ch28_007",
+      "ch": 28,
+      "he": "עוּר",
+      "tr": "ʿûr",
+      "zh": "激起、醒來",
+      "zh_alt": [
+        "激起",
+        "醒來"
+      ],
+      "pos": "verb",
+      "freq": 80,
+      "status": "verified",
+      "stem": "Qal"
+    },
+    {
+      "id": "ch28_008",
+      "ch": 28,
+      "he": "עָרַךְ",
+      "tr": "ʿārak",
+      "zh": "安排、編排、堆疊（木材）、擺陣",
+      "zh_alt": [
+        "安排",
+        "編排",
+        "堆疊",
+        "擺陣"
+      ],
+      "pos": "verb",
+      "freq": 75,
+      "status": "verified",
+      "stem": "Qal"
+    },
+    {
+      "id": "ch28_009",
+      "ch": 28,
+      "he": "רָחַץ",
+      "tr": "rāḥaṣ",
+      "zh": "洗（掉）、洗澡",
+      "zh_alt": [
+        "洗",
+        "洗澡"
+      ],
+      "pos": "verb",
+      "freq": 72,
+      "status": "verified",
+      "stem": "Qal"
+    },
+    {
+      "id": "ch28_010",
+      "ch": 28,
+      "he": "שָׂכַל",
+      "tr": "śākal",
+      "zh": "思考、了解、有智慧、成功",
+      "zh_alt": [
+        "思考",
+        "了解",
+        "有智慧",
+        "成功"
+      ],
+      "pos": "verb",
+      "freq": 60,
+      "status": "verified",
+      "stem": "Hiph."
+    },
+    {
+      "id": "ch28_011",
+      "ch": 28,
+      "he": "מַרְאֶה",
+      "tr": "marʾeh",
+      "zh": "視覺、外貌",
+      "zh_alt": [
+        "視覺",
+        "外貌"
+      ],
+      "pos": "noun",
+      "freq": 103,
+      "status": "verified"
+    },
+    {
+      "id": "ch28_012",
+      "ch": 28,
+      "he": "נֶגֶב",
+      "tr": "negeb",
+      "zh": "南方、南地",
+      "zh_alt": [
+        "南方",
+        "南地"
+      ],
+      "pos": "noun",
+      "freq": 112,
+      "status": "verified"
+    },
+    {
+      "id": "ch28_013",
+      "ch": 28,
+      "he": "עָפָר",
+      "tr": "ʿāp̄ār",
+      "zh": "灰塵、塵土",
+      "zh_alt": [
+        "灰塵",
+        "塵土"
+      ],
+      "pos": "noun",
+      "freq": 110,
+      "status": "verified"
+    },
+    {
+      "id": "ch28_014",
+      "ch": 28,
+      "he": "פַּעַם",
+      "tr": "paʿam",
+      "zh": "腳、腳步、時間",
+      "zh_alt": [
+        "腳",
+        "腳步",
+        "時間"
+      ],
+      "pos": "noun",
+      "freq": 118,
+      "status": "verified"
+    },
+    {
+      "id": "ch29_001",
+      "ch": 29,
+      "he": "לוּן",
+      "tr": "lûn",
+      "zh": "過夜、住宿、停留",
+      "zh_alt": [
+        "過夜",
+        "住宿",
+        "停留"
+      ],
+      "pos": "verb",
+      "freq": 71,
+      "status": "verified",
+      "stem": "Qal"
+    },
+    {
+      "id": "ch29_002",
+      "ch": 29,
+      "he": "מָשַׁח",
+      "tr": "māšaḥ",
+      "zh": "膏立",
+      "zh_alt": [],
+      "pos": "verb",
+      "freq": 70,
+      "status": "verified",
+      "he_alt": [
+        "名詞 מָשִׁיחַ"
+      ],
+      "stem": "Qal"
+    },
+    {
+      "id": "ch29_003",
+      "ch": 29,
+      "he": "נָצַר",
+      "tr": "nāṣar",
+      "zh": "看守、保衛、保存",
+      "zh_alt": [
+        "看守",
+        "保衛",
+        "保存"
+      ],
+      "pos": "verb",
+      "freq": 63,
+      "status": "verified",
+      "stem": "Qal"
+    },
+    {
+      "id": "ch29_004",
+      "ch": 29,
+      "he": "גֵּר",
+      "tr": "gēr",
+      "zh": "外來居留者、外僑",
+      "zh_alt": [
+        "外來居留者",
+        "外僑"
+      ],
+      "pos": "noun",
+      "freq": 92,
+      "status": "verified"
+    },
+    {
+      "id": "ch29_005",
+      "ch": 29,
+      "he": "חַיָּה",
+      "tr": "ḥayyāh",
+      "zh": "動物、活物",
+      "zh_alt": [
+        "動物",
+        "活物"
+      ],
+      "pos": "noun",
+      "freq": 96,
+      "status": "verified"
+    },
+    {
+      "id": "ch29_006",
+      "ch": 29,
+      "he": "חֵלֶב",
+      "tr": "ḥēleb",
+      "zh": "油；（暗喻）最好的、上好的",
+      "zh_alt": [
+        "油",
+        "最好的",
+        "上好的"
+      ],
+      "pos": "noun",
+      "freq": 92,
+      "status": "verified"
+    },
+    {
+      "id": "ch29_007",
+      "ch": 29,
+      "he": "חֲמוֹר",
+      "tr": "ḥămôr",
+      "zh": "（公的）驢",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 96,
+      "status": "verified"
+    },
+    {
+      "id": "ch29_008",
+      "ch": 29,
+      "he": "יֶתֶר",
+      "tr": "yeter",
+      "zh": "殘餘、剩餘、多餘",
+      "zh_alt": [
+        "殘餘",
+        "剩餘",
+        "多餘"
+      ],
+      "pos": "noun",
+      "freq": 97,
+      "status": "verified"
+    },
+    {
+      "id": "ch29_009",
+      "ch": 29,
+      "he": "עוֹר",
+      "tr": "ʿôr",
+      "zh": "皮膚、皮革",
+      "zh_alt": [
+        "皮膚",
+        "皮革"
+      ],
+      "pos": "noun",
+      "freq": 99,
+      "status": "verified"
+    },
+    {
+      "id": "ch29_010",
+      "ch": 29,
+      "he": "עֹז",
+      "tr": "ʿōz",
+      "zh": "力量、能力、威力",
+      "zh_alt": [
+        "力量",
+        "能力",
+        "威力"
+      ],
+      "pos": "noun",
+      "freq": 76,
+      "status": "verified"
+    },
+    {
+      "id": "ch29_011",
+      "ch": 29,
+      "he": "פֶּשַׁע",
+      "tr": "pešaʿ",
+      "zh": "反叛、造反、犯罪",
+      "zh_alt": [
+        "反叛",
+        "造反",
+        "犯罪"
+      ],
+      "pos": "noun",
+      "freq": 93,
+      "status": "verified"
+    },
+    {
+      "id": "ch29_012",
+      "ch": 29,
+      "he": "קָצֶה",
+      "tr": "qāṣeh",
+      "zh": "末端、邊界、盡頭",
+      "zh_alt": [
+        "末端",
+        "邊界",
+        "盡頭"
+      ],
+      "pos": "noun",
+      "freq": 92,
+      "status": "verified"
+    },
+    {
+      "id": "ch29_013",
+      "ch": 29,
+      "he": "שִׂמְחָה",
+      "tr": "śimḥāh",
+      "zh": "喜樂、歡喜",
+      "zh_alt": [
+        "喜樂",
+        "歡喜"
+      ],
+      "pos": "noun",
+      "freq": 94,
+      "status": "verified"
+    },
+    {
+      "id": "ch29_014",
+      "ch": 29,
+      "he": "תָּמִים",
+      "tr": "tāmîm",
+      "zh": "整體、完全、無可責備",
+      "zh_alt": [
+        "整體",
+        "完全",
+        "無可責備"
+      ],
+      "pos": "adj",
+      "freq": 91,
+      "status": "verified"
+    },
+    {
+      "id": "ch30_001",
+      "ch": 30,
+      "he": "חָלַל",
+      "tr": "ḥālal",
+      "zh": "（Niphal）被玷污、玷污自己；（Piel）污染、褻瀆；（Hiphil）使……被褻瀆、開始",
+      "zh_alt": [
+        "被玷污",
+        "玷污自己",
+        "污染",
+        "褻瀆",
+        "使……被褻瀆",
+        "開始"
+      ],
+      "pos": "verb",
+      "freq": 135,
+      "status": "verified",
+      "stem": "Niph./Piel/Hiph."
+    },
+    {
+      "id": "ch30_002",
+      "ch": 30,
+      "he": "נָגַד",
+      "tr": "nāgad",
+      "zh": "宣布、報告、告訴",
+      "zh_alt": [
+        "宣布",
+        "報告",
+        "告訴"
+      ],
+      "pos": "verb",
+      "freq": 371,
+      "status": "verified",
+      "stem": "Hiph."
+    },
+    {
+      "id": "ch30_003",
+      "ch": 30,
+      "he": "שָׁבַע",
+      "tr": "šāb̄aʿ",
+      "zh": "（Niphal）發誓；（Hiphil）向某人求情",
+      "zh_alt": [
+        "發誓",
+        "向某人求情"
+      ],
+      "pos": "verb",
+      "freq": 186,
+      "status": "verified",
+      "stem": "Niph./Hiph."
+    },
+    {
+      "id": "ch30_004",
+      "ch": 30,
+      "he": "שָׁלַךְ",
+      "tr": "šālak",
+      "zh": "差派、丟、丟棄",
+      "zh_alt": [
+        "差派",
+        "丟",
+        "丟棄"
+      ],
+      "pos": "verb",
+      "freq": 125,
+      "status": "verified",
+      "stem": "Hiph."
+    },
+    {
+      "id": "ch30_005",
+      "ch": 30,
+      "he": "דַּעַת",
+      "tr": "daʿat",
+      "zh": "知識、能力",
+      "zh_alt": [
+        "知識",
+        "能力"
+      ],
+      "pos": "noun",
+      "freq": 89,
+      "status": "verified"
+    },
+    {
+      "id": "ch30_006",
+      "ch": 30,
+      "he": "דֶּלֶת",
+      "tr": "delet",
+      "zh": "門",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 88,
+      "status": "verified"
+    },
+    {
+      "id": "ch30_007",
+      "ch": 30,
+      "he": "הָמוֹן",
+      "tr": "hāmôn",
+      "zh": "紛亂、暴動、群眾",
+      "zh_alt": [
+        "紛亂",
+        "暴動",
+        "群眾"
+      ],
+      "pos": "noun",
+      "freq": 85,
+      "status": "verified"
+    },
+    {
+      "id": "ch30_008",
+      "ch": 30,
+      "he": "זְרוֹעַ",
+      "tr": "zĕrôaʿ",
+      "zh": "膀臂、前臂；（暗喻）力量或能力",
+      "zh_alt": [
+        "膀臂",
+        "前臂",
+        "力量或能力"
+      ],
+      "pos": "noun",
+      "freq": 91,
+      "status": "verified"
+    },
+    {
+      "id": "ch30_009",
+      "ch": 30,
+      "he": "כְּרוּב",
+      "tr": "kĕrûb̄",
+      "zh": "基路伯",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 91,
+      "status": "verified"
+    },
+    {
+      "id": "ch30_010",
+      "ch": 30,
+      "he": "כֶּרֶם",
+      "tr": "kerem",
+      "zh": "葡萄園",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 94,
+      "status": "verified"
+    },
+    {
+      "id": "ch30_011",
+      "ch": 30,
+      "he": "מַלְכוּת",
+      "tr": "malkût",
+      "zh": "主權、王國、統治",
+      "zh_alt": [
+        "主權",
+        "王國",
+        "統治"
+      ],
+      "pos": "noun",
+      "freq": 91,
+      "status": "verified"
+    },
+    {
+      "id": "ch30_012",
+      "ch": 30,
+      "he": "עֵצָה",
+      "tr": "ʿēṣāh",
+      "zh": "建議、忠告",
+      "zh_alt": [
+        "建議",
+        "忠告"
+      ],
+      "pos": "noun",
+      "freq": 87,
+      "status": "verified"
+    },
+    {
+      "id": "ch30_013",
+      "ch": 30,
+      "he": "חָלָל",
+      "tr": "ḥālāl",
+      "zh": "殺害的",
+      "zh_alt": [],
+      "pos": "adj",
+      "freq": 94,
+      "status": "verified"
+    },
+    {
+      "id": "ch30_014",
+      "ch": 30,
+      "he": "טָמֵא",
+      "tr": "ṭāmēʾ",
+      "zh": "不潔淨的",
+      "zh_alt": [],
+      "pos": "adj",
+      "freq": 88,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_001",
+      "ch": 31,
+      "he": "אָוֶן",
+      "tr": "ʾāwen",
+      "zh": "邪惡、不公正、作惡的人",
+      "zh_alt": [
+        "邪惡",
+        "不公正",
+        "作惡的人"
+      ],
+      "pos": "noun",
+      "freq": 81,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_002",
+      "ch": 31,
+      "he": "אוֹצָר",
+      "tr": "ʾôṣār",
+      "zh": "供應、庫房、財寶",
+      "zh_alt": [
+        "供應",
+        "庫房",
+        "財寶"
+      ],
+      "pos": "noun",
+      "freq": 79,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_003",
+      "ch": 31,
+      "he": "אוֹת",
+      "tr": "ʾôt",
+      "zh": "記號、保證",
+      "zh_alt": [
+        "記號",
+        "保證"
+      ],
+      "pos": "noun",
+      "freq": 79,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_004",
+      "ch": 31,
+      "he": "גּוֹרָל",
+      "tr": "gôrāl",
+      "zh": "籤、分配",
+      "zh_alt": [
+        "籤",
+        "分配"
+      ],
+      "pos": "noun",
+      "freq": 77,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_005",
+      "ch": 31,
+      "he": "יְשׁוּעָה",
+      "tr": "yĕšûʿāh",
+      "zh": "拯救、救恩",
+      "zh_alt": [
+        "拯救",
+        "救恩"
+      ],
+      "pos": "noun",
+      "freq": 78,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_006",
+      "ch": 31,
+      "he": "מִקְנֶה",
+      "tr": "miqneh",
+      "zh": "財產、田地、牲畜",
+      "zh_alt": [
+        "財產",
+        "田地",
+        "牲畜"
+      ],
+      "pos": "noun",
+      "freq": 76,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_007",
+      "ch": 31,
+      "he": "מִשְׁמֶרֶת",
+      "tr": "mišmeret",
+      "zh": "職責、看守、守衛",
+      "zh_alt": [
+        "職責",
+        "看守",
+        "守衛"
+      ],
+      "pos": "noun",
+      "freq": 78,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_008",
+      "ch": 31,
+      "he": "נֶגַע",
+      "tr": "negaʿ",
+      "zh": "打擊、攻擊、降災",
+      "zh_alt": [
+        "打擊",
+        "攻擊",
+        "降災"
+      ],
+      "pos": "noun",
+      "freq": 78,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_009",
+      "ch": 31,
+      "he": "צַר",
+      "tr": "ṣar",
+      "zh": "仇敵、敵人",
+      "zh_alt": [
+        "仇敵",
+        "敵人"
+      ],
+      "pos": "noun",
+      "freq": 72,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_010",
+      "ch": 31,
+      "he": "קֶדֶם",
+      "tr": "qedem",
+      "zh": "東、古時",
+      "zh_alt": [
+        "東",
+        "古時"
+      ],
+      "pos": "noun",
+      "freq": 61,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_011",
+      "ch": 31,
+      "he": "קָרְבָּן",
+      "tr": "qorbān",
+      "zh": "祭品、禮物",
+      "zh_alt": [
+        "祭品",
+        "禮物"
+      ],
+      "pos": "noun",
+      "freq": 80,
+      "status": "verified"
+    },
+    {
+      "id": "ch31_012",
+      "ch": 31,
+      "he": "שֶׁקֶל",
+      "tr": "šeqel",
+      "zh": "舍客勒、重量單位",
+      "zh_alt": [
+        "舍客勒",
+        "重量單位"
+      ],
+      "pos": "noun",
+      "freq": 88,
+      "status": "verified"
+    },
+    {
+      "id": "ch32_001",
+      "ch": 32,
+      "he": "אֶרֶז",
+      "tr": "ʾerez",
+      "zh": "香柏木",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 73,
+      "status": "verified"
+    },
+    {
+      "id": "ch32_002",
+      "ch": 32,
+      "he": "צוּר",
+      "tr": "ṣûr",
+      "zh": "岩石、大圓石",
+      "zh_alt": [
+        "岩石",
+        "大圓石"
+      ],
+      "pos": "noun",
+      "freq": 73,
+      "status": "verified"
+    },
+    {
+      "id": "ch32_003",
+      "ch": 32,
+      "he": "קֶרֶן",
+      "tr": "qeren",
+      "zh": "角",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 76,
+      "status": "verified"
+    },
+    {
+      "id": "ch32_004",
+      "ch": 32,
+      "he": "קֶשֶׁת",
+      "tr": "qešet",
+      "zh": "弓、武器",
+      "zh_alt": [
+        "弓",
+        "武器"
+      ],
+      "pos": "noun",
+      "freq": 76,
+      "status": "verified"
+    },
+    {
+      "id": "ch33_001",
+      "ch": 33,
+      "he": "בֶּטֶן",
+      "tr": "beṭen",
+      "zh": "腹、胃、母腹",
+      "zh_alt": [
+        "腹",
+        "胃",
+        "母腹"
+      ],
+      "pos": "noun",
+      "freq": 72,
+      "status": "verified"
+    },
+    {
+      "id": "ch33_002",
+      "ch": 33,
+      "he": "הֶבֶל",
+      "tr": "hebel",
+      "zh": "氣息、虛空、偶像",
+      "zh_alt": [
+        "氣息",
+        "虛空",
+        "偶像"
+      ],
+      "pos": "noun",
+      "freq": 73,
+      "status": "verified"
+    },
+    {
+      "id": "ch33_003",
+      "ch": 33,
+      "he": "חֶרְפָּה",
+      "tr": "ḥerpāh",
+      "zh": "責備、恥辱",
+      "zh_alt": [
+        "責備",
+        "恥辱"
+      ],
+      "pos": "noun",
+      "freq": 73,
+      "status": "verified"
+    },
+    {
+      "id": "ch33_004",
+      "ch": 33,
+      "he": "מִזְרָח",
+      "tr": "mizrāḥ",
+      "zh": "日出、東方",
+      "zh_alt": [
+        "日出",
+        "東方"
+      ],
+      "pos": "noun",
+      "freq": 74,
+      "status": "verified"
+    },
+    {
+      "id": "ch34_001",
+      "ch": 34,
+      "he": "מִקְדָּשׁ",
+      "tr": "miqdāš",
+      "zh": "聖所",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 75,
+      "status": "verified"
+    },
+    {
+      "id": "ch34_002",
+      "ch": 34,
+      "he": "עוֹף",
+      "tr": "ʿôp̄",
+      "zh": "飛行的生物、家禽、昆蟲",
+      "zh_alt": [
+        "飛行的生物",
+        "家禽",
+        "昆蟲"
+      ],
+      "pos": "noun",
+      "freq": 71,
+      "status": "verified",
+      "he_alt": [
+        "動詞 עוּף"
+      ]
+    },
+    {
+      "id": "ch34_003",
+      "ch": 34,
+      "he": "עֵז",
+      "tr": "ʿēz",
+      "zh": "山羊、山羊毛",
+      "zh_alt": [
+        "山羊",
+        "山羊毛"
+      ],
+      "pos": "noun",
+      "freq": 74,
+      "status": "verified"
+    },
+    {
+      "id": "ch34_004",
+      "ch": 34,
+      "he": "פָּלַל",
+      "tr": "pālal",
+      "zh": "禱告、代求",
+      "zh_alt": [
+        "禱告",
+        "代求"
+      ],
+      "pos": "verb",
+      "freq": 84,
+      "status": "verified",
+      "stem": "Hith."
+    },
+    {
+      "id": "ch34_005",
+      "ch": 34,
+      "he": "קִיר",
+      "tr": "qîr",
+      "zh": "牆",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 73,
+      "status": "verified"
+    },
+    {
+      "id": "ch34_006",
+      "ch": 34,
+      "he": "שׁוֹפָר",
+      "tr": "šôp̄ār",
+      "zh": "公羊角、號角",
+      "zh_alt": [
+        "公羊角",
+        "號角"
+      ],
+      "pos": "noun",
+      "freq": 72,
+      "status": "verified"
+    },
+    {
+      "id": "ch35_001",
+      "ch": 35,
+      "he": "בַּרְזֶל",
+      "tr": "barzel",
+      "zh": "鐵",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 76,
+      "status": "verified"
+    },
+    {
+      "id": "ch35_002",
+      "ch": 35,
+      "he": "עֵד",
+      "tr": "ʿēd",
+      "zh": "見證人",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 69,
+      "status": "verified"
+    },
+    {
+      "id": "ch35_003",
+      "ch": 35,
+      "he": "צָרָה",
+      "tr": "ṣārāh",
+      "zh": "困苦、愁煩",
+      "zh_alt": [
+        "困苦",
+        "愁煩"
+      ],
+      "pos": "noun",
+      "freq": 70,
+      "status": "verified"
+    },
+    {
+      "id": "ch35_004",
+      "ch": 35,
+      "he": "שׁוֹר",
+      "tr": "šôr",
+      "zh": "公牛、小公牛",
+      "zh_alt": [
+        "公牛",
+        "小公牛"
+      ],
+      "pos": "noun",
+      "freq": 79,
+      "status": "verified"
+    },
+    {
+      "id": "ch35_005",
+      "ch": 35,
+      "he": "שֻׁלְחָן",
+      "tr": "šulḥān",
+      "zh": "桌子",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 71,
+      "status": "verified"
+    },
+    {
+      "id": "ch35_006",
+      "ch": 35,
+      "he": "תְּפִלָּה",
+      "tr": "tĕp̄illāh",
+      "zh": "禱告",
+      "zh_alt": [],
+      "pos": "noun",
+      "freq": 77,
+      "status": "verified"
     }
   ]
 }
