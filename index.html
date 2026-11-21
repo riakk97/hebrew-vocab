@@ -268,7 +268,7 @@
     }
     .chapter-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(54px, 1fr));
       gap: 6px;
       max-height: 185px;
       overflow-y: auto;
@@ -277,41 +277,22 @@
     .ch-checkbox-item {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 4px;
       background-color: var(--bg-parchment);
       border: 1.5px solid var(--border-soft);
       border-radius: 8px;
-      padding: 6px 9px;
-      font-size: 12px;
-      font-weight: 600;
+      padding: 7px 6px;
+      font-size: 13px;
+      font-weight: 700;
       cursor: pointer;
       transition: all 0.12s;
+      text-align: center;
     }
     .ch-checkbox-item.checked {
-      background-color: var(--accent-sage-light);
+      background-color: var(--accent-sage);
       border-color: var(--accent-sage);
-      color: var(--accent-sage);
-    }
-    .ch-checkbox-left {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .ch-check-box {
-      width: 15px;
-      height: 15px;
-      border-radius: 4px;
-      border: 1.5px solid var(--border-strong);
-      background: #FFFFFF;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 11px;
       color: #FFFFFF;
-    }
-    .ch-checkbox-item.checked .ch-check-box {
-      background: var(--accent-sage);
-      border-color: var(--accent-sage);
     }
 
     .freq-slider-row {
@@ -917,15 +898,18 @@
 
       <div class="filter-section">
         <div class="filter-section-title">
-          <span>快捷範圍選擇</span>
-          <span style="font-size:11px;font-weight:500;color:var(--ink-muted);">可下方自由複選任意章節</span>
+          <span>快捷範圍</span>
         </div>
         <div class="quick-presets">
           <button type="button" class="preset-chip" data-preset="all">全部章節</button>
           <button type="button" class="preset-chip" data-preset="ch13_18">13–18 期中範圍</button>
-          <button type="button" class="preset-chip" data-preset="ch19_20">19–20 新進度</button>
+          <button type="button" class="preset-chip" data-preset="ch19_25">19–25 期末範圍</button>
           <button type="button" class="preset-chip wrong-chip" data-preset="wrong_priority">🔥 錯題優先複習</button>
           <button type="button" class="preset-chip" data-preset="clear">清除全不選</button>
+        </div>
+        <div class="filter-section-title" style="margin-top:4px;">
+          <span>章節</span>
+          <span style="font-size:11px;font-weight:500;color:var(--ink-muted);">點擊數字可自由複選</span>
         </div>
         <div id="chapter-checkbox-grid" class="chapter-grid"></div>
       </div>
@@ -1283,13 +1267,8 @@
           const btn = document.createElement("div");
           btn.className = "ch-checkbox-item" + (state.selectedChapters.has(key) ? " checked" : "");
           btn.dataset.ch = key;
-          const label = key === "glossary" ? "書末總表" : ("第 " + key + " 章");
-          btn.innerHTML =
-            '<div class="ch-checkbox-left">' +
-            '<span class="ch-check-box">✓</span>' +
-            '<span>' + label + '</span>' +
-            '</div>' +
-            '<span style="font-size:11px;opacity:0.8;">' + chapterCounts.get(key) + '詞</span>';
+          const label = key === "glossary" ? "總表" : key;
+          btn.textContent = label;
           btn.addEventListener("click", function () {
             state.wrongPriorityOnly = false;
             if (state.selectedChapters.has(key)) {
@@ -1332,11 +1311,11 @@
             if (p === "all") {
               active = state.selectedChapters.size === state.allChapters.length;
             } else if (p === "ch13_18") {
-              const target = ["13", "14", "15", "16", "17", "18"];
-              active = state.selectedChapters.size === target.length && target.every(k => state.selectedChapters.has(k));
-            } else if (p === "ch19_20") {
-              const target = ["19", "20"];
-              active = state.selectedChapters.size === target.length && target.every(k => state.selectedChapters.has(k));
+              const target = ["13", "14", "15", "16", "17", "18"].filter(k => state.allChapters.includes(k));
+              active = target.length > 0 && state.selectedChapters.size === target.length && target.every(k => state.selectedChapters.has(k));
+            } else if (p === "ch19_25") {
+              const target = ["19", "20", "21", "22", "23", "24", "25"].filter(k => state.allChapters.includes(k));
+              active = target.length > 0 && state.selectedChapters.size === target.length && target.every(k => state.selectedChapters.has(k));
             }
           }
           btn.classList.toggle("active", active);
@@ -1833,10 +1812,10 @@
               ["13", "14", "15", "16", "17", "18"].forEach(k => {
                 if (state.allChapters.includes(k)) state.selectedChapters.add(k);
               });
-            } else if (preset === "ch19_20") {
+            } else if (preset === "ch19_25") {
               state.wrongPriorityOnly = false;
               state.selectedChapters.clear();
-              ["19", "20"].forEach(k => {
+              ["19", "20", "21", "22", "23", "24", "25"].forEach(k => {
                 if (state.allChapters.includes(k)) state.selectedChapters.add(k);
               });
             } else if (preset === "wrong_priority") {
