@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "聖經希伯來文初階（Basics of Biblical Hebrew）詞彙庫",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "updated_at": "2026-11-21",
     "chapters_included": [
       13,
@@ -28,7 +28,8 @@
       "zh": "祝福",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 327
     },
     {
       "id": "ch13_002",
@@ -38,7 +39,8 @@
       "zh": "記住、回想",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 235
     },
     {
       "id": "ch13_003",
@@ -48,7 +50,8 @@
       "zh": "（變）老",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 26
     },
     {
       "id": "ch13_004",
@@ -58,7 +61,8 @@
       "zh": "（變）強、堅強、有勇氣",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 290
     },
     {
       "id": "ch13_005",
@@ -68,7 +72,8 @@
       "zh": "知道、了解、發生性關係",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 956
     },
     {
       "id": "ch13_006",
@@ -78,7 +83,8 @@
       "zh": "重、尊榮",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 114
     },
     {
       "id": "ch13_007",
@@ -88,7 +94,8 @@
       "zh": "寫",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 225
     },
     {
       "id": "ch13_008",
@@ -98,7 +105,8 @@
       "zh": "滿、充滿、滿足",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 252
     },
     {
       "id": "ch13_009",
@@ -108,7 +116,8 @@
       "zh": "統治、作王",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 350
     },
     {
       "id": "ch13_010",
@@ -118,7 +127,8 @@
       "zh": "找、得到",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 457
     },
     {
       "id": "ch13_011",
@@ -128,7 +138,8 @@
       "zh": "訪問、計算、任命",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 304
     },
     {
       "id": "ch13_012",
@@ -138,7 +149,8 @@
       "zh": "躺下、性交",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 213
     },
     {
       "id": "ch13_013",
@@ -148,7 +160,8 @@
       "zh": "伸出、放開、差遣",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 854
     },
     {
       "id": "ch13_014",
@@ -158,7 +171,8 @@
       "zh": "遵守、看守、監視、觀察",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 469
     },
     {
       "id": "ch14_001",
@@ -168,7 +182,8 @@
       "zh": "去、進入、來",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 2592
     },
     {
       "id": "ch14_002",
@@ -178,7 +193,8 @@
       "zh": "建造",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 377
     },
     {
       "id": "ch14_003",
@@ -188,7 +204,8 @@
       "zh": "生產",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 499
     },
     {
       "id": "ch14_004",
@@ -198,7 +215,8 @@
       "zh": "害怕、恐懼",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 317
     },
     {
       "id": "ch14_005",
@@ -208,7 +226,8 @@
       "zh": "下去",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 382
     },
     {
       "id": "ch14_006",
@@ -218,7 +237,8 @@
       "zh": "拿",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 967
     },
     {
       "id": "ch14_007",
@@ -228,7 +248,8 @@
       "zh": "死亡",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 854
     },
     {
       "id": "ch14_008",
@@ -238,7 +259,8 @@
       "zh": "跌倒",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 435
     },
     {
       "id": "ch14_009",
@@ -248,7 +270,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "he": "נָשָׂא"
+      "he": "נָשָׂא",
+      "freq": 659
     },
     {
       "id": "ch14_010",
@@ -258,7 +281,8 @@
       "zh": "上去",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 894
     },
     {
       "id": "ch14_011",
@@ -268,7 +292,8 @@
       "zh": "逾越、犯法",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 553
     },
     {
       "id": "ch14_012",
@@ -278,7 +303,8 @@
       "zh": "站立",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 524
     },
     {
       "id": "ch14_013",
@@ -288,7 +314,8 @@
       "zh": "起來、興起、站立",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 627
     },
     {
       "id": "ch14_014",
@@ -298,7 +325,8 @@
       "zh": "呼叫、遇見、大聲讀",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 739
     },
     {
       "id": "ch14_015",
@@ -308,7 +336,8 @@
       "zh": "設置、安置、放置",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 588
     },
     {
       "id": "ch14_016",
@@ -318,7 +347,8 @@
       "zh": "轉、回轉",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 1075
     },
     {
       "id": "ch14_017",
@@ -328,7 +358,8 @@
       "zh": "這裡",
       "zh_alt": [],
       "pos": "adv",
-      "status": "verified"
+      "status": "verified",
+      "freq": 82
     },
     {
       "id": "ch15_001",
@@ -338,7 +369,8 @@
       "zh": "活",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 282
     },
     {
       "id": "ch15_002",
@@ -348,7 +380,8 @@
       "zh": "能夠",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 193
     },
     {
       "id": "ch15_003",
@@ -358,7 +391,8 @@
       "zh": "切斷、立約",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 289
     },
     {
       "id": "ch15_004",
@@ -368,7 +402,8 @@
       "zh": "轉往一邊離開",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 298
     },
     {
       "id": "ch15_005",
@@ -378,7 +413,8 @@
       "zh": "服事",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 289
     },
     {
       "id": "ch15_006",
@@ -388,7 +424,8 @@
       "zh": "回答、作證",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 316
     },
     {
       "id": "ch15_007",
@@ -400,7 +437,8 @@
         "耳朵"
       ],
       "pos": "noun_f",
-      "status": "verified"
+      "status": "verified",
+      "freq": 188
     },
     {
       "id": "ch15_008",
@@ -413,7 +451,8 @@
         "有力的"
       ],
       "pos": "noun_adj",
-      "status": "verified"
+      "status": "verified",
+      "freq": 171
     },
     {
       "id": "ch15_009",
@@ -425,7 +464,8 @@
         "有力的、勇士、強者"
       ],
       "pos": "adj_noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 160
     },
     {
       "id": "ch15_010",
@@ -435,7 +475,8 @@
       "zh": "祭物",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 162
     },
     {
       "id": "ch15_011",
@@ -445,7 +486,8 @@
       "zh": "公義",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 159
     },
     {
       "id": "ch15_012",
@@ -457,7 +499,8 @@
         "北"
       ],
       "pos": "noun_f",
-      "status": "verified"
+      "status": "verified",
+      "freq": 153
     },
     {
       "id": "ch15_013",
@@ -467,7 +510,8 @@
       "zh": "那時、之前",
       "zh_alt": [],
       "pos": "adv",
-      "status": "verified"
+      "status": "verified",
+      "freq": 141
     },
     {
       "id": "ch15_014",
@@ -477,7 +521,8 @@
       "zh": "也、甚至",
       "zh_alt": [],
       "pos": "conj_adv",
-      "status": "verified"
+      "status": "verified",
+      "freq": 133
     },
     {
       "id": "ch15_015",
@@ -487,7 +532,8 @@
       "zh": "免得",
       "zh_alt": [],
       "pos": "conj",
-      "status": "verified"
+      "status": "verified",
+      "freq": 133
     },
     {
       "id": "ch16_001",
@@ -497,7 +543,8 @@
       "zh": "救贖",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 104
     },
     {
       "id": "ch16_002",
@@ -509,7 +556,8 @@
         "沒有命中、犯罪"
       ],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 240
     },
     {
       "id": "ch16_003",
@@ -519,7 +567,8 @@
       "zh": "增加",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 213
     },
     {
       "id": "ch16_004",
@@ -529,7 +578,8 @@
       "zh": "繼承、征服、擁有、剝奪",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 232
     },
     {
       "id": "ch16_005",
@@ -539,7 +589,8 @@
       "zh": "遮蓋",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 102
     },
     {
       "id": "ch16_006",
@@ -549,7 +600,8 @@
       "zh": "支搭帳棚、伸出",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 216
     },
     {
       "id": "ch16_007",
@@ -559,7 +611,8 @@
       "zh": "離開、拋棄",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 214
     },
     {
       "id": "ch16_008",
@@ -569,7 +622,8 @@
       "zh": "接近",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 280
     },
     {
       "id": "ch16_009",
@@ -579,7 +633,8 @@
       "zh": "（成為）多數、偉大",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 229
     },
     {
       "id": "ch16_010",
@@ -589,7 +644,8 @@
       "zh": "喝",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 217
     },
     {
       "id": "ch16_011",
@@ -599,7 +655,8 @@
       "zh": "完成",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 64
     },
     {
       "id": "ch16_012",
@@ -611,7 +668,8 @@
         "手、手掌"
       ],
       "pos": "noun_f",
-      "status": "verified"
+      "status": "verified",
+      "freq": 195
     },
     {
       "id": "ch16_013",
@@ -621,7 +679,8 @@
       "zh": "朋友、伙伴、同伴",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 188
     },
     {
       "id": "ch16_014",
@@ -631,7 +690,8 @@
       "zh": "在……對面、前面",
       "zh_alt": [],
       "pos": "prep",
-      "status": "verified"
+      "status": "verified",
+      "freq": 151
     },
     {
       "id": "ch17_001",
@@ -641,7 +701,8 @@
       "zh": "消滅",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 185
     },
     {
       "id": "ch17_002",
@@ -651,7 +712,8 @@
       "zh": "愛",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 297
     },
     {
       "id": "ch17_003",
@@ -661,7 +723,8 @@
       "zh": "聚集、毀滅",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 200
     },
     {
       "id": "ch17_004",
@@ -671,7 +734,8 @@
       "zh": "燒滅、燒",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 60
     },
     {
       "id": "ch17_005",
@@ -681,7 +745,8 @@
       "zh": "揭露、揭開",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 187
     },
     {
       "id": "ch17_006",
@@ -691,7 +756,8 @@
       "zh": "乾淨、潔淨",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 94
     },
     {
       "id": "ch17_007",
@@ -701,7 +767,8 @@
       "zh": "停止、結束、完、完成",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 207
     },
     {
       "id": "ch17_008",
@@ -711,7 +778,8 @@
       "zh": "（變）高、高舉",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 197
     },
     {
       "id": "ch17_009",
@@ -721,7 +789,8 @@
       "zh": "審判、進行訴訟",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 204
     },
     {
       "id": "ch17_010",
@@ -733,7 +802,8 @@
         "真實、可靠"
       ],
       "pos": "noun_f",
-      "status": "verified"
+      "status": "verified",
+      "freq": 127
     },
     {
       "id": "ch17_011",
@@ -743,7 +813,8 @@
       "zh": "座位、寶座",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 135
     },
     {
       "id": "ch17_012",
@@ -753,7 +824,8 @@
       "zh": "數目",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 134
     },
     {
       "id": "ch17_013",
@@ -763,7 +835,8 @@
       "zh": "十",
       "zh_alt": [],
       "pos": "num",
-      "status": "verified"
+      "status": "verified",
+      "freq": 492
     },
     {
       "id": "ch17_014",
@@ -773,7 +846,8 @@
       "zh": "太陽",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 134
     },
     {
       "id": "ch18_001",
@@ -783,7 +857,8 @@
       "zh": "選擇、測驗、檢查",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 172
     },
     {
       "id": "ch18_002",
@@ -793,7 +868,8 @@
       "zh": "明白、知道",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 171
     },
     {
       "id": "ch18_003",
@@ -803,7 +879,8 @@
       "zh": "尋找、調查、要求",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 165
     },
     {
       "id": "ch18_004",
@@ -813,7 +890,8 @@
       "zh": "殺、屠殺",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 167
     },
     {
       "id": "ch18_005",
@@ -823,7 +901,8 @@
       "zh": "取悅、喜悅、取悅的",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 74
     },
     {
       "id": "ch18_006",
@@ -833,7 +912,8 @@
       "zh": "成為好的、可喜悅的",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 44
     },
     {
       "id": "ch18_007",
@@ -843,7 +923,8 @@
       "zh": "成為聖潔",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 171
     },
     {
       "id": "ch18_008",
@@ -853,7 +934,8 @@
       "zh": "飼養、餵養、照料羊群",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 167
     },
     {
       "id": "ch18_009",
@@ -863,7 +945,8 @@
       "zh": "請問（求）、要求",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 176
     },
     {
       "id": "ch18_010",
@@ -873,7 +956,8 @@
       "zh": "主人、丈夫、巴力",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 161
     },
     {
       "id": "ch18_011",
@@ -883,7 +967,8 @@
       "zh": "棍、杖、支派",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 190
     },
     {
       "id": "ch18_012",
@@ -895,7 +980,8 @@
         "後面、通過"
       ],
       "pos": "prep",
-      "status": "verified"
+      "status": "verified",
+      "freq": 104
     },
     {
       "id": "ch18_013",
@@ -905,7 +991,8 @@
       "zh": "由於、因為",
       "zh_alt": [],
       "pos": "prep_conj",
-      "status": "verified"
+      "status": "verified",
+      "freq": 100
     },
     {
       "id": "ch18_014",
@@ -917,7 +1004,8 @@
         "請、確實"
       ],
       "pos": "particle",
-      "status": "verified"
+      "status": "verified",
+      "freq": 405
     },
     {
       "id": "ch19_001",
@@ -927,7 +1015,8 @@
       "zh": "依靠、信任",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 118
     },
     {
       "id": "ch19_002",
@@ -939,7 +1028,8 @@
         "哭泣、哭"
       ],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 114
     },
     {
       "id": "ch19_003",
@@ -949,7 +1039,8 @@
       "zh": "穿上、穿上衣服",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 112
     },
     {
       "id": "ch19_004",
@@ -961,7 +1052,8 @@
         "燒、燒盡"
       ],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 117
     },
     {
       "id": "ch19_005",
@@ -971,7 +1063,8 @@
       "zh": "火蛇",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 117
     },
     {
       "id": "ch19_006",
@@ -981,7 +1074,8 @@
       "zh": "作完整、作完全",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 116
     },
     {
       "id": "ch19_007",
@@ -991,7 +1085,8 @@
       "zh": "世代",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 167
     },
     {
       "id": "ch19_008",
@@ -1001,7 +1096,8 @@
       "zh": "外面、街道",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 164
     },
     {
       "id": "ch19_009",
@@ -1011,7 +1107,8 @@
       "zh": "工作、職業、服務",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 167
     },
     {
       "id": "ch19_010",
@@ -1021,7 +1118,8 @@
       "zh": "公牛",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 133
     },
     {
       "id": "ch19_011",
@@ -1031,7 +1129,8 @@
       "zh": "大門、口、入口",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 164
     },
     {
       "id": "ch19_012",
@@ -1041,7 +1140,8 @@
       "zh": "許多、豐盛",
       "zh_alt": [],
       "pos": "noun_adj",
-      "status": "verified"
+      "status": "verified",
+      "freq": 150
     },
     {
       "id": "ch19_013",
@@ -1051,7 +1151,8 @@
       "zh": "嘴唇、語言、岸、堤",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 178
     },
     {
       "id": "ch20_001",
@@ -1061,7 +1162,8 @@
       "zh": "抓住",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 63
     },
     {
       "id": "ch20_002",
@@ -1071,7 +1173,8 @@
       "zh": "不潔淨",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 162
     },
     {
       "id": "ch20_003",
@@ -1081,7 +1184,8 @@
       "zh": "形成、使成形、培養",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 63
     },
     {
       "id": "ch20_004",
@@ -1091,7 +1195,8 @@
       "zh": "逃走",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 160
     },
     {
       "id": "ch20_005",
@@ -1101,7 +1206,8 @@
       "zh": "碰觸、伸出、擊打",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 150
     },
     {
       "id": "ch20_006",
@@ -1111,7 +1217,8 @@
       "zh": "環繞",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 163
     },
     {
       "id": "ch20_007",
@@ -1121,7 +1228,8 @@
       "zh": "計算、數算",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 107
     },
     {
       "id": "ch20_008",
@@ -1131,7 +1239,8 @@
       "zh": "喜樂",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 156
     },
     {
       "id": "ch20_009",
@@ -1141,7 +1250,8 @@
       "zh": "破壞、破裂、破碎",
       "zh_alt": [],
       "pos": "verb",
-      "status": "verified"
+      "status": "verified",
+      "freq": 148
     },
     {
       "id": "ch20_010",
@@ -1154,7 +1264,8 @@
         "יַחַד"
       ],
       "pos": "noun_adv",
-      "status": "verified"
+      "status": "verified",
+      "freq": 142
     },
     {
       "id": "ch20_011",
@@ -1164,7 +1275,8 @@
       "zh": "酒",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 141
     },
     {
       "id": "ch20_012",
@@ -1177,7 +1289,8 @@
         "עֲבוֹדָה"
       ],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 145
     },
     {
       "id": "ch20_013",
@@ -1187,7 +1300,8 @@
       "zh": "會眾",
       "zh_alt": [],
       "pos": "noun",
-      "status": "verified"
+      "status": "verified",
+      "freq": 171
     },
     {
       "id": "ch20_014",
@@ -1200,7 +1314,8 @@
         "לְבִלְתִּי"
       ],
       "pos": "other",
-      "status": "verified"
+      "status": "verified",
+      "freq": 112
     }
   ]
 }
