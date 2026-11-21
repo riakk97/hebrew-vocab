@@ -2078,23 +2078,44 @@
           }
         });
 
-        document.getElementById("btn-fb-submit-sheet").addEventListener("click", async function () {
+        const FEEDBACK_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbynNhYqNYkAYO8ASjS54ENf4uljpCXKEiJ-88D2Ddn42CtY4sLxR0hWx-VFW2y3dQGr7w/exec";
+        const btnSubmitSheet = document.getElementById("btn-fb-submit-sheet");
+
+        btnSubmitSheet.addEventListener("click", async function () {
           const msgVal = fbMsgInput.value.trim();
           if (!msgVal) {
             showToast("請先填寫回饋與勘誤內容！");
             fbMsgInput.focus();
             return;
           }
-          const formatted = buildFormattedFeedbackText();
-          try {
-            await navigator.clipboard.writeText(formatted);
-          } catch (e) {}
 
-          const sheetUrl = "https://docs.google.com/spreadsheets/d/158vv8MtHS1B2nL6AHy3mVhPKe88RonYzjoaSrGRETnw/edit";
-          window.open(sheetUrl, "_blank", "noopener,noreferrer");
-          showToast("已自動複製您的回饋並開啟雲端回饋試算表！");
-          fbMsgInput.value = "";
-          fbModal.classList.remove("show");
+          const payload = {
+            type: fbTypeSelect.value,
+            word: fbWordSelect.value,
+            message: msgVal,
+            author: fbAuthorInput.value.trim() || "匿名"
+          };
+
+          const origText = btnSubmitSheet.textContent;
+          btnSubmitSheet.disabled = true;
+          btnSubmitSheet.textContent = "⏳ 傳送中...";
+
+          try {
+            await fetch(FEEDBACK_WEBHOOK_URL, {
+              method: "POST",
+              mode: "no-cors",
+              headers: { "Content-Type": "text/plain;charset=utf-8" },
+              body: JSON.stringify(payload)
+            });
+            showToast("✓ 已成功送出回饋！謝謝您的協助");
+            fbMsgInput.value = "";
+            fbModal.classList.remove("show");
+          } catch (err) {
+            showToast("傳送失敗，請改按右側「複製文字傳 LINE」");
+          } finally {
+            btnSubmitSheet.disabled = false;
+            btnSubmitSheet.textContent = origText;
+          }
         });
 
         document.getElementById("btn-export-json").addEventListener("click", function () {
