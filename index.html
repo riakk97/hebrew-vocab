@@ -926,11 +926,13 @@
           <span>快捷範圍</span>
         </div>
         <div class="quick-presets">
-          <button type="button" class="preset-chip" data-preset="all">全部章節</button>
-          <button type="button" class="preset-chip" data-preset="ch13_18">13–18 期中範圍</button>
-          <button type="button" class="preset-chip" data-preset="ch19_25">19–25 期末範圍</button>
-          <button type="button" class="preset-chip wrong-chip" data-preset="wrong_priority">🔥 錯題優先複習</button>
-          <button type="button" class="preset-chip" data-preset="clear">清除全不選</button>
+          <button type="button" class="preset-chip" data-preset="all">全部</button>
+          <button type="button" class="preset-chip" data-preset="ch03_12">3–12</button>
+          <button type="button" class="preset-chip" data-preset="ch13_18">13–18</button>
+          <button type="button" class="preset-chip" data-preset="ch19_25">19–25</button>
+          <button type="button" class="preset-chip" data-preset="ch26_35">26–35</button>
+          <button type="button" class="preset-chip wrong-chip" data-preset="wrong_priority">🔥 錯題優先</button>
+          <button type="button" class="preset-chip" data-preset="clear">清除</button>
         </div>
         <div class="filter-section-title" style="margin-top:4px;">
           <span>章節</span>
@@ -1374,6 +1376,13 @@
           chip.classList.toggle("active", Number(chip.dataset.freq) === state.minFreq);
         });
 
+        const PRESET_CHAPTERS = {
+          ch03_12: ["3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+          ch13_18: ["13", "14", "15", "16", "17", "18"],
+          ch19_25: ["19", "20", "21", "22", "23", "24", "25"],
+          ch26_35: ["26", "27", "28", "29", "30", "31", "32", "33", "34", "35"]
+        };
+
         document.querySelectorAll("[data-preset]").forEach(btn => {
           const p = btn.dataset.preset;
           let active = false;
@@ -1382,11 +1391,8 @@
           } else if (!state.wrongPriorityOnly) {
             if (p === "all") {
               active = state.selectedChapters.size === state.allChapters.length;
-            } else if (p === "ch13_18") {
-              const target = ["13", "14", "15", "16", "17", "18"].filter(k => state.allChapters.includes(k));
-              active = target.length > 0 && state.selectedChapters.size === target.length && target.every(k => state.selectedChapters.has(k));
-            } else if (p === "ch19_25") {
-              const target = ["19", "20", "21", "22", "23", "24", "25"].filter(k => state.allChapters.includes(k));
+            } else if (PRESET_CHAPTERS[p]) {
+              const target = PRESET_CHAPTERS[p].filter(k => state.allChapters.includes(k));
               active = target.length > 0 && state.selectedChapters.size === target.length && target.every(k => state.selectedChapters.has(k));
             }
           }
@@ -1498,6 +1504,14 @@
         return parts.map(p => '<span class="zh-chunk">' + p + '</span>').join("");
       }
 
+      function formatHeAltDisplay(heAltArr) {
+        if (!Array.isArray(heAltArr) || heAltArr.length === 0) return "";
+        const joined = heAltArr.join(" / ");
+        const hasChinesePrefix = /[\u4e00-\u9fff]/.test(joined);
+        return (hasChinesePrefix ? "" : "亦作 ") +
+          '<span style="font-family:\'SBL Hebrew\',\'Ezra SIL\',serif;font-size:1.15em;font-weight:700;">' + joined + '</span>';
+      }
+
       function createCard(word, side) {
         const btn = document.createElement("button");
         btn.type = "button";
@@ -1529,7 +1543,7 @@
           if (Array.isArray(word.he_alt) && word.he_alt.length > 0) {
             const heAltEl = document.createElement("span");
             heAltEl.className = "alt-hint";
-            heAltEl.innerHTML = '亦作 <span style="font-family:\'SBL Hebrew\',\'Ezra SIL\',serif;font-size:1.15em;font-weight:700;">' + word.he_alt.join(" / ") + '</span>';
+            heAltEl.innerHTML = formatHeAltDisplay(word.he_alt);
             btn.appendChild(heAltEl);
           }
 
@@ -1591,9 +1605,7 @@
           const item = document.createElement("div");
           const score = getRiskScore(w.id);
           item.className = "overview-item" + (score > 0 ? " high-risk" : "");
-          const heAltStr = (Array.isArray(w.he_alt) && w.he_alt.length > 0)
-            ? w.he_alt.join(" / ")
-            : "";
+          const heAltHtml = formatHeAltDisplay(w.he_alt);
           const stemLabel = getVerbStemLabel(w);
           const stemPart = stemLabel ? (" · " + stemLabel) : "";
           const freqHtml = (typeof w.freq === "number")
@@ -1606,7 +1618,7 @@
                 '<span class="overview-he">' + w.he + '</span>' +
                 '<span class="overview-tr' + (state.showTranslit ? '' : ' hidden') + '">' + w.tr + '</span>' +
               '</div>' +
-              (heAltStr ? '<div class="overview-alt">亦作：<span style="font-family:\'SBL Hebrew\',serif;font-weight:700;">' + heAltStr + '</span></div>' : '') +
+              (heAltHtml ? '<div class="overview-alt">' + heAltHtml + '</div>' : '') +
               freqHtml +
             '</div>' +
             '<div class="overview-zh-box">' +
@@ -1869,6 +1881,13 @@
           startNewRound();
         });
 
+        const PRESET_MAP = {
+          ch03_12: ["3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+          ch13_18: ["13", "14", "15", "16", "17", "18"],
+          ch19_25: ["19", "20", "21", "22", "23", "24", "25"],
+          ch26_35: ["26", "27", "28", "29", "30", "31", "32", "33", "34", "35"]
+        };
+
         document.querySelectorAll("[data-preset]").forEach(btn => {
           btn.addEventListener("click", function () {
             const preset = btn.dataset.preset;
@@ -1876,16 +1895,10 @@
               state.wrongPriorityOnly = false;
               state.selectedChapters.clear();
               state.allChapters.forEach(k => state.selectedChapters.add(k));
-            } else if (preset === "ch13_18") {
+            } else if (PRESET_MAP[preset]) {
               state.wrongPriorityOnly = false;
               state.selectedChapters.clear();
-              ["13", "14", "15", "16", "17", "18"].forEach(k => {
-                if (state.allChapters.includes(k)) state.selectedChapters.add(k);
-              });
-            } else if (preset === "ch19_25") {
-              state.wrongPriorityOnly = false;
-              state.selectedChapters.clear();
-              ["19", "20", "21", "22", "23", "24", "25"].forEach(k => {
+              PRESET_MAP[preset].forEach(k => {
                 if (state.allChapters.includes(k)) state.selectedChapters.add(k);
               });
             } else if (preset === "wrong_priority") {
