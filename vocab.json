@@ -1,0 +1,1206 @@
+{
+  "meta": {
+    "title": "聖經希伯來文初階（Basics of Biblical Hebrew）詞彙庫",
+    "version": "1.1.0",
+    "updated_at": "2026-11-21",
+    "chapters_included": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "total_words": 115,
+    "notes": {
+      "ch19": "19.11 字彙共 12 詞（5 動詞、7 名詞）；截圖 19.11 內附帶之 שָׂרָף（火蛇，117次）亦一併列入（ch19_005）",
+      "ch20": "20.14 字彙共 7 詞（截圖 20.14）；20.15 頁首續接之 2 動詞 + 4 名詞 + 1 其他共 7 詞（截圖 p.258）；合計 14 詞（另 20.15 頁首 יַחַד 一起 46 次列入 ch20_010 的 zh_alt）"
+    }
+  },
+  "words": [
+    {
+      "id": "ch13_001",
+      "ch": 13,
+      "he": "בָּרַךְ",
+      "tr": "bārak",
+      "zh": "祝福",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_002",
+      "ch": 13,
+      "he": "זָכַר",
+      "tr": "zākar",
+      "zh": "記住、回想",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_003",
+      "ch": 13,
+      "he": "זָקֵן",
+      "tr": "zāqēn",
+      "zh": "（變）老",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_004",
+      "ch": 13,
+      "he": "חָזַק",
+      "tr": "ḥāzaq",
+      "zh": "（變）強、堅強、有勇氣",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_005",
+      "ch": 13,
+      "he": "יָדַע",
+      "tr": "yādaʿ",
+      "zh": "知道、了解、發生性關係",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_006",
+      "ch": 13,
+      "he": "כָּבֵד",
+      "tr": "kābēd",
+      "zh": "重、尊榮",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_007",
+      "ch": 13,
+      "he": "כָּתַב",
+      "tr": "kātab",
+      "zh": "寫",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_008",
+      "ch": 13,
+      "he": "מָלֵא",
+      "tr": "mālēʾ",
+      "zh": "滿、充滿、滿足",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_009",
+      "ch": 13,
+      "he": "מָלַךְ",
+      "tr": "mālak",
+      "zh": "統治、作王",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_010",
+      "ch": 13,
+      "he": "מָצָא",
+      "tr": "māṣāʾ",
+      "zh": "找、得到",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_011",
+      "ch": 13,
+      "he": "פָּקַד",
+      "tr": "pāqad",
+      "zh": "訪問、計算、任命",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_012",
+      "ch": 13,
+      "he": "שָׁכַב",
+      "tr": "šākab",
+      "zh": "躺下、性交",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_013",
+      "ch": 13,
+      "he": "שָׁלַח",
+      "tr": "šālaḥ",
+      "zh": "伸出、放開、差遣",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch13_014",
+      "ch": 13,
+      "he": "שָׁמַר",
+      "tr": "šāmar",
+      "zh": "遵守、看守、監視、觀察",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_001",
+      "ch": 14,
+      "he": "בּוֹא",
+      "tr": "bôʾ",
+      "zh": "去、進入、來",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_002",
+      "ch": 14,
+      "he": "בָּנָה",
+      "tr": "bānâ",
+      "zh": "建造",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_003",
+      "ch": 14,
+      "he": "יָלַד",
+      "tr": "yālad",
+      "zh": "生產",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_004",
+      "ch": 14,
+      "he": "יָרֵא",
+      "tr": "yārēʾ",
+      "zh": "害怕、恐懼",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_005",
+      "ch": 14,
+      "he": "יָרַד",
+      "tr": "yārad",
+      "zh": "下去",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_006",
+      "ch": 14,
+      "he": "לָקַח",
+      "tr": "lāqaḥ",
+      "zh": "拿",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_007",
+      "ch": 14,
+      "he": "מוּת",
+      "tr": "mût",
+      "zh": "死亡",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_008",
+      "ch": 14,
+      "he": "נָפַל",
+      "tr": "nāpal",
+      "zh": "跌倒",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_009",
+      "ch": 14,
+      "tr": "nāśāʾ",
+      "zh": "舉起、背負、帶去",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified",
+      "he": "נָשָׂא"
+    },
+    {
+      "id": "ch14_010",
+      "ch": 14,
+      "he": "עָלָה",
+      "tr": "ʿālâ",
+      "zh": "上去",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_011",
+      "ch": 14,
+      "he": "עָבַר",
+      "tr": "ʿābar",
+      "zh": "逾越、犯法",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_012",
+      "ch": 14,
+      "he": "עָמַד",
+      "tr": "ʿāmad",
+      "zh": "站立",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_013",
+      "ch": 14,
+      "he": "קוּם",
+      "tr": "qûm",
+      "zh": "起來、興起、站立",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_014",
+      "ch": 14,
+      "he": "קָרָא",
+      "tr": "qārāʾ",
+      "zh": "呼叫、遇見、大聲讀",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_015",
+      "ch": 14,
+      "he": "שִׂים",
+      "tr": "śîm",
+      "zh": "設置、安置、放置",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_016",
+      "ch": 14,
+      "he": "שׁוּב",
+      "tr": "šûb",
+      "zh": "轉、回轉",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch14_017",
+      "ch": 14,
+      "he": "פֹּה",
+      "tr": "pōh",
+      "zh": "這裡",
+      "zh_alt": [],
+      "pos": "adv",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_001",
+      "ch": 15,
+      "he": "חָיָה",
+      "tr": "ḥāyâ",
+      "zh": "活",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_002",
+      "ch": 15,
+      "he": "יָכֹל",
+      "tr": "yākōl",
+      "zh": "能夠",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_003",
+      "ch": 15,
+      "he": "כָּרַת",
+      "tr": "kārat",
+      "zh": "切斷、立約",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_004",
+      "ch": 15,
+      "he": "סוּר",
+      "tr": "sûr",
+      "zh": "轉往一邊離開",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_005",
+      "ch": 15,
+      "he": "עָבַד",
+      "tr": "ʿābad",
+      "zh": "服事",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_006",
+      "ch": 15,
+      "he": "עָנָה",
+      "tr": "ʿānâ",
+      "zh": "回答、作證",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_007",
+      "ch": 15,
+      "he": "אֹזֶן",
+      "tr": "ʾōzen",
+      "zh": "耳朵（陰）",
+      "zh_alt": [
+        "耳朵"
+      ],
+      "pos": "noun_f",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_008",
+      "ch": 15,
+      "he": "אַיִל",
+      "tr": "ʾayil",
+      "zh": "公綿羊；（形）有力的",
+      "zh_alt": [
+        "公綿羊",
+        "有力的"
+      ],
+      "pos": "noun_adj",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_009",
+      "ch": 15,
+      "he": "גִּבּוֹר",
+      "tr": "gibbôr",
+      "zh": "（形）有力的、有能的；（名）勇士、強者",
+      "zh_alt": [
+        "有力的、勇士、強者"
+      ],
+      "pos": "adj_noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_010",
+      "ch": 15,
+      "he": "זֶבַח",
+      "tr": "zebaḥ",
+      "zh": "祭物",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_011",
+      "ch": 15,
+      "he": "צְדָקָה",
+      "tr": "ṣədāqâ",
+      "zh": "公義",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_012",
+      "ch": 15,
+      "he": "צָפוֹן",
+      "tr": "ṣāpôn",
+      "zh": "北（陰）",
+      "zh_alt": [
+        "北"
+      ],
+      "pos": "noun_f",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_013",
+      "ch": 15,
+      "he": "אָז",
+      "tr": "ʾāz",
+      "zh": "那時、之前",
+      "zh_alt": [],
+      "pos": "adv",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_014",
+      "ch": 15,
+      "he": "אַף",
+      "tr": "ʾap",
+      "zh": "也、甚至",
+      "zh_alt": [],
+      "pos": "conj_adv",
+      "status": "verified"
+    },
+    {
+      "id": "ch15_015",
+      "ch": 15,
+      "he": "פֶּן",
+      "tr": "pen",
+      "zh": "免得",
+      "zh_alt": [],
+      "pos": "conj",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_001",
+      "ch": 16,
+      "he": "גָּאַל",
+      "tr": "gāʾal",
+      "zh": "救贖",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_002",
+      "ch": 16,
+      "he": "חָטָא",
+      "tr": "ḥāṭāʾ",
+      "zh": "沒有命中（一個記號）、犯罪",
+      "zh_alt": [
+        "沒有命中、犯罪"
+      ],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_003",
+      "ch": 16,
+      "he": "יָסַף",
+      "tr": "yāsap",
+      "zh": "增加",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_004",
+      "ch": 16,
+      "he": "יָרַשׁ",
+      "tr": "yāraš",
+      "zh": "繼承、征服、擁有、剝奪",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_005",
+      "ch": 16,
+      "he": "כָּפַר",
+      "tr": "kāpar",
+      "zh": "遮蓋",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_006",
+      "ch": 16,
+      "he": "נָטָה",
+      "tr": "nāṭâ",
+      "zh": "支搭帳棚、伸出",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_007",
+      "ch": 16,
+      "he": "עָזַב",
+      "tr": "ʿāzab",
+      "zh": "離開、拋棄",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_008",
+      "ch": 16,
+      "he": "קָרַב",
+      "tr": "qārab",
+      "zh": "接近",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_009",
+      "ch": 16,
+      "he": "רָבָה",
+      "tr": "rābâ",
+      "zh": "（成為）多數、偉大",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_010",
+      "ch": 16,
+      "he": "שָׁתָה",
+      "tr": "šātâ",
+      "zh": "喝",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_011",
+      "ch": 16,
+      "he": "תָּמַם",
+      "tr": "tāmam",
+      "zh": "完成",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_012",
+      "ch": 16,
+      "he": "כַּף",
+      "tr": "kap",
+      "zh": "手、手掌（陰）",
+      "zh_alt": [
+        "手、手掌"
+      ],
+      "pos": "noun_f",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_013",
+      "ch": 16,
+      "he": "רֵעַ",
+      "tr": "rēaʿ",
+      "zh": "朋友、伙伴、同伴",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch16_014",
+      "ch": 16,
+      "he": "נֶגֶד",
+      "tr": "neged",
+      "zh": "在……對面、前面",
+      "zh_alt": [],
+      "pos": "prep",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_001",
+      "ch": 17,
+      "he": "אָבַד",
+      "tr": "ʾābad",
+      "zh": "消滅",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_002",
+      "ch": 17,
+      "he": "אָהַב",
+      "tr": "ʾāhab",
+      "zh": "愛",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_003",
+      "ch": 17,
+      "he": "אָסַף",
+      "tr": "ʾāsap",
+      "zh": "聚集、毀滅",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_004",
+      "ch": 17,
+      "he": "בָּעַר",
+      "tr": "bāʿar",
+      "zh": "燒滅、燒",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_005",
+      "ch": 17,
+      "he": "גָּלָה",
+      "tr": "gālâ",
+      "zh": "揭露、揭開",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_006",
+      "ch": 17,
+      "he": "טָהֵר",
+      "tr": "ṭāhēr",
+      "zh": "乾淨、潔淨",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_007",
+      "ch": 17,
+      "he": "כָּלָה",
+      "tr": "kālâ",
+      "zh": "停止、結束、完、完成",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_008",
+      "ch": 17,
+      "he": "רוּם",
+      "tr": "rûm",
+      "zh": "（變）高、高舉",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_009",
+      "ch": 17,
+      "he": "שָׁפַט",
+      "tr": "šāpaṭ",
+      "zh": "審判、進行訴訟",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_010",
+      "ch": 17,
+      "he": "אֱמֶת",
+      "tr": "ʾĕmet",
+      "zh": "真實、可靠（陰）",
+      "zh_alt": [
+        "真實、可靠"
+      ],
+      "pos": "noun_f",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_011",
+      "ch": 17,
+      "he": "כִּסֵּא",
+      "tr": "kissēʾ",
+      "zh": "座位、寶座",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_012",
+      "ch": 17,
+      "he": "מִסְפָּר",
+      "tr": "mispār",
+      "zh": "數目",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_013",
+      "ch": 17,
+      "he": "עֶשֶׂר",
+      "tr": "ʿeśer",
+      "zh": "十",
+      "zh_alt": [],
+      "pos": "num",
+      "status": "verified"
+    },
+    {
+      "id": "ch17_014",
+      "ch": 17,
+      "he": "שֶׁמֶשׁ",
+      "tr": "šemeš",
+      "zh": "太陽",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_001",
+      "ch": 18,
+      "he": "בָּחַר",
+      "tr": "bāḥar",
+      "zh": "選擇、測驗、檢查",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_002",
+      "ch": 18,
+      "he": "בִּין",
+      "tr": "bîn",
+      "zh": "明白、知道",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_003",
+      "ch": 18,
+      "he": "דָּרַשׁ",
+      "tr": "dāraš",
+      "zh": "尋找、調查、要求",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_004",
+      "ch": 18,
+      "he": "הָרַג",
+      "tr": "hārag",
+      "zh": "殺、屠殺",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_005",
+      "ch": 18,
+      "he": "חָפֵץ",
+      "tr": "ḥāpēṣ",
+      "zh": "取悅、喜悅、取悅的",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_006",
+      "ch": 18,
+      "he": "טוֹב",
+      "tr": "ṭôb",
+      "zh": "成為好的、可喜悅的",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_007",
+      "ch": 18,
+      "he": "קָדַשׁ",
+      "tr": "qādaš",
+      "zh": "成為聖潔",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_008",
+      "ch": 18,
+      "he": "רָעָה",
+      "tr": "rāʿâ",
+      "zh": "飼養、餵養、照料羊群",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_009",
+      "ch": 18,
+      "he": "שָׁאַל",
+      "tr": "šāʾal",
+      "zh": "請問（求）、要求",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_010",
+      "ch": 18,
+      "he": "בַּעַל",
+      "tr": "baʿal",
+      "zh": "主人、丈夫、巴力",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_011",
+      "ch": 18,
+      "he": "שֵׁבֶט",
+      "tr": "šēbeṭ",
+      "zh": "棍、杖、支派",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_012",
+      "ch": 18,
+      "he": "בַּעַד",
+      "tr": "baʿad",
+      "zh": "後面、通過（也作 בְּעַד）",
+      "zh_alt": [
+        "後面、通過"
+      ],
+      "pos": "prep",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_013",
+      "ch": 18,
+      "he": "יַעַן",
+      "tr": "yaʿan",
+      "zh": "由於、因為",
+      "zh_alt": [],
+      "pos": "prep_conj",
+      "status": "verified"
+    },
+    {
+      "id": "ch18_014",
+      "ch": 18,
+      "he": "נָא",
+      "tr": "nāʾ",
+      "zh": "請、確實（祈求質詞）",
+      "zh_alt": [
+        "請、確實"
+      ],
+      "pos": "particle",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_001",
+      "ch": 19,
+      "he": "בָּטַח",
+      "tr": "bāṭaḥ",
+      "zh": "依靠、信任",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_002",
+      "ch": 19,
+      "he": "בָּכָה",
+      "tr": "bākâ",
+      "zh": "哭泣、哭（因悲哀或大喜）",
+      "zh_alt": [
+        "哭泣、哭"
+      ],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_003",
+      "ch": 19,
+      "he": "לָבַשׁ",
+      "tr": "lābaš",
+      "zh": "穿上、穿上衣服",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_004",
+      "ch": 19,
+      "he": "שָׂרַף",
+      "tr": "śārap",
+      "zh": "燒、燒（盡）",
+      "zh_alt": [
+        "燒、燒盡"
+      ],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_005",
+      "ch": 19,
+      "he": "שָׂרָף",
+      "tr": "śārāp",
+      "zh": "火蛇",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_006",
+      "ch": 19,
+      "he": "שָׁלֵם",
+      "tr": "šālēm",
+      "zh": "作完整、作完全",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_007",
+      "ch": 19,
+      "he": "דּוֹר",
+      "tr": "dôr",
+      "zh": "世代",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_008",
+      "ch": 19,
+      "he": "חוּץ",
+      "tr": "ḥûṣ",
+      "zh": "外面、街道",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_009",
+      "ch": 19,
+      "he": "מְלָאכָה",
+      "tr": "məlāʾkâ",
+      "zh": "工作、職業、服務",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_010",
+      "ch": 19,
+      "he": "פַּר",
+      "tr": "par",
+      "zh": "公牛",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_011",
+      "ch": 19,
+      "he": "פֶּתַח",
+      "tr": "petaḥ",
+      "zh": "大門、口、入口",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_012",
+      "ch": 19,
+      "he": "רַב",
+      "tr": "rab",
+      "zh": "許多、豐盛",
+      "zh_alt": [],
+      "pos": "noun_adj",
+      "status": "verified"
+    },
+    {
+      "id": "ch19_013",
+      "ch": 19,
+      "he": "שָׂפָה",
+      "tr": "śāpâ",
+      "zh": "嘴唇、語言、岸、堤",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_001",
+      "ch": 20,
+      "he": "אָחַז",
+      "tr": "ʾāḥaz",
+      "zh": "抓住",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_002",
+      "ch": 20,
+      "he": "טָמֵא",
+      "tr": "ṭāmēʾ",
+      "zh": "不潔淨",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_003",
+      "ch": 20,
+      "he": "יָצַר",
+      "tr": "yāṣar",
+      "zh": "形成、使成形、培養",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_004",
+      "ch": 20,
+      "he": "נוּס",
+      "tr": "nûs",
+      "zh": "逃走",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_005",
+      "ch": 20,
+      "he": "נָגַע",
+      "tr": "nāgaʿ",
+      "zh": "碰觸、伸出、擊打",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_006",
+      "ch": 20,
+      "he": "סָבַב",
+      "tr": "sābab",
+      "zh": "環繞",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_007",
+      "ch": 20,
+      "he": "סָפַר",
+      "tr": "sāpar",
+      "zh": "計算、數算",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_008",
+      "ch": 20,
+      "he": "שָׂמַח",
+      "tr": "śāmaḥ",
+      "zh": "喜樂",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_009",
+      "ch": 20,
+      "he": "שָׁבַר",
+      "tr": "šābar",
+      "zh": "破壞、破裂、破碎",
+      "zh_alt": [],
+      "pos": "verb",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_010",
+      "ch": 20,
+      "he": "יַחְדָּו",
+      "tr": "yaḥdāw",
+      "zh": "一起、同時",
+      "zh_alt": [
+        "一起",
+        "יַחַד"
+      ],
+      "pos": "noun_adv",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_011",
+      "ch": 20,
+      "he": "יַיִן",
+      "tr": "yayin",
+      "zh": "酒",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_012",
+      "ch": 20,
+      "he": "עֲבֹדָה",
+      "tr": "ʿăbōdâ",
+      "zh": "工作、勞力、服務（也拼為 עֲבוֹדָה）",
+      "zh_alt": [
+        "工作、勞力、服務",
+        "עֲבוֹדָה"
+      ],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_013",
+      "ch": 20,
+      "he": "עֵדָה",
+      "tr": "ʿēdâ",
+      "zh": "會眾",
+      "zh_alt": [],
+      "pos": "noun",
+      "status": "verified"
+    },
+    {
+      "id": "ch20_014",
+      "ch": 20,
+      "he": "בִּלְתִּי",
+      "tr": "biltî",
+      "zh": "不，為了不（常以 לְבִלְתִּי 伴隨不定詞附屬形）",
+      "zh_alt": [
+        "不，為了不",
+        "לְבִלְתִּי"
+      ],
+      "pos": "other",
+      "status": "verified"
+    }
+  ]
+}

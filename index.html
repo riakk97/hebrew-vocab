@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>聖經希伯來文初階｜單詞連連看</title>
+  <style>
+    :root {
+      --bg-parchment: #F3ECEA;
+      --bg-bar: #E5D4D0;
+      --bg-card: #FFFFFF;
+      --bg-card-hover: #FAF6F5;
+      --border-soft: #D6C3BE;
+      --border-strong: #B69F99;
+      --ink-main: #3A3230;
+      --ink-muted: #7A6E6B;
+
+
+      --accent-terracotta: #B97A72;
+      --accent-terracotta-light: #F9ECEA;
+
+
+      --accent-sage: #5E7D91;
+      --accent-sage-light: #EAF0F4;
+
+
+      --accent-gold: #B68F54;
+      --accent-gold-light: #FBF5EB;
+
+
+      --shadow-sm: 0 1px 3px rgba(58, 50, 48, 0.07);
+    }
+
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100dvh;
+      max-height: 100dvh;
+      overflow: hidden;
+      background-color: var(--bg-parchment);
+      color: var(--ink-main);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+
+
+    header {
+      flex-shrink: 0;
+      background-color: var(--bg-bar);
+      border-bottom: 1px solid var(--border-soft);
+      padding: 6px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      z-index: 20;
+    }
+
+
+    .bar-row {
+      max-width: 1080px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+
+    .title-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+    }
+
+
+    .logo-badge {
+      width: 26px;
+      height: 26px;
+      border-radius: 7px;
+      background-color: var(--accent-sage);
+      color: #FFFFFF;
+      font-family: "SBL Hebrew", "Ezra SIL", "Times New Roman", serif;
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+
+    .app-title {
+      font-size: clamp(13px, 3.6vw, 16px);
+      font-weight: 700;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+
+    .stats-compact {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+
+
+    .pill {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: 7px;
+      padding: 2px 7px;
+      font-size: clamp(11px, 2.8vw, 12px);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+
+    .text-sage { color: var(--accent-sage); }
+    .text-terracotta { color: var(--accent-terracotta); }
+
+
+    .controls-compact {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .controls-compact::-webkit-scrollbar { display: none; }
+
+
+    select, button {
+      font-family: inherit;
+      font-size: clamp(11px, 2.9vw, 13px);
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background-color 0.15s, border-color 0.15s, transform 0.1s;
+    }
+
+
+    select {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-strong);
+      color: var(--ink-main);
+      padding: 4px 6px;
+      font-weight: 600;
+      outline: none;
+    }
+
+
+    .segmented {
+      display: inline-flex;
+      background-color: #D7C3BE;
+      padding: 2px;
+      border-radius: 8px;
+      border: 1px solid var(--border-strong);
+      flex-shrink: 0;
+    }
+
+
+    .segmented button {
+      border: none;
+      background: transparent;
+      color: var(--ink-main);
+      padding: 3px 8px;
+      font-weight: 600;
+      border-radius: 6px;
+    }
+
+
+    .segmented button.active {
+      background-color: var(--ink-main);
+      color: #FFFFFF;
+    }
+
+
+    .btn-ghost {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-strong);
+      color: var(--ink-main);
+      padding: 4px 8px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: var(--accent-sage);
+    }
+    .dot.off { background-color: #B4A7A4; }
+
+
+    .btn-next {
+      background-color: var(--accent-sage);
+      border: 1px solid var(--accent-sage);
+      color: #FFFFFF;
+      padding: 4px 9px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+
+    .btn-next:active { transform: scale(0.96); }
+
+
+    main {
+      flex: 1;
+      min-height: 0;
+      max-width: 1080px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 8px 10px 10px 10px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+
+    .state-screen {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 12px;
+      padding: 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: 16px;
+    }
+
+
+    .line-stage {
+      flex: 1;
+      min-height: 0;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+
+    .line-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 5;
+    }
+
+
+    .columns-wrap {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(34px, 11vw, 150px);
+      position: relative;
+      z-index: 10;
+    }
+
+
+    .col-stack {
+      height: 100%;
+      min-height: 0;
+      display: grid;
+      grid-template-rows: repeat(8, 1fr);
+      gap: clamp(5px, 1vh, 10px);
+    }
+
+
+    .grid-stage {
+      display: none;
+      flex: 1;
+      min-height: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .grid-stage.active {
+      display: block;
+    }
+
+
+    .grid-board {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: clamp(6px, 1.4vw, 14px);
+    }
+
+
+    .overview-stage {
+      display: none;
+      flex: 1;
+      min-height: 0;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+
+    .overview-stage.active {
+      display: flex;
+    }
+
+
+    .overview-grid {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      gap: 5px 8px;
+    }
+
+
+    @media (min-width: 768px) {
+      .overview-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 8px 10px;
+      }
+    }
+
+
+    .overview-item {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: 10px;
+      padding: 2px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      min-height: 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+
+    .overview-item.high-risk {
+      border-left: 4px solid var(--accent-terracotta);
+    }
+
+
+    .overview-he-box {
+      display: flex;
+      align-items: baseline;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+
+
+    .overview-he {
+      font-family: "SBL Hebrew", "Ezra SIL", "Times New Roman", serif;
+      direction: rtl;
+      font-size: clamp(18px, 3.2vh, 25px);
+      font-weight: 700;
+      line-height: 1;
+    }
+
+
+    .overview-tr {
+      font-size: clamp(10px, 1.6vh, 12px);
+      font-style: italic;
+      color: var(--ink-muted);
+    }
+
+
+    .overview-tr.hidden { display: none; }
+
+
+    .overview-zh-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+
+    .overview-zh {
+      font-size: clamp(11px, 1.8vh, 14px);
+      font-weight: 600;
+      text-align: right;
+      line-height: 1.15;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+
+    .overview-alt {
+      font-size: 10px;
+      color: var(--ink-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+
+
+    .overview-nav {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding-top: 2px;
+    }
+
+
+    .word-card {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      background-color: var(--bg-card);
+      border: 2px solid var(--border-soft);
+      border-radius: 12px;
+      padding: 2px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      touch-action: manipulation;
+      overflow: hidden;
+      position: relative;
+    }
+
+
+    .word-card:active:not(.matched) {
+      transform: scale(0.97);
+    }
+
+
+    .word-card.selected {
+      background-color: var(--accent-gold-light);
+      border-color: var(--accent-gold);
+      box-shadow: 0 0 0 2px rgba(182, 143, 84, 0.25);
+    }
+
+
+    .word-card.matched {
+      background-color: var(--accent-sage-light);
+      border-color: var(--accent-sage);
+      color: var(--accent-sage);
+      opacity: 0.85;
+      cursor: default;
+      box-shadow: none;
+    }
+
+
+    .word-card.mismatch {
+      background-color: var(--accent-terracotta-light);
+      border-color: var(--accent-terracotta);
+      animation: shakeCard 0.34s ease-in-out;
+    }
+
+
+    .risk-badge {
+      position: absolute;
+      top: 3px;
+      left: 5px;
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--accent-terracotta);
+      background: var(--accent-terracotta-light);
+      border-radius: 4px;
+      padding: 0 4px;
+      pointer-events: none;
+    }
+
+
+    @keyframes shakeCard {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-3px); }
+    }
+
+
+    .hebrew-text {
+      font-family: "SBL Hebrew", "Ezra SIL", "Times New Roman", "Noto Serif Hebrew", serif;
+      direction: rtl;
+      unicode-bidi: isolate;
+      font-size: clamp(20px, 3.6vh, 32px);
+      line-height: 1.15;
+      font-weight: 700;
+      color: var(--ink-main);
+      pointer-events: none;
+    }
+
+
+    .grid-board .hebrew-text {
+      font-size: clamp(22px, 4.2vh, 34px);
+    }
+
+
+    .word-card.matched .hebrew-text {
+      color: var(--accent-sage);
+    }
+
+
+    .translit-text {
+      font-size: clamp(10px, 1.6vh, 13px);
+      font-style: italic;
+      line-height: 1.1;
+      color: var(--ink-muted);
+      margin-top: 1px;
+      pointer-events: none;
+    }
+
+
+    .translit-text.hidden {
+      display: none;
+    }
+
+
+    .zh-text {
+      font-size: clamp(12px, 2vh, 16px);
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--ink-main);
+      pointer-events: none;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+
+    .alt-hint {
+      font-size: clamp(9px, 1.3vh, 11px);
+      color: var(--ink-muted);
+      margin-top: 1px;
+      pointer-events: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 95%;
+    }
+
+
+    .grid-board .zh-text {
+      font-size: clamp(12px, 2.1vh, 16px);
+      -webkit-line-clamp: 3;
+    }
+
+
+    .word-card.matched .zh-text {
+      color: var(--accent-sage);
+    }
+
+
+    .toast-float {
+      position: fixed;
+      top: 76px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--accent-gold-light);
+      border: 1px solid var(--accent-gold);
+      color: var(--ink-main);
+      border-radius: 10px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(58, 50, 48, 0.12);
+      z-index: 60;
+      display: none;
+      white-space: nowrap;
+    }
+    .toast-float.show { display: block; }
+
+
+    .complete-banner {
+      position: fixed;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 24px);
+      max-width: 540px;
+      background-color: #FFFFFF;
+      border: 2px solid var(--accent-sage);
+      border-radius: 16px;
+      padding: 12px 16px;
+      box-shadow: 0 10px 28px rgba(58, 50, 48, 0.2);
+      z-index: 50;
+      display: none;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+
+    .complete-banner.show {
+      display: flex;
+      animation: popUp 0.24s ease-out;
+    }
+
+
+    @keyframes popUp {
+      from { opacity: 0; transform: translate(-50%, 14px); }
+      to { opacity: 1; transform: translate(-50%, 0); }
+    }
+
+
+    .complete-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+
+    .complete-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent-sage);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+
+    .complete-stats {
+      font-size: 12px;
+      color: var(--ink-muted);
+    }
+
+
+    .complete-wrong-row {
+      display: none;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px;
+      background-color: var(--accent-terracotta-light);
+      border-radius: 8px;
+      padding: 5px 8px;
+      font-size: 11px;
+    }
+    .complete-wrong-row.show { display: flex; }
+
+
+    .wrong-pill {
+      background: #FFFFFF;
+      border: 1px solid rgba(185, 122, 114, 0.4);
+      border-radius: 6px;
+      padding: 1px 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+
+    .wrong-pill-he {
+      font-family: "SBL Hebrew", "Ezra SIL", "Times New Roman", serif;
+      direction: rtl;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+
+    .complete-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+
+    .complete-actions button {
+      flex: 1;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(58, 50, 48, 0.45);
+      z-index: 70;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .modal-backdrop.show { display: flex; }
+
+
+    .modal-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-strong);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 480px;
+      max-height: 85dvh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 14px 36px rgba(58, 50, 48, 0.25);
+    }
+
+
+    .modal-header {
+      background: var(--bg-bar);
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+
+    .modal-header h2 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+
+    .modal-body {
+      padding: 14px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+
+    .risk-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-height: 220px;
+      overflow-y: auto;
+      border: 1px solid var(--border-soft);
+      border-radius: 10px;
+      padding: 8px;
+      background: var(--bg-parchment);
+    }
+
+
+    .risk-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-card);
+      padding: 5px 8px;
+      border-radius: 7px;
+      font-size: 12px;
+      gap: 8px;
+    }
+
+
+    .backup-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="bar-row">
+      <div class="title-group">
+        <div class="logo-badge">אב</div>
+        <h1 class="app-title" id="app-title">聖經希伯來文初階｜連連看</h1>
+      </div>
+
+
+      <div class="stats-compact">
+        <span class="pill">進度 <strong id="round-progress">0/8</strong></span>
+        <span class="pill">熟練 <strong id="stat-mastered" class="text-sage">0</strong>/<span id="stat-total">0</span></span>
+        <span class="pill">高風險 <strong id="stat-wrong" class="text-terracotta">0</strong></span>
+        <span class="pill" id="stat-timer">00:00</span>
+      </div>
+    </div>
+
+
+    <div class="bar-row controls-compact">
+      <select id="select-scope" aria-label="選擇範圍">
+        <option value="all">載入中...</option>
+      </select>
+
+
+      <div class="segmented" role="group">
+        <button id="btn-mode-line" type="button" class="active">左右連線</button>
+        <button id="btn-mode-grid" type="button">4×4方格</button>
+        <button id="btn-mode-overview" type="button">全覽表</button>
+      </div>
+
+
+      <button id="btn-translit" type="button" class="btn-ghost">
+        <span id="translit-dot" class="dot"></span>
+        <span id="translit-text">音譯</span>
+      </button>
+
+
+      <button id="btn-next-round" type="button" class="btn-next">下一組 ↻</button>
+
+
+      <button id="btn-data-modal" type="button" class="btn-ghost" title="錯題統計與 JSON 備份">紀錄/備份</button>
+    </div>
+  </header>
+
+
+  <div id="toast-float" class="toast-float"></div>
+
+
+  <main>
+    <div id="loading-screen" class="state-screen">
+      <div style="font-size:16px;font-weight:700;">正在讀取雲端字彙庫 (vocab.json)...</div>
+      <div style="font-size:12px;color:var(--ink-muted);">若本機直接雙擊開啟 HTML，請改用 GitHub Pages 網址或本機簡易伺服器執行。</div>
+    </div>
+
+
+    <div id="line-stage" class="line-stage" style="display:none;">
+      <svg id="line-svg" class="line-svg"></svg>
+      <div class="columns-wrap">
+        <div id="col-hebrew" class="col-stack"></div>
+        <div id="col-chinese" class="col-stack"></div>
+      </div>
+    </div>
+
+
+    <div id="grid-stage" class="grid-stage">
+      <div id="grid-board" class="grid-board"></div>
+    </div>
+
+
+    <div id="overview-stage" class="overview-stage">
+      <div id="overview-grid" class="overview-grid"></div>
+      <div class="overview-nav">
+        <button id="btn-ov-prev" type="button" class="btn-ghost">← 上一頁</button>
+        <span id="ov-page-info" style="font-size:12px;font-weight:700;color:var(--ink-muted);">第 1 / 1 頁</span>
+        <button id="btn-ov-next" type="button" class="btn-ghost">下一頁 →</button>
+      </div>
+    </div>
+  </main>
+
+
+  <div id="complete-banner" class="complete-banner">
+    <div class="complete-top">
+      <div class="complete-title">✓ 本組全數完成！</div>
+      <div class="complete-stats" id="complete-stats-text">耗時 00:00｜失誤 0 次</div>
+    </div>
+    <div id="complete-wrong-row" class="complete-wrong-row">
+      <span style="color:var(--accent-terracotta);font-weight:700;">本組錯題：</span>
+      <div id="complete-wrong-chips" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
+    </div>
+    <div class="complete-actions">
+      <button id="btn-banner-wrong" type="button" class="btn-ghost" style="display:none;justify-content:center;border-color:var(--accent-terracotta);color:var(--accent-terracotta);">
+        錯題優先練習
+      </button>
+      <button id="btn-banner-next" type="button" class="btn-next">
+        繼續下一組 →
+      </button>
+    </div>
+  </div>
+
+
+  <div id="data-modal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>個人學習紀錄與備份</h2>
+        <button id="btn-close-modal" type="button" class="btn-ghost">關閉 ✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="font-size:12px;color:var(--ink-muted);line-height:1.5;">
+          所有錯題次數與熟練度均儲存在您的瀏覽器本機（<code>localStorage</code>），每位同學互不干擾。更換裝置或清除快取前，建議匯出 JSON 備份。
+        </div>
+
+
+        <div>
+          <div style="font-weight:700;margin-bottom:6px;display:flex;justify-content:space-between;">
+            <span>高風險錯題排行（依風險分數排序）</span>
+            <span style="font-size:11px;color:var(--ink-muted);">風險 = 錯×2 - 對×0.5 + 7日內×1.5</span>
+          </div>
+          <div id="risk-list" class="risk-list"></div>
+        </div>
+
+
+        <div class="backup-actions">
+          <button id="btn-export-json" type="button" class="btn-next" style="justify-content:center;padding:8px;">
+            ⬇ 匯出紀錄 (.json)
+          </button>
+          <button id="btn-import-trigger" type="button" class="btn-ghost" style="justify-content:center;padding:8px;">
+            ⬆ 匯入備份 (.json)
+          </button>
+          <input type="file" id="input-import-file" accept=".json,application/json" style="display:none;" />
+        </div>
+
+
+        <div style="border-top:1px solid var(--border-soft);padding-top:10px;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:12px;color:var(--ink-muted);">清除本機所有作答統計：</span>
+          <button id="btn-reset-all" type="button" class="btn-ghost" style="color:var(--accent-terracotta);border-color:var(--accent-terracotta);">
+            重設全部紀錄
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    (function () {
+      const STORAGE_KEY = "bh_vocab_progress_v1";
+      const PAIRS_PER_ROUND = 8;
+      const OVERVIEW_PAGE_SIZE = 20;
+      const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
+
+
+      const state = {
+        vocabulary: [],
+        vocabMap: new Map(),
+        mode: "line",
+        scope: "all",
+        showTranslit: true,
+        statsMap: {},
+        currentWords: [],
+        matchedIds: new Set(),
+        roundWrongIds: new Set(),
+        roundMistakes: 0,
+        selected: null,
+        connections: [],
+        seconds: 0,
+        timerId: null,
+        locked: false,
+        ovPage: 0
+      };
+
+
+      const elLoading = document.getElementById("loading-screen");
+      const elMastered = document.getElementById("stat-mastered");
+      const elTotal = document.getElementById("stat-total");
+      const elWrong = document.getElementById("stat-wrong");
+      const elTimer = document.getElementById("stat-timer");
+      const elRoundProgress = document.getElementById("round-progress");
+      const elScope = document.getElementById("select-scope");
+      const elLineStage = document.getElementById("line-stage");
+      const elLineSvg = document.getElementById("line-svg");
+      const elColHebrew = document.getElementById("col-hebrew");
+      const elColChinese = document.getElementById("col-chinese");
+      const elGridStage = document.getElementById("grid-stage");
+      const elGridBoard = document.getElementById("grid-board");
+      const elOvStage = document.getElementById("overview-stage");
+      const elOvGrid = document.getElementById("overview-grid");
+
+
+      function getRiskScore(wordId) {
+        const rec = state.statsMap[wordId];
+        if (!rec) return 0;
+        const wrong = rec.wrong_count || 0;
+        const right = rec.right_count || 0;
+        let recentBonus = 0;
+        if (rec.last_wrong_at) {
+          const ts = Date.parse(rec.last_wrong_at);
+          if (!Number.isNaN(ts) && (Date.now() - ts) <= SEVEN_DAYS_MS) {
+            recentBonus = 1.5;
+          }
+        }
+        return Number((wrong * 2 - right * 0.5 + recentBonus).toFixed(2));
+      }
+
+
+      function ensureStatRecord(wordId) {
+        if (!state.statsMap[wordId]) {
+          state.statsMap[wordId] = {
+            wrong_count: 0,
+            right_count: 0,
+            last_wrong_at: null,
+            confused_with: []
+          };
+        }
+        return state.statsMap[wordId];
+      }
+
+
+      function loadStorage() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return;
+          const parsed = JSON.parse(raw);
+          if (parsed && typeof parsed.stats === "object" && parsed.stats !== null) {
+            state.statsMap = parsed.stats;
+          }
+        } catch (e) {}
+      }
+
+
+      function saveStorage() {
+        updateHeaderStats();
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({
+            schema_version: 1,
+            updated_at: new Date().toISOString(),
+            stats: state.statsMap
+          }));
+        } catch (e) {}
+      }
+
+
+      function updateHeaderStats() {
+        let masteredCount = 0;
+        let highRiskCount = 0;
+        state.vocabulary.forEach(w => {
+          const rec = state.statsMap[w.id];
+          const score = getRiskScore(w.id);
+          if (rec && (rec.right_count || 0) > 0 && score <= 0) {
+            masteredCount += 1;
+          }
+          if (score > 0) {
+            highRiskCount += 1;
+          }
+        });
+        elTotal.textContent = state.vocabulary.length;
+        elMastered.textContent = masteredCount;
+        elWrong.textContent = highRiskCount;
+      }
+
+
+      let toastTimer = null;
+      function showToast(msg) {
+        const el = document.getElementById("toast-float");
+        el.textContent = msg;
+        el.classList.add("show");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => el.classList.remove("show"), 3200);
+      }
+
+
+      function shuffle(arr) {
+        const copy = arr.slice();
+        for (let i = copy.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          const tmp = copy[i];
+          copy[i] = copy[j];
+          copy[j] = tmp;
+        }
+        return copy;
+      }
+
+
+      function startTimer() {
+        stopTimer();
+        state.seconds = 0;
+        renderTimer();
+        state.timerId = setInterval(() => {
+          state.seconds += 1;
+          renderTimer();
+        }, 1000);
+      }
+
+
+      function stopTimer() {
+        if (state.timerId) {
+          clearInterval(state.timerId);
+          state.timerId = null;
+        }
+      }
+
+
+      function renderTimer() {
+        const m = String(Math.floor(state.seconds / 60)).padStart(2, "0");
+        const s = String(state.seconds % 60).padStart(2, "0");
+        elTimer.textContent = m + ":" + s;
+      }
+
+
+      function buildScopeSelector() {
+        const chapters = new Map();
+        state.vocabulary.forEach(w => {
+          const key = String(w.ch);
+          chapters.set(key, (chapters.get(key) || 0) + 1);
+        });
+
+
+        elScope.innerHTML = "";
+
+
+        const optAll = document.createElement("option");
+        optAll.value = "all";
+        optAll.textContent = "全部範圍 (" + state.vocabulary.length + "詞)";
+        elScope.appendChild(optAll);
+
+
+        const optWrong = document.createElement("option");
+        optWrong.value = "wrong_priority";
+        optWrong.textContent = "🔥 錯題優先複習";
+        elScope.appendChild(optWrong);
+
+
+        const sortedKeys = Array.from(chapters.keys()).sort((a, b) => {
+          if (a === "glossary") return 1;
+          if (b === "glossary") return -1;
+          return Number(a) - Number(b);
+        });
+
+
+        sortedKeys.forEach(key => {
+          const opt = document.createElement("option");
+          opt.value = key;
+          const label = key === "glossary" ? "書末總字彙表" : "第 " + key + " 章";
+          opt.textContent = label + " (" + chapters.get(key) + ")";
+          elScope.appendChild(opt);
+        });
+      }
+
+
+      function getFilteredPool() {
+        if (state.scope === "wrong_priority") {
+          const risky = state.vocabulary
+            .filter(w => getRiskScore(w.id) > 0)
+            .sort((a, b) => getRiskScore(b.id) - getRiskScore(a.id));
+
+
+          if (risky.length === 0) {
+            showToast("目前沒有高風險錯題！已切回「全部範圍」");
+            state.scope = "all";
+            elScope.value = "all";
+            return state.vocabulary.slice();
+          }
+          return risky;
+        }
+        if (state.scope === "all") return state.vocabulary.slice();
+        return state.vocabulary.filter(w => String(w.ch) === state.scope);
+      }
+
+
+      function selectWordsForRound() {
+        const pool = getFilteredPool();
+        const limit = Math.min(PAIRS_PER_ROUND, pool.length);
+
+
+        if (state.scope === "wrong_priority") {
+          const topCandidates = pool.slice(0, Math.max(limit, Math.min(pool.length, limit * 2)));
+          const chosen = shuffle(topCandidates).slice(0, limit);
+          return chosen.sort((a, b) => getRiskScore(b.id) - getRiskScore(a.id));
+        }
+
+
+        const highRisk = shuffle(pool.filter(w => getRiskScore(w.id) > 0))
+          .sort((a, b) => getRiskScore(b.id) - getRiskScore(a.id));
+        const unpracticed = shuffle(pool.filter(w => !state.statsMap[w.id]));
+        const mastered = shuffle(pool.filter(w => state.statsMap[w.id] && getRiskScore(w.id) <= 0));
+
+
+        return highRisk.concat(unpracticed, mastered).slice(0, limit);
+      }
+
+
+      function startNewRound() {
+        document.getElementById("complete-banner").classList.remove("show");
+        state.locked = false;
+        state.selected = null;
+        state.matchedIds.clear();
+        state.roundWrongIds.clear();
+        state.roundMistakes = 0;
+        state.connections = [];
+
+
+        if (state.mode === "overview") {
+          state.ovPage = 0;
+          renderOverviewPage();
+          return;
+        }
+
+
+        state.currentWords = selectWordsForRound();
+        updateRoundProgress();
+        renderBoard();
+        startTimer();
+      }
+
+
+      function updateRoundProgress() {
+        elRoundProgress.textContent = state.matchedIds.size + "/" + state.currentWords.length;
+      }
+
+
+      function renderBoard() {
+        elLineStage.style.display = "none";
+        elGridStage.classList.remove("active");
+        elOvStage.classList.remove("active");
+
+
+        if (state.mode === "line") {
+          elLineStage.style.display = "block";
+          renderLineMode();
+        } else if (state.mode === "grid") {
+          elGridStage.classList.add("active");
+          renderGridMode();
+        } else {
+          elOvStage.classList.add("active");
+          renderOverviewPage();
+        }
+      }
+
+
+      function createCard(word, side) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "word-card";
+        btn.dataset.id = word.id;
+        btn.dataset.side = side;
+
+
+        const score = getRiskScore(word.id);
+        if (side === "he" && score > 0) {
+          const badge = document.createElement("span");
+          badge.className = "risk-badge";
+          badge.textContent = "風險 " + score;
+          btn.appendChild(badge);
+        }
+
+
+        if (side === "he") {
+          const heEl = document.createElement("span");
+          heEl.className = "hebrew-text";
+          heEl.textContent = word.he;
+          btn.appendChild(heEl);
+
+
+          const trEl = document.createElement("span");
+          trEl.className = "translit-text" + (state.showTranslit ? "" : " hidden");
+          trEl.textContent = word.tr;
+          btn.appendChild(trEl);
+        } else {
+          const zhEl = document.createElement("span");
+          zhEl.className = "zh-text";
+          zhEl.textContent = word.zh;
+          btn.appendChild(zhEl);
+
+
+          if (Array.isArray(word.zh_alt) && word.zh_alt.length > 0) {
+            const altText = word.zh_alt.filter(s => s && s !== word.zh).join(" / ");
+            if (altText) {
+              const altEl = document.createElement("span");
+              altEl.className = "alt-hint";
+              altEl.textContent = "亦作：" + altText;
+              btn.appendChild(altEl);
+            }
+          }
+        }
+
+
+        if (state.matchedIds.has(word.id)) {
+          btn.classList.add("matched");
+        }
+
+
+        btn.addEventListener("click", function () {
+          onCardTap(btn, word, side);
+        });
+
+
+        return btn;
+      }
+
+
+      function renderLineMode() {
+        const count = state.currentWords.length || 8;
+        elColHebrew.style.gridTemplateRows = "repeat(" + count + ", 1fr)";
+        elColChinese.style.gridTemplateRows = "repeat(" + count + ", 1fr)";
+        elColHebrew.innerHTML = "";
+        elColChinese.innerHTML = "";
+
+
+        shuffle(state.currentWords).forEach(w => elColHebrew.appendChild(createCard(w, "he")));
+        shuffle(state.currentWords).forEach(w => elColChinese.appendChild(createCard(w, "zh")));
+
+
+        requestAnimationFrame(() => drawLines(null));
+      }
+
+
+      function renderGridMode() {
+        elGridBoard.innerHTML = "";
+        const tiles = [];
+        state.currentWords.forEach(w => {
+          tiles.push({ word: w, side: "he" });
+          tiles.push({ word: w, side: "zh" });
+        });
+        const rows = Math.ceil(tiles.length / 4) || 4;
+        elGridBoard.style.gridTemplateRows = "repeat(" + rows + ", 1fr)";
+        shuffle(tiles).forEach(t => elGridBoard.appendChild(createCard(t.word, t.side)));
+      }
+
+
+      function renderOverviewPage() {
+        elLineStage.style.display = "none";
+        elGridStage.classList.remove("active");
+        elOvStage.classList.add("active");
+        stopTimer();
+
+
+        const pool = getFilteredPool();
+        const totalPages = Math.max(1, Math.ceil(pool.length / OVERVIEW_PAGE_SIZE));
+        if (state.ovPage >= totalPages) state.ovPage = 0;
+        if (state.ovPage < 0) state.ovPage = totalPages - 1;
+
+
+        const start = state.ovPage * OVERVIEW_PAGE_SIZE;
+        const pageItems = pool.slice(start, start + OVERVIEW_PAGE_SIZE);
+
+
+        elRoundProgress.textContent = (start + 1) + "-" + (start + pageItems.length) + "/" + pool.length;
+        document.getElementById("ov-page-info").textContent = "第 " + (state.ovPage + 1) + " / " + totalPages + " 頁（共 " + pool.length + " 詞）";
+
+
+        elOvGrid.innerHTML = "";
+        pageItems.forEach(w => {
+          const item = document.createElement("div");
+          const score = getRiskScore(w.id);
+          item.className = "overview-item" + (score > 0 ? " high-risk" : "");
+
+
+          const altStr = (Array.isArray(w.zh_alt) && w.zh_alt.length > 0)
+            ? w.zh_alt.filter(s => s && s !== w.zh).join(" / ")
+            : "";
+
+
+          item.innerHTML =
+            '<div class="overview-he-box">' +
+              '<span class="overview-he">' + w.he + '</span>' +
+              '<span class="overview-tr' + (state.showTranslit ? '' : ' hidden') + '">' + w.tr + '</span>' +
+            '</div>' +
+            '<div class="overview-zh-box">' +
+              '<div class="overview-zh">' + w.zh + '</div>' +
+              (altStr ? '<div class="overview-alt">亦作：' + altStr + '</div>' : '') +
+            '</div>';
+          elOvGrid.appendChild(item);
+        });
+      }
+
+
+      function isSemanticMatch(wordA, wordB) {
+        if (wordA.id === wordB.id) return true;
+        const meaningsA = new Set([wordA.zh, ...(wordA.zh_alt || [])].map(s => s.trim()).filter(Boolean));
+        const meaningsB = [wordB.zh, ...(wordB.zh_alt || [])].map(s => s.trim()).filter(Boolean);
+        return meaningsB.some(m => meaningsA.has(m));
+      }
+
+
+      function onCardTap(el, word, side) {
+        if (state.locked || state.matchedIds.has(word.id)) return;
+
+
+        if (state.selected && state.selected.el === el) {
+          el.classList.remove("selected");
+          state.selected = null;
+          return;
+        }
+
+
+        if (!state.selected) {
+          state.selected = { id: word.id, word: word, side: side, el: el };
+          el.classList.add("selected");
+          return;
+        }
+
+
+        if (state.selected.side === side) {
+          state.selected.el.classList.remove("selected");
+          state.selected = { id: word.id, word: word, side: side, el: el };
+          el.classList.add("selected");
+          return;
+        }
+
+
+        const first = state.selected;
+        const second = { id: word.id, word: word, side: side, el: el };
+
+
+        if (first.id === second.id) {
+          handleMatch(first, second);
+        } else if (isSemanticMatch(first.word, second.word)) {
+          first.el.classList.remove("selected");
+          state.selected = null;
+          showToast("中文釋義重疊，請改配對該詞的專屬卡！");
+        } else {
+          handleMismatch(first, second);
+        }
+      }
+
+
+      function handleMatch(first, second) {
+        const wordId = first.id;
+        state.matchedIds.add(wordId);
+        state.selected = null;
+
+
+        if (!state.roundWrongIds.has(wordId)) {
+          const rec = ensureStatRecord(wordId);
+          rec.right_count = (rec.right_count || 0) + 1;
+        }
+        saveStorage();
+
+
+        first.el.classList.remove("selected");
+        second.el.classList.remove("selected");
+        first.el.classList.add("matched");
+        second.el.classList.add("matched");
+
+
+        if (state.mode === "line") {
+          state.connections.push(wordId);
+          drawLines(null);
+        }
+
+
+        updateRoundProgress();
+
+
+        if (state.matchedIds.size === state.currentWords.length) {
+          stopTimer();
+          setTimeout(openCompleteBanner, 280);
+        }
+      }
+
+
+      function handleMismatch(first, second) {
+        state.locked = true;
+        state.roundMistakes += 1;
+
+
+        const nowIso = new Date().toISOString();
+        state.roundWrongIds.add(first.id);
+        state.roundWrongIds.add(second.id);
+
+
+        const recA = ensureStatRecord(first.id);
+        recA.wrong_count = (recA.wrong_count || 0) + 1;
+        recA.last_wrong_at = nowIso;
+        if (!recA.confused_with.includes(second.id)) recA.confused_with.push(second.id);
+
+
+        const recB = ensureStatRecord(second.id);
+        recB.wrong_count = (recB.wrong_count || 0) + 1;
+        recB.last_wrong_at = nowIso;
+        if (!recB.confused_with.includes(first.id)) recB.confused_with.push(first.id);
+
+
+        saveStorage();
+
+
+        first.el.classList.remove("selected");
+        first.el.classList.add("mismatch");
+        second.el.classList.add("mismatch");
+
+
+        let tempError = null;
+        if (state.mode === "line") {
+          const heEl = first.side === "he" ? first.el : second.el;
+          const zhEl = first.side === "zh" ? first.el : second.el;
+          tempError = { heEl: heEl, zhEl: zhEl };
+          drawLines(tempError);
+        }
+
+
+        setTimeout(() => {
+          first.el.classList.remove("mismatch");
+          second.el.classList.remove("mismatch");
+          state.selected = null;
+          state.locked = false;
+          if (state.mode === "line") drawLines(null);
+        }, 420);
+      }
+
+
+      function drawLines(tempError) {
+        if (state.mode !== "line") return;
+        elLineSvg.innerHTML = "";
+        const box = elLineStage.getBoundingClientRect();
+        if (box.width === 0 || box.height === 0) return;
+
+
+        state.connections.forEach(wordId => {
+          const heEl = elLineStage.querySelector('[data-side="he"][data-id="' + wordId + '"]');
+          const zhEl = elLineStage.querySelector('[data-side="zh"][data-id="' + wordId + '"]');
+          if (heEl && zhEl) appendCurve(box, heEl, zhEl, "#5E7D91", false);
+        });
+
+
+        if (tempError && tempError.heEl && tempError.zhEl) {
+          appendCurve(box, tempError.heEl, tempError.zhEl, "#B97A72", true);
+        }
+      }
+
+
+      function appendCurve(box, leftEl, rightEl, color, dashed) {
+        const l = leftEl.getBoundingClientRect();
+        const r = rightEl.getBoundingClientRect();
+        const x1 = l.right - box.left;
+        const y1 = l.top + l.height / 2 - box.top;
+        const x2 = r.left - box.left;
+        const y2 = r.top + r.height / 2 - box.top;
+        const dx = Math.abs(x2 - x1) * 0.45;
+
+
+        const d = "M " + x1 + " " + y1 + " C " + (x1 + dx) + " " + y1 + ", " + (x2 - dx) + " " + y2 + ", " + x2 + " " + y2;
+
+
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        path.setAttribute("d", d);
+        path.setAttribute("fill", "none");
+        path.setAttribute("stroke", color);
+        path.setAttribute("stroke-width", "3");
+        path.setAttribute("stroke-linecap", "round");
+        if (dashed) path.setAttribute("stroke-dasharray", "5 4");
+
+
+        const c1 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        c1.setAttribute("cx", String(x1));
+        c1.setAttribute("cy", String(y1));
+        c1.setAttribute("r", "4");
+        c1.setAttribute("fill", color);
+
+
+        const c2 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        c2.setAttribute("cx", String(x2));
+        c2.setAttribute("cy", String(y2));
+        c2.setAttribute("r", "4");
+        c2.setAttribute("fill", color);
+
+
+        elLineSvg.appendChild(path);
+        elLineSvg.appendChild(c1);
+        elLineSvg.appendChild(c2);
+      }
+
+
+      function openCompleteBanner() {
+        document.getElementById("complete-stats-text").textContent =
+          "耗時 " + elTimer.textContent + "｜失誤 " + state.roundMistakes + " 次";
+
+
+        const wrongRow = document.getElementById("complete-wrong-row");
+        const chipsBox = document.getElementById("complete-wrong-chips");
+        const btnWrong = document.getElementById("btn-banner-wrong");
+
+
+        if (state.roundWrongIds.size > 0) {
+          wrongRow.classList.add("show");
+          btnWrong.style.display = "inline-flex";
+          chipsBox.innerHTML = "";
+          state.roundWrongIds.forEach(id => {
+            const w = state.vocabMap.get(id);
+            if (!w) return;
+            const chip = document.createElement("span");
+            chip.className = "wrong-pill";
+            chip.innerHTML = '<span class="wrong-pill-he">' + w.he + '</span><span>' + w.zh + '</span>';
+            chipsBox.appendChild(chip);
+          });
+        } else {
+          wrongRow.classList.remove("show");
+          btnWrong.style.display = "none";
+        }
+
+
+        document.getElementById("complete-banner").classList.add("show");
+      }
+
+
+      function renderRiskModal() {
+        const listEl = document.getElementById("risk-list");
+        listEl.innerHTML = "";
+
+
+        const ranked = state.vocabulary
+          .map(w => ({ word: w, score: getRiskScore(w.id), rec: state.statsMap[w.id] }))
+          .filter(item => item.rec && (item.rec.wrong_count > 0 || item.score > 0))
+          .sort((a, b) => b.score - a.score);
+
+
+        if (ranked.length === 0) {
+          listEl.innerHTML = '<div style="text-align:center;color:var(--ink-muted);padding:16px;">目前尚無錯題紀錄，繼續保持！</div>';
+          return;
+        }
+
+
+        ranked.forEach(({ word, score, rec }) => {
+          const row = document.createElement("div");
+          row.className = "risk-row";
+          const confusedNames = (rec.confused_with || [])
+            .map(cid => state.vocabMap.get(cid))
+            .filter(Boolean)
+            .map(cw => cw.he)
+            .slice(0, 3)
+            .join("、");
+
+
+          row.innerHTML =
+            '<div style="display:flex;align-items:center;gap:8px;">' +
+              '<span style="font-family:\'SBL Hebrew\',serif;font-size:18px;font-weight:700;">' + word.he + '</span>' +
+              '<span>' + word.zh + '</span>' +
+            '</div>' +
+            '<div style="text-align:right;font-size:11px;color:var(--ink-muted);">' +
+              '<strong style="color:var(--accent-terracotta);">風險 ' + score + '</strong>（錯' + (rec.wrong_count || 0) + '/對' + (rec.right_count || 0) + '）' +
+              (confusedNames ? '<br/>易混淆：' + confusedNames : '') +
+            '</div>';
+          listEl.appendChild(row);
+        });
+      }
+
+
+      function initEvents() {
+        elScope.addEventListener("change", function (e) {
+          state.scope = e.target.value;
+          startNewRound();
+        });
+
+
+        const btnLine = document.getElementById("btn-mode-line");
+        const btnGrid = document.getElementById("btn-mode-grid");
+        const btnOv = document.getElementById("btn-mode-overview");
+
+
+        function setMode(mode) {
+          state.mode = mode;
+          btnLine.classList.toggle("active", mode === "line");
+          btnGrid.classList.toggle("active", mode === "grid");
+          btnOv.classList.toggle("active", mode === "overview");
+          startNewRound();
+        }
+
+
+        btnLine.addEventListener("click", () => setMode("line"));
+        btnGrid.addEventListener("click", () => setMode("grid"));
+        btnOv.addEventListener("click", () => setMode("overview"));
+
+
+        document.getElementById("btn-translit").addEventListener("click", function () {
+          state.showTranslit = !state.showTranslit;
+          document.getElementById("translit-dot").classList.toggle("off", !state.showTranslit);
+          document.querySelectorAll(".translit-text, .overview-tr").forEach(el => {
+            el.classList.toggle("hidden", !state.showTranslit);
+          });
+          if (state.mode === "line") requestAnimationFrame(() => drawLines(null));
+        });
+
+
+        document.getElementById("btn-next-round").addEventListener("click", function () {
+          if (state.mode === "overview") {
+            state.ovPage += 1;
+            renderOverviewPage();
+          } else {
+            startNewRound();
+          }
+        });
+
+
+        document.getElementById("btn-ov-prev").addEventListener("click", function () {
+          state.ovPage -= 1;
+          renderOverviewPage();
+        });
+
+
+        document.getElementById("btn-ov-next").addEventListener("click", function () {
+          state.ovPage += 1;
+          renderOverviewPage();
+        });
+
+
+        document.getElementById("btn-banner-next").addEventListener("click", startNewRound);
+
+
+        document.getElementById("btn-banner-wrong").addEventListener("click", function () {
+          state.scope = "wrong_priority";
+          elScope.value = "wrong_priority";
+          startNewRound();
+        });
+
+
+        const modal = document.getElementById("data-modal");
+        document.getElementById("btn-data-modal").addEventListener("click", function () {
+          renderRiskModal();
+          modal.classList.add("show");
+        });
+        document.getElementById("btn-close-modal").addEventListener("click", () => modal.classList.remove("show"));
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) modal.classList.remove("show");
+        });
+
+
+        document.getElementById("btn-export-json").addEventListener("click", function () {
+          const payload = {
+            app: "Biblical Hebrew Vocab Matcher",
+            exported_at: new Date().toISOString(),
+            stats: state.statsMap
+          };
+          const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          const dateTag = new Date().toISOString().slice(0, 10);
+          a.href = url;
+          a.download = "bh_vocab_backup_" + dateTag + ".json";
+          a.click();
+          URL.revokeObjectURL(url);
+          showToast("已下載學習紀錄備份 JSON！");
+        });
+
+
+        const inputImport = document.getElementById("input-import-file");
+        document.getElementById("btn-import-trigger").addEventListener("click", () => inputImport.click());
+        inputImport.addEventListener("change", function (e) {
+          const file = e.target.files && e.target.files[0];
+          if (!file) return;
+          const reader = new FileReader();
+          reader.onload = function (ev) {
+            try {
+              const data = JSON.parse(String(ev.target.result));
+              if (!data || typeof data.stats !== "object") {
+                throw new Error("格式不符");
+              }
+              state.statsMap = data.stats;
+              saveStorage();
+              renderRiskModal();
+              startNewRound();
+              showToast("成功匯入學習紀錄！");
+            } catch (err) {
+              showToast("匯入失敗：請確認為有效的備份 JSON 檔");
+            } finally {
+              inputImport.value = "";
+            }
+          };
+          reader.readAsText(file);
+        });
+
+
+        let resetConfirm = false;
+        let resetTimer = null;
+        const btnResetAll = document.getElementById("btn-reset-all");
+        btnResetAll.addEventListener("click", function () {
+          if (!resetConfirm) {
+            resetConfirm = true;
+            btnResetAll.textContent = "再按一次確定清除";
+            clearTimeout(resetTimer);
+            resetTimer = setTimeout(() => {
+              resetConfirm = false;
+              btnResetAll.textContent = "重設全部紀錄";
+            }, 3000);
+          } else {
+            resetConfirm = false;
+            btnResetAll.textContent = "重設全部紀錄";
+            state.statsMap = {};
+            saveStorage();
+            renderRiskModal();
+            startNewRound();
+            showToast("已清除所有本機學習統計");
+          }
+        });
+
+
+        window.addEventListener("resize", function () {
+          if (state.mode === "line") requestAnimationFrame(() => drawLines(null));
+        });
+      }
+
+
+      async function bootstrap() {
+        loadStorage();
+        initEvents();
+
+
+        try {
+          const res = await fetch("./vocab.json", { cache: "no-cache" });
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          const data = await res.json();
+          const rawList = Array.isArray(data) ? data : (data.words || []);
+
+
+          state.vocabulary = rawList.filter(item => item && item.he && item.he.trim() && item.zh && item.zh.trim());
+          state.vocabMap.clear();
+          state.vocabulary.forEach(w => state.vocabMap.set(w.id, w));
+
+
+          if (state.vocabulary.length === 0) {
+            elLoading.innerHTML = '<div style="font-weight:700;color:var(--accent-terracotta);">vocab.json 目前沒有已填入內容的單字。</div>';
+            return;
+          }
+
+
+          elLoading.style.display = "none";
+          buildScopeSelector();
+          updateHeaderStats();
+          startNewRound();
+        } catch (err) {
+          elLoading.innerHTML =
+            '<div style="font-size:15px;font-weight:700;color:var(--accent-terracotta);">無法載入 vocab.json</div>' +
+            '<div style="font-size:12px;color:var(--ink-muted);max-width:420px;line-height:1.6;">' +
+            '錯誤原因：' + err.message + '<br/>' +
+            '瀏覽器基於安全限制，不允許直接雙擊開啟本機 HTML 讀取同資料夾的 JSON 檔。請將 <code>index.html</code> 與 <code>vocab.json</code> 上傳至 GitHub Pages，即可在電腦與手機正常開啟。' +
+            '</div>';
+        }
+      }
+
+
+      bootstrap();
+    })();
+  </script>
+</body>
+</html>
