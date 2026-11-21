@@ -622,13 +622,15 @@
     .zh-text {
       font-size: clamp(11.5px, 1.85vh, 15px);
       font-weight: 600;
-      line-height: 1.25;
+      line-height: 1.3;
       color: var(--ink-main);
       pointer-events: none;
       width: 100%;
-      white-space: normal;
-      word-break: break-word;
-      overflow-wrap: anywhere;
+    }
+
+    .zh-chunk {
+      display: inline-block;
+      white-space: nowrap;
     }
 
     .alt-hint {
@@ -1490,6 +1492,12 @@
         return "";
       }
 
+      function formatZhByCommaBoundary(zhStr) {
+        if (!zhStr) return "";
+        const parts = String(zhStr).match(/[^、，；;]+[、，；;]?/g) || [zhStr];
+        return parts.map(p => '<span class="zh-chunk">' + p + '</span>').join("");
+      }
+
       function createCard(word, side) {
         const btn = document.createElement("button");
         btn.type = "button";
@@ -1532,7 +1540,7 @@
         } else {
           const zhEl = document.createElement("span");
           zhEl.className = "zh-text";
-          zhEl.textContent = word.zh;
+          zhEl.innerHTML = formatZhByCommaBoundary(word.zh);
           btn.appendChild(zhEl);
         }
 
@@ -1602,7 +1610,7 @@
               freqHtml +
             '</div>' +
             '<div class="overview-zh-box">' +
-              '<div class="overview-zh">' + w.zh + '</div>' +
+              '<div class="overview-zh">' + formatZhByCommaBoundary(w.zh) + '</div>' +
             '</div>';
           elOvGrid.appendChild(item);
         });
