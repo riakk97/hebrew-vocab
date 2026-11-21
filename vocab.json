@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "聖經希伯來文初階（Basics of Biblical Hebrew）詞彙庫",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "updated_at": "2026-11-21",
     "chapters_included": [
       13,
@@ -35,7 +35,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 327
+      "freq": 327,
+      "stem": "Qal"
     },
     {
       "id": "ch13_002",
@@ -46,7 +47,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 235
+      "freq": 235,
+      "stem": "Qal"
     },
     {
       "id": "ch13_003",
@@ -57,7 +59,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 26
+      "freq": 26,
+      "stem": "Qal"
     },
     {
       "id": "ch13_004",
@@ -68,7 +71,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 290
+      "freq": 290,
+      "stem": "Qal"
     },
     {
       "id": "ch13_005",
@@ -79,7 +83,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 956
+      "freq": 956,
+      "stem": "Qal"
     },
     {
       "id": "ch13_006",
@@ -90,7 +95,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 114
+      "freq": 114,
+      "stem": "Qal"
     },
     {
       "id": "ch13_007",
@@ -101,7 +107,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 225
+      "freq": 225,
+      "stem": "Qal"
     },
     {
       "id": "ch13_008",
@@ -112,7 +119,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 252
+      "freq": 252,
+      "stem": "Qal"
     },
     {
       "id": "ch13_009",
@@ -123,7 +131,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 350
+      "freq": 350,
+      "stem": "Qal"
     },
     {
       "id": "ch13_010",
@@ -134,7 +143,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 457
+      "freq": 457,
+      "stem": "Qal"
     },
     {
       "id": "ch13_011",
@@ -145,7 +155,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 304
+      "freq": 304,
+      "stem": "Qal"
     },
     {
       "id": "ch13_012",
@@ -156,7 +167,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 213
+      "freq": 213,
+      "stem": "Qal"
     },
     {
       "id": "ch13_013",
@@ -167,7 +179,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 854
+      "freq": 854,
+      "stem": "Qal"
     },
     {
       "id": "ch13_014",
@@ -178,7 +191,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 469
+      "freq": 469,
+      "stem": "Qal"
     },
     {
       "id": "ch14_001",
@@ -189,7 +203,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 2592
+      "freq": 2592,
+      "stem": "Qal"
     },
     {
       "id": "ch14_002",
@@ -200,7 +215,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 377
+      "freq": 377,
+      "stem": "Qal"
     },
     {
       "id": "ch14_003",
@@ -211,7 +227,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 499
+      "freq": 499,
+      "stem": "Qal"
     },
     {
       "id": "ch14_004",
@@ -222,7 +239,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 317
+      "freq": 317,
+      "stem": "Qal"
     },
     {
       "id": "ch14_005",
@@ -233,7 +251,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 382
+      "freq": 382,
+      "stem": "Qal"
     },
     {
       "id": "ch14_006",
@@ -244,7 +263,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 967
+      "freq": 967,
+      "stem": "Qal"
     },
     {
       "id": "ch14_007",
@@ -255,7 +275,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 854
+      "freq": 854,
+      "stem": "Qal"
     },
     {
       "id": "ch14_008",
@@ -266,7 +287,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 435
+      "freq": 435,
+      "stem": "Qal"
     },
     {
       "id": "ch14_009",
@@ -277,7 +299,8 @@
       "pos": "verb",
       "status": "verified",
       "he": "נָשָׂא",
-      "freq": 659
+      "freq": 659,
+      "stem": "Qal"
     },
     {
       "id": "ch14_010",
@@ -288,7 +311,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 894
+      "freq": 894,
+      "stem": "Qal"
     },
     {
       "id": "ch14_011",
@@ -299,7 +323,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 553
+      "freq": 553,
+      "stem": "Qal"
     },
     {
       "id": "ch14_012",
@@ -310,7 +335,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 524
+      "freq": 524,
+      "stem": "Qal"
     },
     {
       "id": "ch14_013",
@@ -321,7 +347,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 627
+      "freq": 627,
+      "stem": "Qal"
     },
     {
       "id": "ch14_014",
@@ -332,7 +359,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 739
+      "freq": 739,
+      "stem": "Qal"
     },
     {
       "id": "ch14_015",
@@ -343,7 +371,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 588
+      "freq": 588,
+      "stem": "Qal"
     },
     {
       "id": "ch14_016",
@@ -354,7 +383,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 1075
+      "freq": 1075,
+      "stem": "Qal"
     },
     {
       "id": "ch14_017",
@@ -376,7 +406,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 282
+      "freq": 282,
+      "stem": "Qal"
     },
     {
       "id": "ch15_002",
@@ -387,7 +418,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 193
+      "freq": 193,
+      "stem": "Qal"
     },
     {
       "id": "ch15_003",
@@ -398,7 +430,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 289
+      "freq": 289,
+      "stem": "Qal"
     },
     {
       "id": "ch15_004",
@@ -409,7 +442,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 298
+      "freq": 298,
+      "stem": "Qal"
     },
     {
       "id": "ch15_005",
@@ -420,7 +454,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 289
+      "freq": 289,
+      "stem": "Qal"
     },
     {
       "id": "ch15_006",
@@ -431,7 +466,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 316
+      "freq": 316,
+      "stem": "Qal"
     },
     {
       "id": "ch15_007",
@@ -550,7 +586,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 104
+      "freq": 104,
+      "stem": "Qal"
     },
     {
       "id": "ch16_002",
@@ -563,7 +600,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 240
+      "freq": 240,
+      "stem": "Qal"
     },
     {
       "id": "ch16_003",
@@ -574,7 +612,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 213
+      "freq": 213,
+      "stem": "Qal"
     },
     {
       "id": "ch16_004",
@@ -585,7 +624,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 232
+      "freq": 232,
+      "stem": "Qal"
     },
     {
       "id": "ch16_005",
@@ -596,7 +636,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 102
+      "freq": 102,
+      "stem": "Qal"
     },
     {
       "id": "ch16_006",
@@ -607,7 +648,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 216
+      "freq": 216,
+      "stem": "Qal"
     },
     {
       "id": "ch16_007",
@@ -618,7 +660,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 214
+      "freq": 214,
+      "stem": "Qal"
     },
     {
       "id": "ch16_008",
@@ -629,7 +672,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 280
+      "freq": 280,
+      "stem": "Qal"
     },
     {
       "id": "ch16_009",
@@ -640,7 +684,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 229
+      "freq": 229,
+      "stem": "Qal"
     },
     {
       "id": "ch16_010",
@@ -651,7 +696,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 217
+      "freq": 217,
+      "stem": "Qal"
     },
     {
       "id": "ch16_011",
@@ -662,7 +708,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 64
+      "freq": 64,
+      "stem": "Qal"
     },
     {
       "id": "ch16_012",
@@ -708,7 +755,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 185
+      "freq": 185,
+      "stem": "Qal"
     },
     {
       "id": "ch17_002",
@@ -719,7 +767,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 297
+      "freq": 297,
+      "stem": "Qal"
     },
     {
       "id": "ch17_003",
@@ -730,7 +779,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 200
+      "freq": 200,
+      "stem": "Qal"
     },
     {
       "id": "ch17_004",
@@ -741,7 +791,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 60
+      "freq": 60,
+      "stem": "Qal"
     },
     {
       "id": "ch17_005",
@@ -752,7 +803,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 187
+      "freq": 187,
+      "stem": "Qal"
     },
     {
       "id": "ch17_006",
@@ -763,7 +815,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 94
+      "freq": 94,
+      "stem": "Qal"
     },
     {
       "id": "ch17_007",
@@ -774,7 +827,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 207
+      "freq": 207,
+      "stem": "Qal"
     },
     {
       "id": "ch17_008",
@@ -785,7 +839,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 197
+      "freq": 197,
+      "stem": "Qal"
     },
     {
       "id": "ch17_009",
@@ -796,7 +851,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 204
+      "freq": 204,
+      "stem": "Qal"
     },
     {
       "id": "ch17_010",
@@ -864,7 +920,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 172
+      "freq": 172,
+      "stem": "Qal"
     },
     {
       "id": "ch18_002",
@@ -875,7 +932,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 171
+      "freq": 171,
+      "stem": "Qal"
     },
     {
       "id": "ch18_003",
@@ -886,7 +944,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 165
+      "freq": 165,
+      "stem": "Qal"
     },
     {
       "id": "ch18_004",
@@ -897,7 +956,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 167
+      "freq": 167,
+      "stem": "Qal"
     },
     {
       "id": "ch18_005",
@@ -908,7 +968,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 74
+      "freq": 74,
+      "stem": "Qal"
     },
     {
       "id": "ch18_006",
@@ -919,7 +980,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 44
+      "freq": 44,
+      "stem": "Qal"
     },
     {
       "id": "ch18_007",
@@ -930,7 +992,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 171
+      "freq": 171,
+      "stem": "Qal"
     },
     {
       "id": "ch18_008",
@@ -941,7 +1004,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 167
+      "freq": 167,
+      "stem": "Qal"
     },
     {
       "id": "ch18_009",
@@ -952,7 +1016,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 176
+      "freq": 176,
+      "stem": "Qal"
     },
     {
       "id": "ch18_010",
@@ -1026,7 +1091,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 118
+      "freq": 118,
+      "stem": "Qal"
     },
     {
       "id": "ch19_002",
@@ -1039,7 +1105,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 114
+      "freq": 114,
+      "stem": "Qal"
     },
     {
       "id": "ch19_003",
@@ -1050,7 +1117,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 112
+      "freq": 112,
+      "stem": "Qal"
     },
     {
       "id": "ch19_004",
@@ -1063,7 +1131,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 117
+      "freq": 117,
+      "stem": "Qal"
     },
     {
       "id": "ch19_005",
@@ -1085,7 +1154,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 116
+      "freq": 116,
+      "stem": "Qal"
     },
     {
       "id": "ch19_007",
@@ -1173,7 +1243,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 63
+      "freq": 63,
+      "stem": "Qal"
     },
     {
       "id": "ch20_002",
@@ -1184,7 +1255,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 162
+      "freq": 162,
+      "stem": "Qal"
     },
     {
       "id": "ch20_003",
@@ -1195,7 +1267,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 63
+      "freq": 63,
+      "stem": "Qal"
     },
     {
       "id": "ch20_004",
@@ -1206,7 +1279,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 160
+      "freq": 160,
+      "stem": "Qal"
     },
     {
       "id": "ch20_005",
@@ -1217,7 +1291,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 150
+      "freq": 150,
+      "stem": "Qal"
     },
     {
       "id": "ch20_006",
@@ -1228,7 +1303,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 163
+      "freq": 163,
+      "stem": "Qal"
     },
     {
       "id": "ch20_007",
@@ -1239,7 +1315,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 107
+      "freq": 107,
+      "stem": "Qal"
     },
     {
       "id": "ch20_008",
@@ -1250,7 +1327,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 156
+      "freq": 156,
+      "stem": "Qal"
     },
     {
       "id": "ch20_009",
@@ -1261,7 +1339,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 148
+      "freq": 148,
+      "stem": "Qal"
     },
     {
       "id": "ch20_010",
@@ -1348,7 +1427,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 134
+      "freq": 134,
+      "stem": "Qal"
     },
     {
       "id": "ch21_002",
@@ -1362,7 +1442,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 143
+      "freq": 143,
+      "stem": "Qal"
     },
     {
       "id": "ch21_003",
@@ -1376,7 +1457,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 140
+      "freq": 140,
+      "stem": "Qal"
     },
     {
       "id": "ch21_004",
@@ -1390,7 +1472,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 146
+      "freq": 146,
+      "stem": "Qal"
     },
     {
       "id": "ch21_005",
@@ -1404,7 +1487,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 134
+      "freq": 134,
+      "stem": "Qal"
     },
     {
       "id": "ch21_006",
@@ -1415,7 +1499,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 136
+      "freq": 136,
+      "stem": "Qal"
     },
     {
       "id": "ch21_007",
@@ -1429,7 +1514,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 144
+      "freq": 144,
+      "stem": "Qal"
     },
     {
       "id": "ch21_008",
@@ -1440,7 +1526,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 148
+      "freq": 148,
+      "stem": "Qal"
     },
     {
       "id": "ch21_009",
@@ -1454,7 +1541,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 133
+      "freq": 133,
+      "stem": "Qal"
     },
     {
       "id": "ch21_010",
@@ -1558,7 +1646,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 64
+      "freq": 64,
+      "stem": "Qal"
     },
     {
       "id": "ch22_002",
@@ -1569,7 +1658,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 125
+      "freq": 125,
+      "stem": "Qal"
     },
     {
       "id": "ch22_003",
@@ -1582,7 +1672,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 117
+      "freq": 117,
+      "stem": "Qal"
     },
     {
       "id": "ch22_004",
@@ -1598,7 +1689,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 124
+      "freq": 124,
+      "stem": "Qal"
     },
     {
       "id": "ch22_005",
@@ -1611,7 +1703,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 117
+      "freq": 117,
+      "stem": "Qal"
     },
     {
       "id": "ch22_006",
@@ -1626,7 +1719,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 121
+      "freq": 121,
+      "stem": "Qal"
     },
     {
       "id": "ch22_007",
@@ -1640,7 +1734,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 125
+      "freq": 125,
+      "stem": "Qal"
     },
     {
       "id": "ch22_008",
@@ -1653,7 +1748,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 127
+      "freq": 127,
+      "stem": "Qal"
     },
     {
       "id": "ch22_009",
@@ -1664,7 +1760,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 133
+      "freq": 133,
+      "stem": "Qal"
     },
     {
       "id": "ch22_010",
@@ -1679,7 +1776,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 130
+      "freq": 130,
+      "stem": "Qal"
     },
     {
       "id": "ch22_011",
@@ -1693,7 +1791,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 117
+      "freq": 117,
+      "stem": "Qal"
     },
     {
       "id": "ch22_012",
@@ -1934,156 +2033,168 @@
       "ch": 24,
       "he": "אָמַן",
       "tr": "ʾāman",
-      "zh": "（Niphal）穩定、堅固、信賴、守信",
+      "zh": "穩定、堅固、信賴、守信",
       "zh_alt": [
         "穩定、堅固、信賴、守信"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 97
+      "freq": 97,
+      "stem": "Niph."
     },
     {
       "id": "ch24_002",
       "ch": 24,
       "he": "יָשַׁע",
       "tr": "yāšaʿ",
-      "zh": "（Niphal）被救、受援助",
+      "zh": "被救、受援助",
       "zh_alt": [
         "被救、受援助"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 205
+      "freq": 205,
+      "stem": "Niph."
     },
     {
       "id": "ch24_003",
       "ch": 24,
       "he": "יָתַר",
       "tr": "yātar",
-      "zh": "（Niphal）被遺留、保持",
+      "zh": "被遺留、保持",
       "zh_alt": [
         "被遺留、保持"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 106
+      "freq": 106,
+      "stem": "Niph."
     },
     {
       "id": "ch24_004",
       "ch": 24,
       "he": "כּוּן",
       "tr": "kûn",
-      "zh": "（Niphal）被堅固、建造、預備",
+      "zh": "被堅固、建造、預備",
       "zh_alt": [
         "被堅固、建造、預備"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 219
+      "freq": 219,
+      "stem": "Niph."
     },
     {
       "id": "ch24_005",
       "ch": 24,
       "he": "לָחַם",
       "tr": "lāḥam",
-      "zh": "（Niphal）爭鬥",
+      "zh": "爭鬥",
       "zh_alt": [
         "爭鬥"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 171
+      "freq": 171,
+      "stem": "Niph."
     },
     {
       "id": "ch24_006",
       "ch": 24,
       "he": "מָלַט",
       "tr": "mālaṭ",
-      "zh": "（Niphal）逃脫",
+      "zh": "逃脫",
       "zh_alt": [
         "逃脫"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 94
+      "freq": 94,
+      "stem": "Niph."
     },
     {
       "id": "ch24_007",
       "ch": 24,
       "he": "נָחַם",
       "tr": "nāḥam",
-      "zh": "（Niphal）抱歉、悔改、有憐憫",
+      "zh": "抱歉、悔改、有憐憫",
       "zh_alt": [
         "抱歉、悔改、有憐憫"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 108
+      "freq": 108,
+      "stem": "Niph."
     },
     {
       "id": "ch24_008",
       "ch": 24,
       "he": "נָכָה",
       "tr": "nākâ",
-      "zh": "（Niphal）被擊打",
+      "zh": "被擊打",
       "zh_alt": [
         "被擊打"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 501
+      "freq": 501,
+      "stem": "Niph."
     },
     {
       "id": "ch24_009",
       "ch": 24,
       "he": "נָצַב",
       "tr": "nāṣab",
-      "zh": "（Niphal）站崗、被安置",
+      "zh": "站崗、被安置",
       "zh_alt": [
         "站崗、被安置"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 74
+      "freq": 74,
+      "stem": "Niph."
     },
     {
       "id": "ch24_010",
       "ch": 24,
       "he": "נָצַל",
       "tr": "nāṣal",
-      "zh": "（Niphal）被拯救",
+      "zh": "被拯救",
       "zh_alt": [
         "被拯救"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 213
+      "freq": 213,
+      "stem": "Niph."
     },
     {
       "id": "ch24_011",
       "ch": 24,
       "he": "סָתַר",
       "tr": "sātar",
-      "zh": "（Niphal）隱藏、躲藏自己",
+      "zh": "隱藏、躲藏自己",
       "zh_alt": [
         "隱藏、躲藏自己"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 82
+      "freq": 82,
+      "stem": "Niph."
     },
     {
       "id": "ch24_012",
       "ch": 24,
       "he": "פָּלָא",
       "tr": "pālāʾ",
-      "zh": "（Niphal）非常驚人、令人驚奇",
+      "zh": "非常驚人、令人驚奇",
       "zh_alt": [
         "非常驚人、令人驚奇"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 71
+      "freq": 71,
+      "stem": "Niph."
     },
     {
       "id": "ch24_013",
@@ -2094,14 +2205,15 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 104
+      "freq": 104,
+      "stem": "Qal"
     },
     {
       "id": "ch24_014",
       "ch": 24,
       "he": "שָׁחַת",
       "tr": "šāḥat",
-      "zh": "（Piel、Hiphil）被敗壞、破壞、毀滅",
+      "zh": "被敗壞、破壞、毀滅",
       "zh_alt": [
         "被敗壞、破壞、毀滅",
         "破壞",
@@ -2109,20 +2221,22 @@
       ],
       "pos": "verb_piel_hiphil",
       "status": "verified",
-      "freq": 152
+      "freq": 152,
+      "stem": "Piel/Hiph."
     },
     {
       "id": "ch24_015",
       "ch": 24,
       "he": "שָׁמַד",
       "tr": "šāmad",
-      "zh": "（Niphal）被毀滅、滅絕",
+      "zh": "被毀滅、滅絕",
       "zh_alt": [
         "被毀滅、滅絕"
       ],
       "pos": "verb_niphal",
       "status": "verified",
-      "freq": 90
+      "freq": 90,
+      "stem": "Niph."
     },
     {
       "id": "ch25_001",
@@ -2136,7 +2250,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 95
+      "freq": 95,
+      "stem": "Qal"
     },
     {
       "id": "ch25_002",
@@ -2150,7 +2265,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 60
+      "freq": 60,
+      "stem": "Qal"
     },
     {
       "id": "ch25_003",
@@ -2164,7 +2280,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 93
+      "freq": 93,
+      "stem": "Qal"
     },
     {
       "id": "ch25_004",
@@ -2178,7 +2295,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 98
+      "freq": 98,
+      "stem": "Qal"
     },
     {
       "id": "ch25_005",
@@ -2192,7 +2310,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 97
+      "freq": 97,
+      "stem": "Qal"
     },
     {
       "id": "ch25_006",
@@ -2203,7 +2322,8 @@
       "zh_alt": [],
       "pos": "verb",
       "status": "verified",
-      "freq": 102
+      "freq": 102,
+      "stem": "Qal"
     },
     {
       "id": "ch25_007",
@@ -2217,7 +2337,8 @@
       ],
       "pos": "verb",
       "status": "verified",
-      "freq": 92
+      "freq": 92,
+      "stem": "Qal"
     },
     {
       "id": "ch25_008",

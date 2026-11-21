@@ -393,24 +393,6 @@
       gap: clamp(5px, 1vh, 10px);
     }
 
-    .grid-stage {
-      display: none;
-      flex: 1;
-      min-height: 0;
-      width: 100%;
-      height: 100%;
-    }
-    .grid-stage.active { display: block; }
-
-    .grid-board {
-      width: 100%;
-      height: 100%;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      gap: clamp(6px, 1.4vw, 14px);
-    }
-
     .overview-stage {
       display: none;
       flex: 1;
@@ -443,7 +425,7 @@
       background-color: var(--bg-card);
       border: 1px solid var(--border-soft);
       border-radius: 10px;
-      padding: 2px 8px;
+      padding: 3px 8px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -502,14 +484,12 @@
     }
 
     .overview-zh {
-      font-size: clamp(11px, 1.8vh, 14px);
+      font-size: clamp(11px, 1.75vh, 13.5px);
       font-weight: 600;
       text-align: right;
-      line-height: 1.15;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
+      line-height: 1.2;
+      word-break: break-word;
+      overflow-wrap: anywhere;
     }
 
     .overview-alt {
@@ -537,7 +517,7 @@
       background-color: var(--bg-card);
       border: 2px solid var(--border-soft);
       border-radius: 12px;
-      padding: 2px 8px;
+      padding: 4px 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -572,29 +552,37 @@
       animation: shakeCard 0.34s ease-in-out;
     }
 
-    .risk-badge {
+    .stem-badge {
       position: absolute;
       top: 3px;
-      left: 5px;
-      font-size: 9px;
+      left: 6px;
+      font-size: 9.5px;
       font-weight: 700;
-      color: var(--accent-terracotta);
-      background: var(--accent-terracotta-light);
+      color: var(--ink-muted);
+      background: var(--bg-parchment);
+      border: 1px solid var(--border-soft);
       border-radius: 4px;
       padding: 0 4px;
+      line-height: 1.35;
       pointer-events: none;
+    }
+    .stem-badge.stem-derived {
+      color: var(--accent-gold);
+      background: var(--accent-gold-light);
+      border-color: rgba(182, 143, 84, 0.4);
     }
 
     .freq-badge {
       position: absolute;
       top: 3px;
-      right: 5px;
-      font-size: 9px;
+      right: 6px;
+      font-size: 9.5px;
       font-weight: 700;
       color: var(--accent-sage);
       background: var(--accent-sage-light);
       border-radius: 4px;
       padding: 0 4px;
+      line-height: 1.35;
       pointer-events: none;
     }
     .freq-badge.hidden {
@@ -619,11 +607,10 @@
       pointer-events: none;
     }
 
-    .grid-board .hebrew-text { font-size: clamp(22px, 4.2vh, 34px); }
     .word-card.matched .hebrew-text { color: var(--accent-sage); }
 
     .translit-text {
-      font-size: clamp(10px, 1.6vh, 13px);
+      font-size: clamp(10px, 1.55vh, 12.5px);
       font-style: italic;
       line-height: 1.1;
       color: var(--ink-muted);
@@ -633,15 +620,15 @@
     .translit-text.hidden { display: none; }
 
     .zh-text {
-      font-size: clamp(12px, 2vh, 16px);
+      font-size: clamp(11.5px, 1.85vh, 15px);
       font-weight: 600;
-      line-height: 1.2;
+      line-height: 1.25;
       color: var(--ink-main);
       pointer-events: none;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      width: 100%;
+      white-space: normal;
+      word-break: break-word;
+      overflow-wrap: anywhere;
     }
 
     .alt-hint {
@@ -655,10 +642,6 @@
       max-width: 95%;
     }
 
-    .grid-board .zh-text {
-      font-size: clamp(12px, 2.1vh, 16px);
-      -webkit-line-clamp: 3;
-    }
     .word-card.matched .zh-text { color: var(--accent-sage); }
 
     .toast-float {
@@ -908,8 +891,7 @@
       </button>
 
       <div class="segmented" role="group">
-        <button id="btn-mode-line" type="button" class="active">左右連線</button>
-        <button id="btn-mode-grid" type="button">4×4方格</button>
+        <button id="btn-mode-line" type="button" class="active">連連看</button>
         <button id="btn-mode-overview" type="button">全覽表</button>
       </div>
 
@@ -997,10 +979,6 @@
         <div id="col-hebrew" class="col-stack"></div>
         <div id="col-chinese" class="col-stack"></div>
       </div>
-    </div>
-
-    <div id="grid-stage" class="grid-stage">
-      <div id="grid-board" class="grid-board"></div>
     </div>
 
     <div id="overview-stage" class="overview-stage">
@@ -1491,19 +1469,25 @@
 
       function renderBoard() {
         elLineStage.style.display = "none";
-        elGridStage.classList.remove("active");
         elOvStage.classList.remove("active");
 
         if (state.mode === "line") {
           elLineStage.style.display = "block";
           renderLineMode();
-        } else if (state.mode === "grid") {
-          elGridStage.classList.add("active");
-          renderGridMode();
         } else {
           elOvStage.classList.add("active");
           renderOverviewPage();
         }
+      }
+
+      function getVerbStemLabel(word) {
+        if (word.stem) return word.stem;
+        if (typeof word.pos === "string" && word.pos.startsWith("verb")) {
+          if (word.pos === "verb_niphal") return "Niph.";
+          if (word.pos === "verb_piel_hiphil") return "Piel/Hiph.";
+          return "Qal";
+        }
+        return "";
       }
 
       function createCard(word, side) {
@@ -1513,11 +1497,11 @@
         btn.dataset.id = word.id;
         btn.dataset.side = side;
 
-        const score = getRiskScore(word.id);
-        if (side === "he" && score > 0) {
+        const stemLabel = getVerbStemLabel(word);
+        if (side === "he" && stemLabel) {
           const badge = document.createElement("span");
-          badge.className = "risk-badge";
-          badge.textContent = "風險 " + score;
+          badge.className = "stem-badge" + (stemLabel !== "Qal" ? " stem-derived" : "");
+          badge.textContent = stemLabel;
           btn.appendChild(badge);
         }
 
@@ -1577,21 +1561,8 @@
         requestAnimationFrame(() => drawLines(null));
       }
 
-      function renderGridMode() {
-        elGridBoard.innerHTML = "";
-        const tiles = [];
-        state.currentWords.forEach(w => {
-          tiles.push({ word: w, side: "he" });
-          tiles.push({ word: w, side: "zh" });
-        });
-        const rows = Math.ceil(tiles.length / 4) || 4;
-        elGridBoard.style.gridTemplateRows = "repeat(" + rows + ", 1fr)";
-        shuffle(tiles).forEach(t => elGridBoard.appendChild(createCard(t.word, t.side)));
-      }
-
       function renderOverviewPage() {
         elLineStage.style.display = "none";
-        elGridStage.classList.remove("active");
         elOvStage.classList.add("active");
         stopTimer();
 
@@ -1615,9 +1586,11 @@
           const heAltStr = (Array.isArray(w.he_alt) && w.he_alt.length > 0)
             ? w.he_alt.join(" / ")
             : "";
+          const stemLabel = getVerbStemLabel(w);
+          const stemPart = stemLabel ? (" · " + stemLabel) : "";
           const freqHtml = (typeof w.freq === "number")
-            ? ('<span class="overview-freq' + (state.showFreq ? '' : ' hidden') + '">第' + w.ch + '章 · ' + w.freq + '次</span>')
-            : ('<span class="overview-freq' + (state.showFreq ? '' : ' hidden') + '">第' + w.ch + '章</span>');
+            ? ('<span class="overview-freq' + (state.showFreq ? '' : ' hidden') + '">第' + w.ch + '章' + stemPart + ' · ' + w.freq + '次</span>')
+            : ('<span class="overview-freq' + (state.showFreq ? '' : ' hidden') + '">第' + w.ch + '章' + stemPart + '</span>');
 
           item.innerHTML =
             '<div class="overview-he-box">' +
@@ -1938,19 +1911,16 @@
         });
 
         const btnLine = document.getElementById("btn-mode-line");
-        const btnGrid = document.getElementById("btn-mode-grid");
         const btnOv = document.getElementById("btn-mode-overview");
 
         function setMode(mode) {
           state.mode = mode;
           btnLine.classList.toggle("active", mode === "line");
-          btnGrid.classList.toggle("active", mode === "grid");
           btnOv.classList.toggle("active", mode === "overview");
           startNewRound();
         }
 
         btnLine.addEventListener("click", () => setMode("line"));
-        btnGrid.addEventListener("click", () => setMode("grid"));
         btnOv.addEventListener("click", () => setMode("overview"));
 
         document.getElementById("btn-translit").addEventListener("click", function () {
